@@ -1,0 +1,2159 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"43 /Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h: 43:     struct {
+[s S838 `uc 1 `uc 1 ]
+[n S838 . lsb msb ]
+"41
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h: 41: typedef union {
+[u S837 `ui 1 `S838 1 ]
+[n S837 . value . ]
+"51
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h: 51:     struct {
+[s S840 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S840 . delay ch0on0 ch1on0 ch0on1 ch1on1 ch0aon ch1aon ]
+"49
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h: 49: typedef union {
+[u S839 `uc 1 `S840 1 ]
+[n S839 . value . ]
+"64
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h: 64:     struct {
+[s S842 :1 `uc 1 :1 `uc 1 :6 `uc 1 ]
+[n S842 . off2 update unused ]
+"62
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/AC-Dimmer.h: 62: typedef union {
+[u S841 `uc 1 `S842 1 ]
+[n S841 . value . ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"7936 /Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7936:     struct {
+[s S386 :1 `uc 1 :1 `uc 1 ]
+[n S386 . TMR1IF TMR2IF ]
+"7935
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7935: typedef union {
+[u S385 `S386 1 ]
+[n S385 . . ]
+"7941
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7941: extern volatile PIR4bits_t PIR4bits __attribute__((address(0x710)));
+[v _PIR4bits `VS385 ~T0 @X0 0 e@1808 ]
+"6619
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6619: extern volatile unsigned char TMR0H __attribute__((address(0x59D)));
+[v _TMR0H `Vuc ~T0 @X0 0 e@1437 ]
+"6481
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6481: extern volatile unsigned char TMR0L __attribute__((address(0x59C)));
+[v _TMR0L `Vuc ~T0 @X0 0 e@1436 ]
+"6879
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6879:     struct {
+[s S336 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S336 . T0OUTPS T016BIT T0OUT . T0EN ]
+"6886
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6886:     struct {
+[s S337 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S337 . T0OUTPS0 T0OUTPS1 T0OUTPS2 T0OUTPS3 ]
+"6878
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6878: typedef union {
+[u S335 `S336 1 `S337 1 ]
+[n S335 . . . ]
+"6893
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6893: extern volatile T0CON0bits_t T0CON0bits __attribute__((address(0x59E)));
+[v _T0CON0bits `VS335 ~T0 @X0 0 e@1438 ]
+"647
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 647:     struct {
+[s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S41 . LATA0 LATA1 LATA2 . LATA4 LATA5 ]
+"646
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 646: typedef union {
+[u S40 `S41 1 ]
+[n S40 . . ]
+"656
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 656: extern volatile LATAbits_t LATAbits __attribute__((address(0x018)));
+[v _LATAbits `VS40 ~T0 @X0 0 e@24 ]
+"7792
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7792:     struct {
+[s S378 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S378 . INTF . IOCIF TMR0IF ]
+"7791
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7791: typedef union {
+[u S377 `S378 1 ]
+[n S377 . . ]
+"7799
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7799: extern volatile PIR0bits_t PIR0bits __attribute__((address(0x70C)));
+[v _PIR0bits `VS377 ~T0 @X0 0 e@1804 ]
+"7897
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7897:     struct {
+[s S384 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S384 . SSP1IF BCL1IF . TX1IF RC1IF ]
+"7896
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7896: typedef union {
+[u S383 `S384 1 ]
+[n S383 . . ]
+"7905
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7905: extern volatile PIR3bits_t PIR3bits __attribute__((address(0x70F)));
+[v _PIR3bits `VS383 ~T0 @X0 0 e@1807 ]
+"1126
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1126: extern volatile unsigned char TX1REG __attribute__((address(0x11A)));
+[v _TX1REG `Vuc ~T0 @X0 0 e@282 ]
+[p mainexit ]
+"16793
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16793: extern volatile unsigned char ANSELA __attribute__((address(0x1F38)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@7992 ]
+"17178
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17178: extern volatile unsigned char ANSELC __attribute__((address(0x1F4E)));
+[v _ANSELC `Vuc ~T0 @X0 0 e@8014 ]
+"16265
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16265: extern volatile unsigned char RA0PPS __attribute__((address(0x1F10)));
+[v _RA0PPS `Vuc ~T0 @X0 0 e@7952 ]
+"641
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 641: extern volatile unsigned char LATA __attribute__((address(0x018)));
+[v _LATA `Vuc ~T0 @X0 0 e@24 ]
+"686
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 686: extern volatile unsigned char LATC __attribute__((address(0x01A)));
+[v _LATC `Vuc ~T0 @X0 0 e@26 ]
+"546
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 546: extern volatile unsigned char TRISA __attribute__((address(0x012)));
+[v _TRISA `Vuc ~T0 @X0 0 e@18 ]
+"591
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 591: extern volatile unsigned char TRISC __attribute__((address(0x014)));
+[v _TRISC `Vuc ~T0 @X0 0 e@20 ]
+"16207
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16207: extern volatile unsigned char TX1CKPPS __attribute__((address(0x1ECC)));
+[v _TX1CKPPS `Vuc ~T0 @X0 0 e@7884 ]
+"16149
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16149: extern volatile unsigned char RX1DTPPS __attribute__((address(0x1ECB)));
+[v _RX1DTPPS `Vuc ~T0 @X0 0 e@7883 ]
+"1187
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1187: extern volatile unsigned char SP1BRGL __attribute__((address(0x11B)));
+[v _SP1BRGL `Vuc ~T0 @X0 0 e@283 ]
+"1491
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1491: extern volatile unsigned char TX1STA __attribute__((address(0x11E)));
+[v _TX1STA `Vuc ~T0 @X0 0 e@286 ]
+"1311
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1311: extern volatile unsigned char RC1STA __attribute__((address(0x11D)));
+[v _RC1STA `Vuc ~T0 @X0 0 e@285 ]
+"6938
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6938: extern volatile unsigned char T0CON1 __attribute__((address(0x59F)));
+[v _T0CON1 `Vuc ~T0 @X0 0 e@1439 ]
+"10319
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10319: extern volatile unsigned char ZCDCON __attribute__((address(0x91F)));
+[v _ZCDCON `Vuc ~T0 @X0 0 e@2335 ]
+"4139
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4139: extern volatile unsigned char T2CLKCON __attribute__((address(0x290)));
+[v _T2CLKCON `Vuc ~T0 @X0 0 e@656 ]
+"3816
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3816: extern volatile unsigned char PR2 __attribute__((address(0x28D)));
+[v _PR2 `Vuc ~T0 @X0 0 e@653 ]
+"3865
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3865: extern volatile unsigned char T2CON __attribute__((address(0x28E)));
+[v _T2CON `Vuc ~T0 @X0 0 e@654 ]
+"8213
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8213:     struct {
+[s S403 :1 `uc 1 :1 `uc 1 ]
+[n S403 . TMR1IE TMR2IE ]
+"8212
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8212: typedef union {
+[u S402 `S403 1 ]
+[n S402 . . ]
+"8218
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8218: extern volatile PIE4bits_t PIE4bits __attribute__((address(0x71A)));
+[v _PIE4bits `VS402 ~T0 @X0 0 e@1818 ]
+"419
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 419:     struct {
+[s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . INTEDG . PEIE GIE ]
+"418
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 418: typedef union {
+[u S30 `S31 1 ]
+[n S30 . . ]
+"426
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 426: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+"8075
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8075:     struct {
+[s S395 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S395 . INTE . IOCIE TMR0IE ]
+"8074
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8074: typedef union {
+[u S394 `S395 1 ]
+[n S394 . . ]
+"8082
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8082: extern volatile PIE0bits_t PIE0bits __attribute__((address(0x716)));
+[v _PIE0bits `VS394 ~T0 @X0 0 e@1814 ]
+"1326
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1326:     struct {
+[s S86 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S86 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"1325
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1325: typedef union {
+[u S85 `S86 1 ]
+[n S85 . . ]
+"1337
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1337: extern volatile RC1STAbits_t RC1STAbits __attribute__((address(0x11D)));
+[v _RC1STAbits `VS85 ~T0 @X0 0 e@285 ]
+"1072
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1072: extern volatile unsigned char RC1REG __attribute__((address(0x119)));
+[v _RC1REG `Vuc ~T0 @X0 0 e@281 ]
+"2 /Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+[p x FEXTOSC = OFF ]
+"3
+[p x RSTOSC = HFINTPLL ]
+"4
+[p x CLKOUTEN = OFF ]
+"5
+[p x CSWEN = OFF ]
+"6
+[p x FCMEN = OFF ]
+"9
+[p x MCLRE = ON ]
+"10
+[p x PWRTE = OFF ]
+"11
+[p x LPBOREN = OFF ]
+"12
+[p x BOREN = ON ]
+"13
+[p x BORV = HI ]
+"14
+[p x ZCD = OFF ]
+"15
+[p x PPS1WAY = ON ]
+"16
+[p x STVREN = ON ]
+"19
+[p x WDTCPS = WDTCPS_31 ]
+"20
+[p x WDTE = OFF ]
+"21
+[p x WDTCWS = WDTCWS_7 ]
+"22
+[p x WDTCCS = SC ]
+"25
+[p x BBSIZE = BB512 ]
+"26
+[p x BBEN = OFF ]
+"27
+[p x SAFEN = OFF ]
+"28
+[p x WRTAPP = OFF ]
+"29
+[p x WRTB = OFF ]
+"30
+[p x WRTC = OFF ]
+"31
+[p x WRTSAF = OFF ]
+"32
+[p x LVP = ON ]
+"35
+[p x CP = OFF ]
+"110 /Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 110: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"130
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 130: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"150
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 150: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"170
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 170: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"233
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 233: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"253
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 253: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"277
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 277: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"297
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 297: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"317
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 317: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"375
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 375: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"395
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 395: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"415
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 415: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"448
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 448: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"498
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 498: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"548
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 548: __asm("TRISA equ 012h");
+[; <" TRISA equ 012h ;# ">
+"593
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 593: __asm("TRISC equ 014h");
+[; <" TRISC equ 014h ;# ">
+"643
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 643: __asm("LATA equ 018h");
+[; <" LATA equ 018h ;# ">
+"688
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 688: __asm("LATC equ 01Ah");
+[; <" LATC equ 01Ah ;# ">
+"738
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 738: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"745
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 745: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"815
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 815: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"885
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 885: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"956
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 956: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"1022
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1022: __asm("ADACT equ 09Fh");
+[; <" ADACT equ 09Fh ;# ">
+"1074
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1074: __asm("RC1REG equ 0119h");
+[; <" RC1REG equ 0119h ;# ">
+"1079
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1079: __asm("RCREG equ 0119h");
+[; <" RCREG equ 0119h ;# ">
+"1083
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1083: __asm("RCREG1 equ 0119h");
+[; <" RCREG1 equ 0119h ;# ">
+"1128
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1128: __asm("TX1REG equ 011Ah");
+[; <" TX1REG equ 011Ah ;# ">
+"1133
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1133: __asm("TXREG1 equ 011Ah");
+[; <" TXREG1 equ 011Ah ;# ">
+"1137
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1137: __asm("TXREG equ 011Ah");
+[; <" TXREG equ 011Ah ;# ">
+"1182
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1182: __asm("SP1BRG equ 011Bh");
+[; <" SP1BRG equ 011Bh ;# ">
+"1189
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1189: __asm("SP1BRGL equ 011Bh");
+[; <" SP1BRGL equ 011Bh ;# ">
+"1194
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1194: __asm("SPBRG equ 011Bh");
+[; <" SPBRG equ 011Bh ;# ">
+"1198
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1198: __asm("SPBRG1 equ 011Bh");
+[; <" SPBRG1 equ 011Bh ;# ">
+"1202
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1202: __asm("SPBRGL equ 011Bh");
+[; <" SPBRGL equ 011Bh ;# ">
+"1259
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1259: __asm("SP1BRGH equ 011Ch");
+[; <" SP1BRGH equ 011Ch ;# ">
+"1264
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1264: __asm("SPBRGH equ 011Ch");
+[; <" SPBRGH equ 011Ch ;# ">
+"1268
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1268: __asm("SPBRGH1 equ 011Ch");
+[; <" SPBRGH1 equ 011Ch ;# ">
+"1313
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1313: __asm("RC1STA equ 011Dh");
+[; <" RC1STA equ 011Dh ;# ">
+"1318
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1318: __asm("RCSTA1 equ 011Dh");
+[; <" RCSTA1 equ 011Dh ;# ">
+"1322
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1322: __asm("RCSTA equ 011Dh");
+[; <" RCSTA equ 011Dh ;# ">
+"1493
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1493: __asm("TX1STA equ 011Eh");
+[; <" TX1STA equ 011Eh ;# ">
+"1498
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1498: __asm("TXSTA1 equ 011Eh");
+[; <" TXSTA1 equ 011Eh ;# ">
+"1502
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1502: __asm("TXSTA equ 011Eh");
+[; <" TXSTA equ 011Eh ;# ">
+"1673
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1673: __asm("BAUD1CON equ 011Fh");
+[; <" BAUD1CON equ 011Fh ;# ">
+"1678
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1678: __asm("BAUDCON1 equ 011Fh");
+[; <" BAUDCON1 equ 011Fh ;# ">
+"1682
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1682: __asm("BAUDCTL1 equ 011Fh");
+[; <" BAUDCTL1 equ 011Fh ;# ">
+"1686
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1686: __asm("BAUDCON equ 011Fh");
+[; <" BAUDCON equ 011Fh ;# ">
+"1690
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1690: __asm("BAUDCTL equ 011Fh");
+[; <" BAUDCTL equ 011Fh ;# ">
+"1919
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1919: __asm("SSP1BUF equ 018Ch");
+[; <" SSP1BUF equ 018Ch ;# ">
+"1939
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 1939: __asm("SSP1ADD equ 018Dh");
+[; <" SSP1ADD equ 018Dh ;# ">
+"2059
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2059: __asm("SSP1MSK equ 018Eh");
+[; <" SSP1MSK equ 018Eh ;# ">
+"2129
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2129: __asm("SSP1STAT equ 018Fh");
+[; <" SSP1STAT equ 018Fh ;# ">
+"2493
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2493: __asm("SSP1CON1 equ 0190h");
+[; <" SSP1CON1 equ 0190h ;# ">
+"2613
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2613: __asm("SSP1CON2 equ 0191h");
+[; <" SSP1CON2 equ 0191h ;# ">
+"2800
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2800: __asm("SSP1CON3 equ 0192h");
+[; <" SSP1CON3 equ 0192h ;# ">
+"2862
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2862: __asm("TMR1 equ 020Ch");
+[; <" TMR1 equ 020Ch ;# ">
+"2869
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 2869: __asm("TMR1L equ 020Ch");
+[; <" TMR1L equ 020Ch ;# ">
+"3039
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3039: __asm("TMR1H equ 020Dh");
+[; <" TMR1H equ 020Dh ;# ">
+"3159
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3159: __asm("T1CON equ 020Eh");
+[; <" T1CON equ 020Eh ;# ">
+"3255
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3255: __asm("T1GCON equ 020Fh");
+[; <" T1GCON equ 020Fh ;# ">
+"3260
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3260: __asm("PR1 equ 020Fh");
+[; <" PR1 equ 020Fh ;# ">
+"3451
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3451: __asm("T1GATE equ 0210h");
+[; <" T1GATE equ 0210h ;# ">
+"3456
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3456: __asm("TMR1GATE equ 0210h");
+[; <" TMR1GATE equ 0210h ;# ">
+"3617
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3617: __asm("T1CLK equ 0211h");
+[; <" T1CLK equ 0211h ;# ">
+"3622
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3622: __asm("TMR1CLK equ 0211h");
+[; <" TMR1CLK equ 0211h ;# ">
+"3759
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3759: __asm("T2TMR equ 028Ch");
+[; <" T2TMR equ 028Ch ;# ">
+"3764
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3764: __asm("TMR2 equ 028Ch");
+[; <" TMR2 equ 028Ch ;# ">
+"3813
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3813: __asm("T2PR equ 028Dh");
+[; <" T2PR equ 028Dh ;# ">
+"3818
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3818: __asm("PR2 equ 028Dh");
+[; <" PR2 equ 028Dh ;# ">
+"3867
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 3867: __asm("T2CON equ 028Eh");
+[; <" T2CON equ 028Eh ;# ">
+"4013
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4013: __asm("T2HLT equ 028Fh");
+[; <" T2HLT equ 028Fh ;# ">
+"4141
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4141: __asm("T2CLKCON equ 0290h");
+[; <" T2CLKCON equ 0290h ;# ">
+"4221
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4221: __asm("T2RST equ 0291h");
+[; <" T2RST equ 0291h ;# ">
+"4301
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4301: __asm("CCPR1 equ 030Ch");
+[; <" CCPR1 equ 030Ch ;# ">
+"4308
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4308: __asm("CCPR1L equ 030Ch");
+[; <" CCPR1L equ 030Ch ;# ">
+"4328
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4328: __asm("CCPR1H equ 030Dh");
+[; <" CCPR1H equ 030Dh ;# ">
+"4348
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4348: __asm("CCP1CON equ 030Eh");
+[; <" CCP1CON equ 030Eh ;# ">
+"4475
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4475: __asm("CCP1CAP equ 030Fh");
+[; <" CCP1CAP equ 030Fh ;# ">
+"4543
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4543: __asm("CCPR2 equ 0310h");
+[; <" CCPR2 equ 0310h ;# ">
+"4550
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4550: __asm("CCPR2L equ 0310h");
+[; <" CCPR2L equ 0310h ;# ">
+"4570
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4570: __asm("CCPR2H equ 0311h");
+[; <" CCPR2H equ 0311h ;# ">
+"4590
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4590: __asm("CCP2CON equ 0312h");
+[; <" CCP2CON equ 0312h ;# ">
+"4717
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4717: __asm("CCP2CAP equ 0313h");
+[; <" CCP2CAP equ 0313h ;# ">
+"4785
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4785: __asm("PWM3DC equ 0314h");
+[; <" PWM3DC equ 0314h ;# ">
+"4792
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4792: __asm("PWM3DCL equ 0314h");
+[; <" PWM3DCL equ 0314h ;# ">
+"4858
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 4858: __asm("PWM3DCH equ 0315h");
+[; <" PWM3DCH equ 0315h ;# ">
+"5028
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5028: __asm("PWM3CON equ 0316h");
+[; <" PWM3CON equ 0316h ;# ">
+"5084
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5084: __asm("PWM4DC equ 0318h");
+[; <" PWM4DC equ 0318h ;# ">
+"5091
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5091: __asm("PWM4DCL equ 0318h");
+[; <" PWM4DCL equ 0318h ;# ">
+"5157
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5157: __asm("PWM4DCH equ 0319h");
+[; <" PWM4DCH equ 0319h ;# ">
+"5327
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5327: __asm("PWM4CON equ 031Ah");
+[; <" PWM4CON equ 031Ah ;# ">
+"5383
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5383: __asm("PWM5DC equ 031Ch");
+[; <" PWM5DC equ 031Ch ;# ">
+"5390
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5390: __asm("PWM5DCL equ 031Ch");
+[; <" PWM5DCL equ 031Ch ;# ">
+"5456
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5456: __asm("PWM5DCH equ 031Dh");
+[; <" PWM5DCH equ 031Dh ;# ">
+"5626
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5626: __asm("PWM5CON equ 031Eh");
+[; <" PWM5CON equ 031Eh ;# ">
+"5682
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5682: __asm("PWM6DC equ 038Ch");
+[; <" PWM6DC equ 038Ch ;# ">
+"5689
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5689: __asm("PWM6DCL equ 038Ch");
+[; <" PWM6DCL equ 038Ch ;# ">
+"5755
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5755: __asm("PWM6DCH equ 038Dh");
+[; <" PWM6DCH equ 038Dh ;# ">
+"5925
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5925: __asm("PWM6CON equ 038Eh");
+[; <" PWM6CON equ 038Eh ;# ">
+"5983
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5983: __asm("NCO1ACC equ 058Ch");
+[; <" NCO1ACC equ 058Ch ;# ">
+"5990
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 5990: __asm("NCO1ACCL equ 058Ch");
+[; <" NCO1ACCL equ 058Ch ;# ">
+"6060
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6060: __asm("NCO1ACCH equ 058Dh");
+[; <" NCO1ACCH equ 058Dh ;# ">
+"6130
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6130: __asm("NCO1ACCU equ 058Eh");
+[; <" NCO1ACCU equ 058Eh ;# ">
+"6178
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6178: __asm("NCO1INC equ 058Fh");
+[; <" NCO1INC equ 058Fh ;# ">
+"6185
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6185: __asm("NCO1INCL equ 058Fh");
+[; <" NCO1INCL equ 058Fh ;# ">
+"6255
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6255: __asm("NCO1INCH equ 0590h");
+[; <" NCO1INCH equ 0590h ;# ">
+"6325
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6325: __asm("NCO1INCU equ 0591h");
+[; <" NCO1INCU equ 0591h ;# ">
+"6371
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6371: __asm("NCO1CON equ 0592h");
+[; <" NCO1CON equ 0592h ;# ">
+"6411
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6411: __asm("NCO1CLK equ 0593h");
+[; <" NCO1CLK equ 0593h ;# ">
+"6483
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6483: __asm("TMR0L equ 059Ch");
+[; <" TMR0L equ 059Ch ;# ">
+"6488
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6488: __asm("TMR0 equ 059Ch");
+[; <" TMR0 equ 059Ch ;# ">
+"6621
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6621: __asm("TMR0H equ 059Dh");
+[; <" TMR0H equ 059Dh ;# ">
+"6626
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6626: __asm("PR0 equ 059Dh");
+[; <" PR0 equ 059Dh ;# ">
+"6875
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6875: __asm("T0CON0 equ 059Eh");
+[; <" T0CON0 equ 059Eh ;# ">
+"6940
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 6940: __asm("T0CON1 equ 059Fh");
+[; <" T0CON1 equ 059Fh ;# ">
+"7051
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7051: __asm("CWG1CLKCON equ 060Ch");
+[; <" CWG1CLKCON equ 060Ch ;# ">
+"7079
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7079: __asm("CWG1DAT equ 060Dh");
+[; <" CWG1DAT equ 060Dh ;# ">
+"7125
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7125: __asm("CWG1DBR equ 060Eh");
+[; <" CWG1DBR equ 060Eh ;# ">
+"7229
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7229: __asm("CWG1DBF equ 060Fh");
+[; <" CWG1DBF equ 060Fh ;# ">
+"7333
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7333: __asm("CWG1CON0 equ 0610h");
+[; <" CWG1CON0 equ 0610h ;# ">
+"7434
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7434: __asm("CWG1CON1 equ 0611h");
+[; <" CWG1CON1 equ 0611h ;# ">
+"7512
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7512: __asm("CWG1AS0 equ 0612h");
+[; <" CWG1AS0 equ 0612h ;# ">
+"7632
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7632: __asm("CWG1AS1 equ 0613h");
+[; <" CWG1AS1 equ 0613h ;# ">
+"7676
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7676: __asm("CWG1STR equ 0614h");
+[; <" CWG1STR equ 0614h ;# ">
+"7788
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7788: __asm("PIR0 equ 070Ch");
+[; <" PIR0 equ 070Ch ;# ">
+"7821
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7821: __asm("PIR1 equ 070Dh");
+[; <" PIR1 equ 070Dh ;# ">
+"7860
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7860: __asm("PIR2 equ 070Eh");
+[; <" PIR2 equ 070Eh ;# ">
+"7893
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7893: __asm("PIR3 equ 070Fh");
+[; <" PIR3 equ 070Fh ;# ">
+"7932
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7932: __asm("PIR4 equ 0710h");
+[; <" PIR4 equ 0710h ;# ">
+"7958
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 7958: __asm("PIR5 equ 0711h");
+[; <" PIR5 equ 0711h ;# ">
+"8003
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8003: __asm("PIR6 equ 0712h");
+[; <" PIR6 equ 0712h ;# ">
+"8029
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8029: __asm("PIR7 equ 0713h");
+[; <" PIR7 equ 0713h ;# ">
+"8071
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8071: __asm("PIE0 equ 0716h");
+[; <" PIE0 equ 0716h ;# ">
+"8104
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8104: __asm("PIE1 equ 0717h");
+[; <" PIE1 equ 0717h ;# ">
+"8137
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8137: __asm("PIE2 equ 0718h");
+[; <" PIE2 equ 0718h ;# ">
+"8170
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8170: __asm("PIE3 equ 0719h");
+[; <" PIE3 equ 0719h ;# ">
+"8209
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8209: __asm("PIE4 equ 071Ah");
+[; <" PIE4 equ 071Ah ;# ">
+"8235
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8235: __asm("PIE5 equ 071Bh");
+[; <" PIE5 equ 071Bh ;# ">
+"8280
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8280: __asm("PIE6 equ 071Ch");
+[; <" PIE6 equ 071Ch ;# ">
+"8306
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8306: __asm("PIE7 equ 071Dh");
+[; <" PIE7 equ 071Dh ;# ">
+"8348
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8348: __asm("PMD0 equ 0796h");
+[; <" PMD0 equ 0796h ;# ">
+"8393
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8393: __asm("PMD1 equ 0797h");
+[; <" PMD1 equ 0797h ;# ">
+"8441
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8441: __asm("PMD2 equ 0798h");
+[; <" PMD2 equ 0798h ;# ">
+"8486
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8486: __asm("PMD3 equ 0799h");
+[; <" PMD3 equ 0799h ;# ">
+"8536
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8536: __asm("PMD4 equ 079Ah");
+[; <" PMD4 equ 079Ah ;# ">
+"8570
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8570: __asm("PMD5 equ 079Bh");
+[; <" PMD5 equ 079Bh ;# ">
+"8609
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8609: __asm("WDTCON0 equ 080Ch");
+[; <" WDTCON0 equ 080Ch ;# ">
+"8684
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8684: __asm("WDTCON1 equ 080Dh");
+[; <" WDTCON1 equ 080Dh ;# ">
+"8778
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8778: __asm("WDTPSL equ 080Eh");
+[; <" WDTPSL equ 080Eh ;# ">
+"8906
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 8906: __asm("WDTPSH equ 080Fh");
+[; <" WDTPSH equ 080Fh ;# ">
+"9034
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9034: __asm("WDTTMR equ 0810h");
+[; <" WDTTMR equ 0810h ;# ">
+"9116
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9116: __asm("BORCON equ 0811h");
+[; <" BORCON equ 0811h ;# ">
+"9143
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9143: __asm("PCON0 equ 0813h");
+[; <" PCON0 equ 0813h ;# ">
+"9205
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9205: __asm("PCON1 equ 0814h");
+[; <" PCON1 equ 0814h ;# ">
+"9226
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9226: __asm("NVMADR equ 081Ah");
+[; <" NVMADR equ 081Ah ;# ">
+"9233
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9233: __asm("NVMADRL equ 081Ah");
+[; <" NVMADRL equ 081Ah ;# ">
+"9295
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9295: __asm("NVMADRH equ 081Bh");
+[; <" NVMADRH equ 081Bh ;# ">
+"9351
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9351: __asm("NVMDAT equ 081Ch");
+[; <" NVMDAT equ 081Ch ;# ">
+"9358
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9358: __asm("NVMDATL equ 081Ch");
+[; <" NVMDATL equ 081Ch ;# ">
+"9420
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9420: __asm("NVMDATH equ 081Dh");
+[; <" NVMDATH equ 081Dh ;# ">
+"9470
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9470: __asm("NVMCON1 equ 081Eh");
+[; <" NVMCON1 equ 081Eh ;# ">
+"9526
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9526: __asm("NVMCON2 equ 081Fh");
+[; <" NVMCON2 equ 081Fh ;# ">
+"9546
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9546: __asm("CPUDOZE equ 088Ch");
+[; <" CPUDOZE equ 088Ch ;# ">
+"9611
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9611: __asm("OSCCON1 equ 088Dh");
+[; <" OSCCON1 equ 088Dh ;# ">
+"9681
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9681: __asm("OSCCON2 equ 088Eh");
+[; <" OSCCON2 equ 088Eh ;# ">
+"9751
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9751: __asm("OSCCON3 equ 088Fh");
+[; <" OSCCON3 equ 088Fh ;# ">
+"9785
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9785: __asm("OSCSTAT equ 0890h");
+[; <" OSCSTAT equ 0890h ;# ">
+"9837
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9837: __asm("OSCEN equ 0891h");
+[; <" OSCEN equ 0891h ;# ">
+"9883
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9883: __asm("OSCTUNE equ 0892h");
+[; <" OSCTUNE equ 0892h ;# ">
+"9941
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9941: __asm("OSCFRQ equ 0893h");
+[; <" OSCFRQ equ 0893h ;# ">
+"9981
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 9981: __asm("CLKRCON equ 0895h");
+[; <" CLKRCON equ 0895h ;# ">
+"10046
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10046: __asm("CLKRCLK equ 0896h");
+[; <" CLKRCLK equ 0896h ;# ">
+"10092
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10092: __asm("FVRCON equ 090Ch");
+[; <" FVRCON equ 090Ch ;# ">
+"10168
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10168: __asm("DAC1CON0 equ 090Eh");
+[; <" DAC1CON0 equ 090Eh ;# ">
+"10269
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10269: __asm("DAC1CON1 equ 090Fh");
+[; <" DAC1CON1 equ 090Fh ;# ">
+"10321
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10321: __asm("ZCDCON equ 091Fh");
+[; <" ZCDCON equ 091Fh ;# ">
+"10367
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10367: __asm("CMOUT equ 098Fh");
+[; <" CMOUT equ 098Fh ;# ">
+"10372
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10372: __asm("CMSTAT equ 098Fh");
+[; <" CMSTAT equ 098Fh ;# ">
+"10445
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10445: __asm("CM1CON0 equ 0990h");
+[; <" CM1CON0 equ 0990h ;# ">
+"10525
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10525: __asm("CM1CON1 equ 0991h");
+[; <" CM1CON1 equ 0991h ;# ">
+"10565
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10565: __asm("CM1NCH equ 0992h");
+[; <" CM1NCH equ 0992h ;# ">
+"10625
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10625: __asm("CM1PCH equ 0993h");
+[; <" CM1PCH equ 0993h ;# ">
+"10685
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10685: __asm("CM2CON0 equ 0994h");
+[; <" CM2CON0 equ 0994h ;# ">
+"10765
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10765: __asm("CM2CON1 equ 0995h");
+[; <" CM2CON1 equ 0995h ;# ">
+"10805
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10805: __asm("CM2NCH equ 0996h");
+[; <" CM2NCH equ 0996h ;# ">
+"10865
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10865: __asm("CM2PCH equ 0997h");
+[; <" CM2PCH equ 0997h ;# ">
+"10925
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10925: __asm("CLCDATA equ 01E0Fh");
+[; <" CLCDATA equ 01E0Fh ;# ">
+"10963
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 10963: __asm("CLC1CON equ 01E10h");
+[; <" CLC1CON equ 01E10h ;# ">
+"11081
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11081: __asm("CLC1POL equ 01E11h");
+[; <" CLC1POL equ 01E11h ;# ">
+"11159
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11159: __asm("CLC1SEL0 equ 01E12h");
+[; <" CLC1SEL0 equ 01E12h ;# ">
+"11263
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11263: __asm("CLC1SEL1 equ 01E13h");
+[; <" CLC1SEL1 equ 01E13h ;# ">
+"11367
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11367: __asm("CLC1SEL2 equ 01E14h");
+[; <" CLC1SEL2 equ 01E14h ;# ">
+"11471
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11471: __asm("CLC1SEL3 equ 01E15h");
+[; <" CLC1SEL3 equ 01E15h ;# ">
+"11575
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11575: __asm("CLC1GLS0 equ 01E16h");
+[; <" CLC1GLS0 equ 01E16h ;# ">
+"11687
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11687: __asm("CLC1GLS1 equ 01E17h");
+[; <" CLC1GLS1 equ 01E17h ;# ">
+"11799
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11799: __asm("CLC1GLS2 equ 01E18h");
+[; <" CLC1GLS2 equ 01E18h ;# ">
+"11911
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 11911: __asm("CLC1GLS3 equ 01E19h");
+[; <" CLC1GLS3 equ 01E19h ;# ">
+"12023
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12023: __asm("CLC2CON equ 01E1Ah");
+[; <" CLC2CON equ 01E1Ah ;# ">
+"12141
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12141: __asm("CLC2POL equ 01E1Bh");
+[; <" CLC2POL equ 01E1Bh ;# ">
+"12219
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12219: __asm("CLC2SEL0 equ 01E1Ch");
+[; <" CLC2SEL0 equ 01E1Ch ;# ">
+"12323
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12323: __asm("CLC2SEL1 equ 01E1Dh");
+[; <" CLC2SEL1 equ 01E1Dh ;# ">
+"12427
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12427: __asm("CLC2SEL2 equ 01E1Eh");
+[; <" CLC2SEL2 equ 01E1Eh ;# ">
+"12531
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12531: __asm("CLC2SEL3 equ 01E1Fh");
+[; <" CLC2SEL3 equ 01E1Fh ;# ">
+"12635
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12635: __asm("CLC2GLS0 equ 01E20h");
+[; <" CLC2GLS0 equ 01E20h ;# ">
+"12747
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12747: __asm("CLC2GLS1 equ 01E21h");
+[; <" CLC2GLS1 equ 01E21h ;# ">
+"12859
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12859: __asm("CLC2GLS2 equ 01E22h");
+[; <" CLC2GLS2 equ 01E22h ;# ">
+"12971
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 12971: __asm("CLC2GLS3 equ 01E23h");
+[; <" CLC2GLS3 equ 01E23h ;# ">
+"13083
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13083: __asm("CLC3CON equ 01E24h");
+[; <" CLC3CON equ 01E24h ;# ">
+"13201
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13201: __asm("CLC3POL equ 01E25h");
+[; <" CLC3POL equ 01E25h ;# ">
+"13279
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13279: __asm("CLC3SEL0 equ 01E26h");
+[; <" CLC3SEL0 equ 01E26h ;# ">
+"13383
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13383: __asm("CLC3SEL1 equ 01E27h");
+[; <" CLC3SEL1 equ 01E27h ;# ">
+"13487
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13487: __asm("CLC3SEL2 equ 01E28h");
+[; <" CLC3SEL2 equ 01E28h ;# ">
+"13591
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13591: __asm("CLC3SEL3 equ 01E29h");
+[; <" CLC3SEL3 equ 01E29h ;# ">
+"13695
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13695: __asm("CLC3GLS0 equ 01E2Ah");
+[; <" CLC3GLS0 equ 01E2Ah ;# ">
+"13807
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13807: __asm("CLC3GLS1 equ 01E2Bh");
+[; <" CLC3GLS1 equ 01E2Bh ;# ">
+"13919
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 13919: __asm("CLC3GLS2 equ 01E2Ch");
+[; <" CLC3GLS2 equ 01E2Ch ;# ">
+"14031
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14031: __asm("CLC3GLS3 equ 01E2Dh");
+[; <" CLC3GLS3 equ 01E2Dh ;# ">
+"14143
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14143: __asm("CLC4CON equ 01E2Eh");
+[; <" CLC4CON equ 01E2Eh ;# ">
+"14261
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14261: __asm("CLC4POL equ 01E2Fh");
+[; <" CLC4POL equ 01E2Fh ;# ">
+"14339
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14339: __asm("CLC4SEL0 equ 01E30h");
+[; <" CLC4SEL0 equ 01E30h ;# ">
+"14443
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14443: __asm("CLC4SEL1 equ 01E31h");
+[; <" CLC4SEL1 equ 01E31h ;# ">
+"14547
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14547: __asm("CLC4SEL2 equ 01E32h");
+[; <" CLC4SEL2 equ 01E32h ;# ">
+"14651
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14651: __asm("CLC4SEL3 equ 01E33h");
+[; <" CLC4SEL3 equ 01E33h ;# ">
+"14755
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14755: __asm("CLC4GLS0 equ 01E34h");
+[; <" CLC4GLS0 equ 01E34h ;# ">
+"14867
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14867: __asm("CLC4GLS1 equ 01E35h");
+[; <" CLC4GLS1 equ 01E35h ;# ">
+"14979
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 14979: __asm("CLC4GLS2 equ 01E36h");
+[; <" CLC4GLS2 equ 01E36h ;# ">
+"15091
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15091: __asm("CLC4GLS3 equ 01E37h");
+[; <" CLC4GLS3 equ 01E37h ;# ">
+"15203
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15203: __asm("PPSLOCK equ 01E8Fh");
+[; <" PPSLOCK equ 01E8Fh ;# ">
+"15223
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15223: __asm("INTPPS equ 01E90h");
+[; <" INTPPS equ 01E90h ;# ">
+"15281
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15281: __asm("T0CKIPPS equ 01E91h");
+[; <" T0CKIPPS equ 01E91h ;# ">
+"15339
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15339: __asm("T1CKIPPS equ 01E92h");
+[; <" T1CKIPPS equ 01E92h ;# ">
+"15397
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15397: __asm("T1GPPS equ 01E93h");
+[; <" T1GPPS equ 01E93h ;# ">
+"15455
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15455: __asm("T2INPPS equ 01E9Ch");
+[; <" T2INPPS equ 01E9Ch ;# ">
+"15513
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15513: __asm("CCP1PPS equ 01EA1h");
+[; <" CCP1PPS equ 01EA1h ;# ">
+"15571
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15571: __asm("CCP2PPS equ 01EA2h");
+[; <" CCP2PPS equ 01EA2h ;# ">
+"15629
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15629: __asm("CWG1PPS equ 01EB1h");
+[; <" CWG1PPS equ 01EB1h ;# ">
+"15687
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15687: __asm("CLCIN0PPS equ 01EBBh");
+[; <" CLCIN0PPS equ 01EBBh ;# ">
+"15745
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15745: __asm("CLCIN1PPS equ 01EBCh");
+[; <" CLCIN1PPS equ 01EBCh ;# ">
+"15803
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15803: __asm("CLCIN2PPS equ 01EBDh");
+[; <" CLCIN2PPS equ 01EBDh ;# ">
+"15861
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15861: __asm("CLCIN3PPS equ 01EBEh");
+[; <" CLCIN3PPS equ 01EBEh ;# ">
+"15919
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15919: __asm("ADACTPPS equ 01EC3h");
+[; <" ADACTPPS equ 01EC3h ;# ">
+"15977
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 15977: __asm("SSP1CLKPPS equ 01EC5h");
+[; <" SSP1CLKPPS equ 01EC5h ;# ">
+"16035
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16035: __asm("SSP1DATPPS equ 01EC6h");
+[; <" SSP1DATPPS equ 01EC6h ;# ">
+"16093
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16093: __asm("SSP1SSPPS equ 01EC7h");
+[; <" SSP1SSPPS equ 01EC7h ;# ">
+"16151
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16151: __asm("RX1DTPPS equ 01ECBh");
+[; <" RX1DTPPS equ 01ECBh ;# ">
+"16209
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16209: __asm("TX1CKPPS equ 01ECCh");
+[; <" TX1CKPPS equ 01ECCh ;# ">
+"16267
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16267: __asm("RA0PPS equ 01F10h");
+[; <" RA0PPS equ 01F10h ;# ">
+"16311
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16311: __asm("RA1PPS equ 01F11h");
+[; <" RA1PPS equ 01F11h ;# ">
+"16355
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16355: __asm("RA2PPS equ 01F12h");
+[; <" RA2PPS equ 01F12h ;# ">
+"16399
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16399: __asm("RA3PPS equ 01F13h");
+[; <" RA3PPS equ 01F13h ;# ">
+"16443
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16443: __asm("RA4PPS equ 01F14h");
+[; <" RA4PPS equ 01F14h ;# ">
+"16487
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16487: __asm("RA5PPS equ 01F15h");
+[; <" RA5PPS equ 01F15h ;# ">
+"16531
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16531: __asm("RC0PPS equ 01F20h");
+[; <" RC0PPS equ 01F20h ;# ">
+"16575
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16575: __asm("RC1PPS equ 01F21h");
+[; <" RC1PPS equ 01F21h ;# ">
+"16619
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16619: __asm("RC2PPS equ 01F22h");
+[; <" RC2PPS equ 01F22h ;# ">
+"16663
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16663: __asm("RC3PPS equ 01F23h");
+[; <" RC3PPS equ 01F23h ;# ">
+"16707
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16707: __asm("RC4PPS equ 01F24h");
+[; <" RC4PPS equ 01F24h ;# ">
+"16751
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16751: __asm("RC5PPS equ 01F25h");
+[; <" RC5PPS equ 01F25h ;# ">
+"16795
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16795: __asm("ANSELA equ 01F38h");
+[; <" ANSELA equ 01F38h ;# ">
+"16840
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16840: __asm("WPUA equ 01F39h");
+[; <" WPUA equ 01F39h ;# ">
+"16890
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16890: __asm("ODCONA equ 01F3Ah");
+[; <" ODCONA equ 01F3Ah ;# ">
+"16935
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16935: __asm("SLRCONA equ 01F3Bh");
+[; <" SLRCONA equ 01F3Bh ;# ">
+"16980
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 16980: __asm("INLVLA equ 01F3Ch");
+[; <" INLVLA equ 01F3Ch ;# ">
+"17030
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17030: __asm("IOCAP equ 01F3Dh");
+[; <" IOCAP equ 01F3Dh ;# ">
+"17080
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17080: __asm("IOCAN equ 01F3Eh");
+[; <" IOCAN equ 01F3Eh ;# ">
+"17130
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17130: __asm("IOCAF equ 01F3Fh");
+[; <" IOCAF equ 01F3Fh ;# ">
+"17180
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17180: __asm("ANSELC equ 01F4Eh");
+[; <" ANSELC equ 01F4Eh ;# ">
+"17230
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17230: __asm("WPUC equ 01F4Fh");
+[; <" WPUC equ 01F4Fh ;# ">
+"17280
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17280: __asm("ODCONC equ 01F50h");
+[; <" ODCONC equ 01F50h ;# ">
+"17330
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17330: __asm("SLRCONC equ 01F51h");
+[; <" SLRCONC equ 01F51h ;# ">
+"17380
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17380: __asm("INLVLC equ 01F52h");
+[; <" INLVLC equ 01F52h ;# ">
+"17430
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17430: __asm("IOCCP equ 01F53h");
+[; <" IOCCP equ 01F53h ;# ">
+"17480
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17480: __asm("IOCCN equ 01F54h");
+[; <" IOCCN equ 01F54h ;# ">
+"17530
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17530: __asm("IOCCF equ 01F55h");
+[; <" IOCCF equ 01F55h ;# ">
+"17580
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17580: __asm("STATUS_SHAD equ 01FE4h");
+[; <" STATUS_SHAD equ 01FE4h ;# ">
+"17620
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17620: __asm("WREG_SHAD equ 01FE5h");
+[; <" WREG_SHAD equ 01FE5h ;# ">
+"17640
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17640: __asm("BSR_SHAD equ 01FE6h");
+[; <" BSR_SHAD equ 01FE6h ;# ">
+"17660
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17660: __asm("PCLATH_SHAD equ 01FE7h");
+[; <" PCLATH_SHAD equ 01FE7h ;# ">
+"17680
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17680: __asm("FSR0_SHAD equ 01FE8h");
+[; <" FSR0_SHAD equ 01FE8h ;# ">
+"17687
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17687: __asm("FSR0L_SHAD equ 01FE8h");
+[; <" FSR0L_SHAD equ 01FE8h ;# ">
+"17707
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17707: __asm("FSR0H_SHAD equ 01FE9h");
+[; <" FSR0H_SHAD equ 01FE9h ;# ">
+"17727
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17727: __asm("FSR1_SHAD equ 01FEAh");
+[; <" FSR1_SHAD equ 01FEAh ;# ">
+"17734
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17734: __asm("FSR1L_SHAD equ 01FEAh");
+[; <" FSR1L_SHAD equ 01FEAh ;# ">
+"17754
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17754: __asm("FSR1H_SHAD equ 01FEBh");
+[; <" FSR1H_SHAD equ 01FEBh ;# ">
+"17774
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17774: __asm("STKPTR equ 01FEDh");
+[; <" STKPTR equ 01FEDh ;# ">
+"17818
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17818: __asm("TOSL equ 01FEEh");
+[; <" TOSL equ 01FEEh ;# ">
+"17888
+[; ;/Applications/microchip/xc8/v2.10/pic/include/pic16lf15323.h: 17888: __asm("TOSH equ 01FEFh");
+[; <" TOSH equ 01FEFh ;# ">
+"42 /Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 42: uint16 Ch0Delay;
+[v _Ch0Delay `S837 ~T0 @X0 1 e ]
+"43
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 43: uint16 Ch1Delay;
+[v _Ch1Delay `S837 ~T0 @X0 1 e ]
+"45
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 45: uchar Cmd;
+[v _Cmd `uc ~T0 @X0 1 e ]
+"46
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 46: uint16 CmdVal;
+[v _CmdVal `S837 ~T0 @X0 1 e ]
+"48
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 48: uchar RcvCnt;
+[v _RcvCnt `uc ~T0 @X0 1 e ]
+"49
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 49: uchar Rx;
+[v _Rx `uc ~T0 @X0 1 e ]
+"52
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 52: __near uint16 Delay0;
+[v _Delay0 `NS837 ~T0 @X0 1 e ]
+"53
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 53: __near uint16 Delay1;
+[v _Delay1 `NS837 ~T0 @X0 1 e ]
+"54
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 54: __near uint16 Delay2;
+[v _Delay2 `NS837 ~T0 @X0 1 e ]
+"56
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 56: __near flag0 Flags0;
+[v _Flags0 `NS839 ~T0 @X0 1 e ]
+"57
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 57: __near flag1 Flags1;
+[v _Flags1 `NS841 ~T0 @X0 1 e ]
+[v $root$_myIsr `(v ~T0 @X0 0 e ]
+"59
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 59: void __attribute__((picinterrupt(("")))) myIsr(void) {
+[v _myIsr `(v ~T1 @X0 1 ef ]
+{
+[e :U _myIsr ]
+[f ]
+"61
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 61:     if (PIR4bits.TMR2IF) {
+[e $ ! != -> . . _PIR4bits 0 1 `i -> 0 `i 844  ]
+{
+"62
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 62:         PIR4bits.TMR2IF = 0;
+[e = . . _PIR4bits 0 1 -> -> 0 `i `uc ]
+"67
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 67:         TMR0H = (0xFF74 >> 8);
+[e = _TMR0H -> >> -> 65396 `ui -> 8 `i `uc ]
+"68
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 68:         TMR0L = (0xFF74 & 0xFF);
+[e = _TMR0L -> & -> 65396 `ui -> -> 255 `i `ui `uc ]
+"69
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 69:         Flags0.delay = 0;
+[e = . . _Flags0 1 0 -> -> 0 `i `uc ]
+"71
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 71:         if (Flags1.update) {
+[e $ ! != -> . . _Flags1 1 1 `i -> 0 `i 845  ]
+{
+"72
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 72:             T0CON0bits.T0EN = 1;
+[e = . . _T0CON0bits 0 4 -> -> 1 `i `uc ]
+"74
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 74:             Flags0.value = 0;
+[e = . _Flags0 0 -> -> 0 `i `uc ]
+"75
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 75:             Flags1.value = 0;
+[e = . _Flags1 0 -> -> 0 `i `uc ]
+"76
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 76:             Delay0.value = 0xFFFF;
+[e = . _Delay0 0 -> 65535 `ui ]
+"77
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 77:             Delay1.value = 0xFFFF;
+[e = . _Delay1 0 -> 65535 `ui ]
+"78
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 78:             Delay2.value = 0xFFFF;
+[e = . _Delay2 0 -> 65535 `ui ]
+"80
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 80:             LATAbits.LATA4 = 0;
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+"81
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 81:             LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"83
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 83:             if (Ch0Delay.value == 0) {
+[e $ ! == . _Ch0Delay 0 -> -> 0 `i `ui 846  ]
+{
+"84
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 84:                 Flags0.ch0aon = 1;
+[e = . . _Flags0 1 5 -> -> 1 `i `uc ]
+"85
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 85:                 LATAbits.LATA4 = 1;
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+"87
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 87:                 if (Ch1Delay.value == 0) {
+[e $ ! == . _Ch1Delay 0 -> -> 0 `i `ui 847  ]
+{
+"88
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 88:                     Flags0.ch1aon = 1;
+[e = . . _Flags0 1 6 -> -> 1 `i `uc ]
+"89
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 89:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"90
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 90:                     T0CON0bits.T0EN = 0;
+[e = . . _T0CON0bits 0 4 -> -> 0 `i `uc ]
+"91
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 91:                 } else {
+}
+[e $U 848  ]
+[e :U 847 ]
+{
+"92
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 92:                     if (Ch1Delay.value == 8192) {
+[e $ ! == . _Ch1Delay 0 -> -> 8192 `i `ui 849  ]
+{
+"93
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 93:                         T0CON0bits.T0EN = 0;
+[e = . . _T0CON0bits 0 4 -> -> 0 `i `uc ]
+"94
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 94:                     } else {
+}
+[e $U 850  ]
+[e :U 849 ]
+{
+"95
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 95:                         Delay0.value = Ch1Delay.value;
+[e = . _Delay0 0 . _Ch1Delay 0 ]
+"96
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 96:                         Flags0.ch1on0 = 1;
+[e = . . _Flags0 1 2 -> -> 1 `i `uc ]
+"97
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 97:                         Delay1.value = 8192 - Ch1Delay.value;
+[e = . _Delay1 0 - -> -> 8192 `i `ui . _Ch1Delay 0 ]
+"98
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 98:                         Flags1.off2 = 1;
+[e = . . _Flags1 1 0 -> -> 1 `i `uc ]
+"99
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 99:                     }
+}
+[e :U 850 ]
+"100
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 100:                 }
+}
+[e :U 848 ]
+"101
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 101:             } else if (Ch1Delay.value == 0) {
+}
+[e $U 851  ]
+[e :U 846 ]
+[e $ ! == . _Ch1Delay 0 -> -> 0 `i `ui 852  ]
+{
+"102
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 102:                 Flags0.ch1aon = 1;
+[e = . . _Flags0 1 6 -> -> 1 `i `uc ]
+"103
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 103:                 LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"105
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 105:                 if (Ch0Delay.value == 8192) {
+[e $ ! == . _Ch0Delay 0 -> -> 8192 `i `ui 853  ]
+{
+"106
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 106:                     T0CON0bits.T0EN = 0;
+[e = . . _T0CON0bits 0 4 -> -> 0 `i `uc ]
+"107
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 107:                 } else {
+}
+[e $U 854  ]
+[e :U 853 ]
+{
+"108
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 108:                     Delay0.value = Ch0Delay.value;
+[e = . _Delay0 0 . _Ch0Delay 0 ]
+"109
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 109:                     Flags0.ch0on0 = 1;
+[e = . . _Flags0 1 1 -> -> 1 `i `uc ]
+"110
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 110:                     Delay1.value = 8192 - Ch0Delay.value;
+[e = . _Delay1 0 - -> -> 8192 `i `ui . _Ch0Delay 0 ]
+"111
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 111:                     Flags1.off2 = 1;
+[e = . . _Flags1 1 0 -> -> 1 `i `uc ]
+"112
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 112:                 }
+}
+[e :U 854 ]
+"113
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 113:             } else if (Ch0Delay.value == Ch1Delay.value) {
+}
+[e $U 855  ]
+[e :U 852 ]
+[e $ ! == . _Ch0Delay 0 . _Ch1Delay 0 856  ]
+{
+"114
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 114:                 if (Ch0Delay.value == 8192) {
+[e $ ! == . _Ch0Delay 0 -> -> 8192 `i `ui 857  ]
+{
+"115
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 115:                     T0CON0bits.T0EN = 0;
+[e = . . _T0CON0bits 0 4 -> -> 0 `i `uc ]
+"116
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 116:                 } else {
+}
+[e $U 858  ]
+[e :U 857 ]
+{
+"117
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 117:                     Delay0.value = Ch0Delay.value;
+[e = . _Delay0 0 . _Ch0Delay 0 ]
+"118
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 118:                     Flags0.ch0on0 = 1;
+[e = . . _Flags0 1 1 -> -> 1 `i `uc ]
+"119
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 119:                     Flags0.ch1on0 = 1;
+[e = . . _Flags0 1 2 -> -> 1 `i `uc ]
+"120
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 120:                     Delay1.value = 8192 - Ch0Delay.value;
+[e = . _Delay1 0 - -> -> 8192 `i `ui . _Ch0Delay 0 ]
+"121
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 121:                     Flags1.off2 = 1;
+[e = . . _Flags1 1 0 -> -> 1 `i `uc ]
+"122
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 122:                 }
+}
+[e :U 858 ]
+"123
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 123:             } else if (Ch0Delay.value > Ch1Delay.value) {
+}
+[e $U 859  ]
+[e :U 856 ]
+[e $ ! > . _Ch0Delay 0 . _Ch1Delay 0 860  ]
+{
+"124
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 124:                 Delay0.value = Ch1Delay.value;
+[e = . _Delay0 0 . _Ch1Delay 0 ]
+"125
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 125:                 Flags0.ch1on0 = 1;
+[e = . . _Flags0 1 2 -> -> 1 `i `uc ]
+"126
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 126:                 if (Ch0Delay.value == 8192) {
+[e $ ! == . _Ch0Delay 0 -> -> 8192 `i `ui 861  ]
+{
+"127
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 127:                     Delay1.value = 8192 - Delay0.value;
+[e = . _Delay1 0 - -> -> 8192 `i `ui . _Delay0 0 ]
+"128
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 128:                     Flags1.off2 = 1;
+[e = . . _Flags1 1 0 -> -> 1 `i `uc ]
+"129
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 129:                 } else {
+}
+[e $U 862  ]
+[e :U 861 ]
+{
+"130
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 130:                     Delay1.value = Ch0Delay.value - Ch1Delay.value;
+[e = . _Delay1 0 - . _Ch0Delay 0 . _Ch1Delay 0 ]
+"131
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 131:                     Flags0.ch0on1 = 1;
+[e = . . _Flags0 1 3 -> -> 1 `i `uc ]
+"132
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 132:                     Delay2.value = 8192 - Ch0Delay.value;
+[e = . _Delay2 0 - -> -> 8192 `i `ui . _Ch0Delay 0 ]
+"133
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 133:                 }
+}
+[e :U 862 ]
+"134
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 134:             } else {
+}
+[e $U 863  ]
+[e :U 860 ]
+{
+"135
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 135:                 Delay0.value = Ch0Delay.value;
+[e = . _Delay0 0 . _Ch0Delay 0 ]
+"136
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 136:                 Flags0.ch0on0 = 1;
+[e = . . _Flags0 1 1 -> -> 1 `i `uc ]
+"137
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 137:                 if (Ch1Delay.value == 8192) {
+[e $ ! == . _Ch1Delay 0 -> -> 8192 `i `ui 864  ]
+{
+"138
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 138:                     Delay1.value = 8192 - Delay0.value;
+[e = . _Delay1 0 - -> -> 8192 `i `ui . _Delay0 0 ]
+"139
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 139:                     Flags1.off2 = 1;
+[e = . . _Flags1 1 0 -> -> 1 `i `uc ]
+"140
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 140:                 } else {
+}
+[e $U 865  ]
+[e :U 864 ]
+{
+"141
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 141:                     Delay1.value = Ch1Delay.value - Ch0Delay.value;
+[e = . _Delay1 0 - . _Ch1Delay 0 . _Ch0Delay 0 ]
+"142
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 142:                     Flags0.ch1on1 = 1;
+[e = . . _Flags0 1 4 -> -> 1 `i `uc ]
+"143
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 143:                     Delay2.value = 8192 - Ch1Delay.value;
+[e = . _Delay2 0 - -> -> 8192 `i `ui . _Ch1Delay 0 ]
+"144
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 144:                 }
+}
+[e :U 865 ]
+"145
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 145:             }
+}
+[e :U 863 ]
+[e :U 859 ]
+[e :U 855 ]
+[e :U 851 ]
+"148
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 148:             Delay0.value = ~Delay0.value;
+[e = . _Delay0 0 ~ . _Delay0 0 ]
+"149
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 149:             Delay1.value = ~Delay1.value;
+[e = . _Delay1 0 ~ . _Delay1 0 ]
+"150
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 150:             Delay2.value = ~Delay2.value;
+[e = . _Delay2 0 ~ . _Delay2 0 ]
+"151
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 151:         }
+}
+[e :U 845 ]
+"152
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 152:     } else {
+}
+[e $U 866  ]
+[e :U 844 ]
+{
+"153
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 153:         PIR0bits.TMR0IF = 0;
+[e = . . _PIR0bits 0 3 -> -> 0 `i `uc ]
+"154
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 154:         switch(Flags0.delay) {
+[e $U 868  ]
+{
+"155
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 155:             case 0:
+[e :U 869 ]
+"156
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 156:                 TMR0H = Delay0.msb;
+[e = _TMR0H . . _Delay0 1 1 ]
+"157
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 157:                 TMR0L = Delay0.lsb;
+[e = _TMR0L . . _Delay0 1 0 ]
+"158
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 158:                 break;
+[e $U 867  ]
+"159
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 159:             case 1:
+[e :U 870 ]
+"160
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 160:                 TMR0H = Delay1.msb;
+[e = _TMR0H . . _Delay1 1 1 ]
+"161
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 161:                 TMR0L = Delay1.lsb;
+[e = _TMR0L . . _Delay1 1 0 ]
+"162
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 162:                 if (Flags0.ch0on0) {
+[e $ ! != -> . . _Flags0 1 1 `i -> 0 `i 871  ]
+{
+"163
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 163:                     LATAbits.LATA4 = 1;
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+"164
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 164:                 }
+}
+[e :U 871 ]
+"165
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 165:                 if (Flags0.ch1on0) {
+[e $ ! != -> . . _Flags0 1 2 `i -> 0 `i 872  ]
+{
+"166
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 166:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"167
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 167:                 }
+}
+[e :U 872 ]
+"168
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 168:                 break;
+[e $U 867  ]
+"169
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 169:             case 2:
+[e :U 873 ]
+"170
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 170:                 TMR0H = Delay2.msb;
+[e = _TMR0H . . _Delay2 1 1 ]
+"171
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 171:                 TMR0L = Delay2.lsb;
+[e = _TMR0L . . _Delay2 1 0 ]
+"172
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 172:                 if (Flags0.ch0on1) {
+[e $ ! != -> . . _Flags0 1 3 `i -> 0 `i 874  ]
+{
+"173
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 173:                     LATAbits.LATA4 = 1;
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+"174
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 174:                 }
+}
+[e :U 874 ]
+"175
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 175:                 if (Flags0.ch1on1) {
+[e $ ! != -> . . _Flags0 1 4 `i -> 0 `i 875  ]
+{
+"176
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 176:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"177
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 177:                 }
+}
+[e :U 875 ]
+"178
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 178:                 if (Flags1.off2) {
+[e $ ! != -> . . _Flags1 1 0 `i -> 0 `i 876  ]
+{
+"179
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 179:                     if (!Flags0.ch0aon) {
+[e $ ! ! != -> . . _Flags0 1 5 `i -> 0 `i 877  ]
+{
+"180
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 180:                         LATAbits.LATA4 = 0;
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+"181
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 181:                     }
+}
+[e :U 877 ]
+"182
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 182:                     if (!Flags0.ch1aon) {
+[e $ ! ! != -> . . _Flags0 1 6 `i -> 0 `i 878  ]
+{
+"183
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 183:                         LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"184
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 184:                     }
+}
+[e :U 878 ]
+"185
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 185:                 }
+}
+[e :U 876 ]
+"186
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 186:                 break;
+[e $U 867  ]
+"187
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 187:             case 3:
+[e :U 879 ]
+"188
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 188:                 if (!Flags0.ch0aon) {
+[e $ ! ! != -> . . _Flags0 1 5 `i -> 0 `i 880  ]
+{
+"189
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 189:                     LATAbits.LATA4 = 0;
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+"190
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 190:                 }
+}
+[e :U 880 ]
+"191
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 191:                 if (!Flags0.ch1aon) {
+[e $ ! ! != -> . . _Flags0 1 6 `i -> 0 `i 881  ]
+{
+"192
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 192:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"193
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 193:                 }
+}
+[e :U 881 ]
+"194
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 194:                 __asm("decf _Flags0, f");
+[; <" decf _Flags0, f ;# ">
+"195
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 195:         }
+}
+[e $U 867  ]
+[e :U 868 ]
+[e [\ -> . . _Flags0 1 0 `i , $ -> 0 `i 869
+ , $ -> 1 `i 870
+ , $ -> 2 `i 873
+ , $ -> 3 `i 879
+ 867 ]
+[e :U 867 ]
+"196
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 196:         __asm("incf _Flags0, f");
+[; <" incf _Flags0, f ;# ">
+"197
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 197:     }
+}
+[e :U 866 ]
+"198
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 198:     return;
+[e $UE 843  ]
+"199
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 199: }
+[e :UE 843 ]
+}
+"201
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 201: uchar nibbleToHex(uchar i) {
+[v _nibbleToHex `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _nibbleToHex ]
+[v _i `uc ~T0 @X0 1 r1 ]
+[f ]
+"202
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 202:     if (i >= 10) {
+[e $ ! >= -> _i `i -> 10 `i 883  ]
+{
+"203
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 203:         return 'A'+i-10;
+[e ) -> - + -> 65 `ui -> _i `ui -> -> 10 `i `ui `uc ]
+[e $UE 882  ]
+"204
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 204:     }
+}
+[e :U 883 ]
+"205
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 205:     return '0'+i;
+[e ) -> + -> 48 `ui -> _i `ui `uc ]
+[e $UE 882  ]
+"206
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 206: }
+[e :UE 882 ]
+}
+"208
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 208: void sendChar(uchar c) {
+[v _sendChar `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _sendChar ]
+[v _c `uc ~T0 @X0 1 r1 ]
+[f ]
+"209
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 209:     while (!PIR3bits.TX1IF);
+[e $U 885  ]
+[e :U 886 ]
+[e :U 885 ]
+[e $ ! != -> . . _PIR3bits 0 3 `i -> 0 `i 886  ]
+[e :U 887 ]
+"210
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 210:     TX1REG = c;
+[e = _TX1REG _c ]
+"211
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 211: }
+[e :UE 884 ]
+}
+"213
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 213: void sendInt(uchar i) {
+[v _sendInt `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _sendInt ]
+[v _i `uc ~T0 @X0 1 r1 ]
+[f ]
+"214
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 214:     uchar tmp = i;
+[v _tmp `uc ~T0 @X0 1 a ]
+[e = _tmp _i ]
+"215
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 215:     tmp >>= 4;
+[e =>> _tmp -> -> 4 `i `uc ]
+"216
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 216:     sendChar(nibbleToHex(tmp));
+[e ( _sendChar (1 ( _nibbleToHex (1 _tmp ]
+"217
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 217:     i &= 0xF;
+[e =& _i -> -> 15 `i `uc ]
+"218
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 218:     sendChar(nibbleToHex(i));
+[e ( _sendChar (1 ( _nibbleToHex (1 _i ]
+"219
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 219: }
+[e :UE 888 ]
+}
+"221
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 221: uchar hexToNibble(uchar c) {
+[v _hexToNibble `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _hexToNibble ]
+[v _c `uc ~T0 @X0 1 r1 ]
+[f ]
+"222
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 222:     if (c >= 'A') {
+[e $ ! >= -> _c `ui -> 65 `ui 890  ]
+{
+"223
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 223:         return c-'A'+10;
+[e ) -> + - -> _c `ui -> 65 `ui -> -> 10 `i `ui `uc ]
+[e $UE 889  ]
+"224
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 224:     }
+}
+[e :U 890 ]
+"225
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 225:     return c-'0';
+[e ) -> - -> _c `ui -> 48 `ui `uc ]
+[e $UE 889  ]
+"226
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 226: }
+[e :UE 889 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"228
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 228: int main(void)
+[v _main `(i ~T0 @X0 1 ef ]
+"229
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 229: {
+{
+[e :U _main ]
+[f ]
+"230
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 230:     uchar state;
+[v _state `uc ~T0 @X0 1 a ]
+"232
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 232:     ANSELA = 0b00000100;
+[e = _ANSELA -> -> 4 `i `uc ]
+"234
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 234:     ANSELC = 0b00000000;
+[e = _ANSELC -> -> 0 `i `uc ]
+"238
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 238:     RA0PPS = 0xF;
+[e = _RA0PPS -> -> 15 `i `uc ]
+"242
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 242:     LATA = 0b00000000;
+[e = _LATA -> -> 0 `i `uc ]
+"244
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 244:     LATC = 0b00000000;
+[e = _LATC -> -> 0 `i `uc ]
+"246
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 246:     TRISA = 0b11001110;
+[e = _TRISA -> -> 206 `i `uc ]
+"248
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 248:     TRISC = 0b11111111;
+[e = _TRISC -> -> 255 `i `uc ]
+"252
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 252:     TX1CKPPS = 0x00;
+[e = _TX1CKPPS -> -> 0 `i `uc ]
+"253
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 253:     RX1DTPPS = 0x01;
+[e = _RX1DTPPS -> -> 1 `i `uc ]
+"259
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 259:     SP1BRGL = 16;
+[e = _SP1BRGL -> -> 16 `i `uc ]
+"261
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 261:     TX1STA = 0b00100100;
+[e = _TX1STA -> -> 36 `i `uc ]
+"262
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 262:     RC1STA = 0b10010000;
+[e = _RC1STA -> -> 144 `i `uc ]
+"269
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 269:     T0CON0bits.T016BIT = 1;
+[e = . . _T0CON0bits 0 1 -> -> 1 `i `uc ]
+"270
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 270:     T0CON1 = 0b01000011;
+[e = _T0CON1 -> -> 67 `i `uc ]
+"273
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 273:     ZCDCON = 0b10000011;
+[e = _ZCDCON -> -> 131 `i `uc ]
+"277
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 277:     T2CLKCON = 0b00000110;
+[e = _T2CLKCON -> -> 6 `i `uc ]
+"279
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 279:     PR2 = 133;
+[e = _PR2 -> -> 133 `i `uc ]
+"280
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 280:     T2CON = 0b10010000;
+[e = _T2CON -> -> 144 `i `uc ]
+"281
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 281:     PIE4bits.TMR2IE = 1;
+[e = . . _PIE4bits 0 1 -> -> 1 `i `uc ]
+"287
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 287:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
+"288
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 288:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"291
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 291:     PIE0bits.TMR0IE = 1;
+[e = . . _PIE0bits 0 3 -> -> 1 `i `uc ]
+"293
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 293:     RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"294
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 294:     Flags1.value = 0;
+[e = . _Flags1 0 -> -> 0 `i `uc ]
+"295
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 295:     Flags0.value = 0;
+[e = . _Flags0 0 -> -> 0 `i `uc ]
+"297
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 297:     while (1) {
+[e :U 893 ]
+{
+"298
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 298:         state = 0;
+[e = _state -> -> 0 `i `uc ]
+"299
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 299:         if (PIR3bits.RC1IF) {
+[e $ ! != -> . . _PIR3bits 0 4 `i -> 0 `i 895  ]
+{
+"300
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 300:             if (RC1STAbits.FERR) {
+[e $ ! != -> . . _RC1STAbits 0 2 `i -> 0 `i 896  ]
+{
+"301
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 301:                 RC1REG;
+[e _RC1REG ]
+"303
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 303:                 if (Rx != 0 || RcvCnt != 0) {
+[e $ ! || != -> _Rx `i -> 0 `i != -> _RcvCnt `i -> 0 `i 897  ]
+{
+"304
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 304:                     state = 3;
+[e = _state -> -> 3 `i `uc ]
+"305
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 305:                 }
+}
+[e :U 897 ]
+"306
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 306:             } else {
+}
+[e $U 898  ]
+[e :U 896 ]
+{
+"307
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 307:                 Rx = RC1REG;
+[e = _Rx _RC1REG ]
+"308
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 308:                 if (Rx == 'S') {
+[e $ ! == -> _Rx `ui -> 83 `ui 899  ]
+{
+"309
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 309:                     if (RcvCnt != 0) {
+[e $ ! != -> _RcvCnt `i -> 0 `i 900  ]
+{
+"310
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 310:                         sendChar('N');
+[e ( _sendChar (1 -> -> 78 `ui `uc ]
+"311
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 311:                     }
+}
+[e :U 900 ]
+"312
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 312:                     RcvCnt = 1;
+[e = _RcvCnt -> -> 1 `i `uc ]
+"313
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 313:                 } else {
+}
+[e $U 901  ]
+[e :U 899 ]
+{
+"314
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 314:                     switch (RcvCnt & 7) {
+[e $U 903  ]
+{
+"315
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 315:                         case 0:
+[e :U 904 ]
+"316
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 316:                             if (Rx != 0) {
+[e $ ! != -> _Rx `i -> 0 `i 905  ]
+{
+"317
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 317:                                 state = 1;
+[e = _state -> -> 1 `i `uc ]
+"318
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 318:                             } else {
+}
+[e $U 906  ]
+[e :U 905 ]
+{
+"319
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 319:                                 RcvCnt--;
+[e -- _RcvCnt -> -> 1 `i `uc ]
+"320
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 320:                             }
+}
+[e :U 906 ]
+"321
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 321:                             break;
+[e $U 902  ]
+"322
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 322:                         case 1:
+[e :U 907 ]
+"323
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 323:                             Cmd = hexToNibble(Rx);
+[e = _Cmd ( _hexToNibble (1 _Rx ]
+"324
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 324:                             Cmd <<= 4;
+[e =<< _Cmd -> -> 4 `i `uc ]
+"325
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 325:                             break;
+[e $U 902  ]
+"326
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 326:                         case 2:
+[e :U 908 ]
+"327
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 327:                             Cmd += hexToNibble(Rx);
+[e =+ _Cmd -> ( _hexToNibble (1 _Rx `uc ]
+"328
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 328:                             if (Cmd > 2) {
+[e $ ! > -> _Cmd `i -> 2 `i 909  ]
+{
+"329
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 329:                                 state = 1;
+[e = _state -> -> 1 `i `uc ]
+"330
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 330:                             }
+}
+[e :U 909 ]
+"331
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 331:                             break;
+[e $U 902  ]
+"332
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 332:                         case 3:
+[e :U 910 ]
+"333
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 333:                             CmdVal.msb = hexToNibble(Rx);
+[e = . . _CmdVal 1 1 ( _hexToNibble (1 _Rx ]
+"334
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 334:                             CmdVal.msb <<= 4;
+[e =<< . . _CmdVal 1 1 -> -> 4 `i `uc ]
+"335
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 335:                             break;
+[e $U 902  ]
+"336
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 336:                         case 4:
+[e :U 911 ]
+"337
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 337:                             CmdVal.msb += hexToNibble(Rx);
+[e =+ . . _CmdVal 1 1 -> ( _hexToNibble (1 _Rx `uc ]
+"338
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 338:                             break;
+[e $U 902  ]
+"339
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 339:                         case 5:
+[e :U 912 ]
+"340
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 340:                             CmdVal.lsb = hexToNibble(Rx);
+[e = . . _CmdVal 1 0 ( _hexToNibble (1 _Rx ]
+"341
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 341:                             CmdVal.lsb <<= 4;
+[e =<< . . _CmdVal 1 0 -> -> 4 `i `uc ]
+"342
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 342:                             break;
+[e $U 902  ]
+"343
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 343:                         case 6:
+[e :U 913 ]
+"344
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 344:                             CmdVal.lsb += hexToNibble(Rx);
+[e =+ . . _CmdVal 1 0 -> ( _hexToNibble (1 _Rx `uc ]
+"345
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 345:                             if (Cmd == 0) {
+[e $ ! == -> _Cmd `i -> 0 `i 914  ]
+{
+"346
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 346:                                 if (Flags1.update || CmdVal.value > 8192) {
+[e $ ! || != -> . . _Flags1 1 1 `i -> 0 `i > . _CmdVal 0 -> -> 8192 `i `ui 915  ]
+{
+"347
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 347:                                     state = 1;
+[e = _state -> -> 1 `i `uc ]
+"348
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 348:                                 } else {
+}
+[e $U 916  ]
+[e :U 915 ]
+{
+"349
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 349:                                     Ch0Delay.value = CmdVal.value;
+[e = . _Ch0Delay 0 . _CmdVal 0 ]
+"350
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 350:                                     sendInt(Ch0Delay.msb);
+[e ( _sendInt (1 . . _Ch0Delay 1 1 ]
+"351
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 351:                                     sendInt(Ch0Delay.lsb);
+[e ( _sendInt (1 . . _Ch0Delay 1 0 ]
+"352
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 352:                                     state = 2;
+[e = _state -> -> 2 `i `uc ]
+"353
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 353:                                 }
+}
+[e :U 916 ]
+"354
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 354:                             } else if (Cmd == 1) {
+}
+[e $U 917  ]
+[e :U 914 ]
+[e $ ! == -> _Cmd `i -> 1 `i 918  ]
+{
+"355
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 355:                                 if (Flags1.update || CmdVal.value > 8192) {
+[e $ ! || != -> . . _Flags1 1 1 `i -> 0 `i > . _CmdVal 0 -> -> 8192 `i `ui 919  ]
+{
+"356
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 356:                                     state = 1;
+[e = _state -> -> 1 `i `uc ]
+"357
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 357:                                 } else {
+}
+[e $U 920  ]
+[e :U 919 ]
+{
+"358
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 358:                                     Ch1Delay.value = CmdVal.value;
+[e = . _Ch1Delay 0 . _CmdVal 0 ]
+"359
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 359:                                     sendInt(Ch1Delay.msb);
+[e ( _sendInt (1 . . _Ch1Delay 1 1 ]
+"360
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 360:                                     sendInt(Ch1Delay.lsb);
+[e ( _sendInt (1 . . _Ch1Delay 1 0 ]
+"361
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 361:                                     state = 2;
+[e = _state -> -> 2 `i `uc ]
+"362
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 362:                                 }
+}
+[e :U 920 ]
+"363
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 363:                             } else {
+}
+[e $U 921  ]
+[e :U 918 ]
+{
+"364
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 364:                                 Flags1.update = 1;
+[e = . . _Flags1 1 1 -> -> 1 `i `uc ]
+"365
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 365:                                 state = 2;
+[e = _state -> -> 2 `i `uc ]
+"366
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 366:                             }
+}
+[e :U 921 ]
+[e :U 917 ]
+"367
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 367:                             break;
+[e $U 902  ]
+"368
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 368:                     }
+}
+[e $U 902  ]
+[e :U 903 ]
+[e [\ & -> _RcvCnt `i -> 7 `i , $ -> 0 `i 904
+ , $ -> 1 `i 907
+ , $ -> 2 `i 908
+ , $ -> 3 `i 910
+ , $ -> 4 `i 911
+ , $ -> 5 `i 912
+ , $ -> 6 `i 913
+ 902 ]
+[e :U 902 ]
+"369
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 369:                     RcvCnt++;
+[e ++ _RcvCnt -> -> 1 `i `uc ]
+"370
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 370:                 }
+}
+[e :U 901 ]
+"371
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 371:             }
+}
+[e :U 898 ]
+"372
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 372:         } else if (RC1STAbits.OERR) {
+}
+[e $U 922  ]
+[e :U 895 ]
+[e $ ! != -> . . _RC1STAbits 0 1 `i -> 0 `i 923  ]
+{
+"373
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 373:             sendChar('O');
+[e ( _sendChar (1 -> -> 79 `ui `uc ]
+"374
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 374:             RC1STAbits.CREN = 0;
+[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
+"375
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 375:             RC1STAbits.CREN = 1;
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+"376
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 376:         }
+}
+[e :U 923 ]
+[e :U 922 ]
+"378
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 378:         if (state == 2) {
+[e $ ! == -> _state `i -> 2 `i 924  ]
+{
+"379
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 379:             sendChar('K');
+[e ( _sendChar (1 -> -> 75 `ui `uc ]
+"380
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 380:             RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"381
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 381:         } else if (state == 1) {
+}
+[e $U 925  ]
+[e :U 924 ]
+[e $ ! == -> _state `i -> 1 `i 926  ]
+{
+"382
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 382:             sendChar('N');
+[e ( _sendChar (1 -> -> 78 `ui `uc ]
+"383
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 383:             RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"384
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 384:         } else if (state == 3) {
+}
+[e $U 927  ]
+[e :U 926 ]
+[e $ ! == -> _state `i -> 3 `i 928  ]
+{
+"385
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 385:             sendChar('Z');
+[e ( _sendChar (1 -> -> 90 `ui `uc ]
+"386
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 386:             RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"387
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 387:         }
+}
+[e :U 928 ]
+[e :U 927 ]
+[e :U 925 ]
+"388
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 388:     }
+}
+[e :U 892 ]
+[e $U 893  ]
+[e :U 894 ]
+"390
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 390:     return 0;
+[e ) -> 0 `i ]
+[e $UE 891  ]
+"391
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 391: }
+[e :UE 891 ]
+}
