@@ -293,6 +293,8 @@ int main(void)
     RcvCnt = 0;
     Flags1.value = 0;
     Flags0.value = 0;
+    Ch0Delay.value = MAX_DELAY;
+    Ch1Delay.value = MAX_DELAY;
     
     while (1) {
         state = STATE_NONE;
@@ -346,23 +348,22 @@ int main(void)
                                 if (Flags1.update || CmdVal.value > MAX_DELAY) {
                                     state = STATE_FAILED;
                                 } else {
-                                    Ch0Delay.value = CmdVal.value;
+                                    Ch0Delay.value = MAX_DELAY-CmdVal.value;
                                     sendInt(Ch0Delay.msb);
                                     sendInt(Ch0Delay.lsb);
+                                    Flags1.update = 1;
                                     state = STATE_PROCESSED;
                                 }
                             } else if (Cmd == CMD_SET_CH1) {
                                 if (Flags1.update || CmdVal.value > MAX_DELAY) {
                                     state = STATE_FAILED;
                                 } else {
-                                    Ch1Delay.value = CmdVal.value;
+                                    Ch1Delay.value = MAX_DELAY-CmdVal.value;
                                     sendInt(Ch1Delay.msb);
                                     sendInt(Ch1Delay.lsb);
+                                    Flags1.update = 1;
                                     state = STATE_PROCESSED;
                                 }
-                            } else {
-                                Flags1.update = 1;
-                                state = STATE_PROCESSED;
                             }
                             break;
                     }

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/Applications/microchip/xc8/v2.10/pic/dat/en_msgs.txt -cs \
   -h+dist/default/production/AC-Dimmer-C.X.production.sym \
   --cmf=dist/default/production/AC-Dimmer-C.X.production.cmf -z -Q16LF15323 \
-  -o/tmp/xcKAs6vQR --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcXZpg6ER --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/AC-Dimmer-C.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0200Eh-020EFh -pstack=STACK -ACODE=00h-07FFh \
   -ASTRCODE=00h-07FFh -ASTRING=00h-0FFhx8 -ACONST=00h-0FFhx8 \
@@ -37,7 +37,7 @@ Linker command line:
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
-  -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcxi99lci.o \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcDUjnAVE.o \
   dist/default/production/AC-Dimmer-C.X.production.o 
 
 Object code version is 3.11
@@ -47,18 +47,18 @@ Machine type is 16LF15323
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcxi99lci.o
-                end_init                            170      170        1        8       0
+/tmp/xcDUjnAVE.o
+                end_init                            175      175        1        8       0
                 reset_vec                             0        0        1        0       0
                 config                             8007     8007        5    1000E       0
 dist/default/production/AC-Dimmer-C.X.production.o
-                cinit                               171      171       15        8       0
-                intentry                              4        4      16C        8       0
-                text4                               306      306        D        8       0
-                text3                               2F9      2F9        D        8       0
-                text2                               313      313        A        8       0
-                text1                               2DE      2DE       1B        8       0
-                maintext                            186      186      158        8       0
+                cinit                               176      176       15        8       0
+                intentry                              4        4      171        8       0
+                text4                               317      317        D        8       0
+                text3                               30A      30A        D        8       0
+                text2                               324      324        A        8       0
+                text1                               2EF      2EF       1B        8       0
+                maintext                            18B      18B      164        8       0
                 cstackBANK0                          2C       2C        2       20       1
                 cstackCOMMON                         70       70        7       70       1
                 bssBANK0                             20       20        C       20       1
@@ -68,15 +68,15 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STACK          
 
         CLASS   CODE           
-                end_init                            170      170        1         0
-                cinit                               171      171       15         0
-                intentry                              4        4      16C         0
+                end_init                            175      175        1         0
+                cinit                               176      176       15         0
+                intentry                              4        4      171         0
                 reset_vec                             0        0        1         0
-                text4                               306      306        D         0
-                text3                               2F9      2F9        D         0
-                text2                               313      313        A         0
-                text1                               2DE      2DE       1B         0
-                maintext                            186      186      158         0
+                text4                               317      317        D         0
+                text3                               30A      30A        D         0
+                text2                               324      324        A         0
+                text1                               2EF      2EF       1B         0
+                maintext                            18B      18B      164         0
 
         CLASS   STRCODE        
 
@@ -368,7 +368,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000001  000001         0       0  CODE        2
                 bssBANK0                       000020  00000E  00002E        20       1  BANK0       1
-                intentry                       000004  000319  00031D         8       0  CODE        2
+                intentry                       000004  00032A  00032E         8       0  CODE        2
                 cstackCOMMON                   000070  00000C  00007C        70       1  COMMON      1
                 config                         008007  000005  00800C     1000E       0  CONFIG      2
 
@@ -381,12 +381,12 @@ UNUSED ADDRESS RANGES
         BANK2            00120-0016F              50           1
         BIGRAM           02000-020EF              F0           1
         CODE             00001-00003               3           2
-                         0031D-007FF             4E3
+                         0032E-007FF             4D2
         COMMON           0007C-0007D               2           1
         CONST            00001-00003               3           2
-                         0031D-007FF             100
+                         0032E-007FF             100
         ENTRY            00001-00003               3           2
-                         0031D-007FF             100
+                         0032E-007FF             100
         IDLOC            08000-08003               4           2
         RAM              0002E-0006F              42           1
                          000A0-000EF              50
@@ -457,9 +457,9 @@ UNUSED ADDRESS RANGES
         SFR9             00480-004EF              70           1
         STACK            0200E-020EF              E2           1
         STRCODE          00001-00003               3           2
-                         0031D-007FF             4E3
+                         0032E-007FF             4D2
         STRING           00001-00003               3           2
-                         0031D-007FF             100
+                         0032E-007FF             100
 
                                   Symbol Table
 
@@ -598,7 +598,7 @@ __Hbank9                 bank9        00000
 __Hbigram                bigram       00000
 __HbssBANK0              bssBANK0     00000
 __HbssCOMMON             bssCOMMON    00000
-__Hcinit                 cinit        00186
+__Hcinit                 cinit        0018B
 __Hclrtext               clrtext      00000
 __Hcode                  code         00000
 __Hcommon                common       00000
@@ -606,11 +606,11 @@ __Hconfig                config       0800C
 __HcstackBANK0           cstackBANK0  00000
 __HcstackCOMMON          cstackCOMMON 00000
 __Heeprom_data           eeprom_data  00000
-__Hend_init              end_init     00171
+__Hend_init              end_init     00176
 __Hfunctab               functab      00000
 __Hidloc                 idloc        00000
-__Hinit                  init         00170
-__Hintentry              intentry     00170
+__Hinit                  init         00175
+__Hintentry              intentry     00175
 __Hmaintext              maintext     00000
 __Hpowerup               powerup      00000
 __Hram                   ram          00000
@@ -754,7 +754,7 @@ __Lbank9                 bank9        00000
 __Lbigram                bigram       00000
 __LbssBANK0              bssBANK0     00000
 __LbssCOMMON             bssCOMMON    00000
-__Lcinit                 cinit        00171
+__Lcinit                 cinit        00176
 __Lclrtext               clrtext      00000
 __Lcode                  code         00000
 __Lcommon                common       00000
@@ -762,10 +762,10 @@ __Lconfig                config       08007
 __LcstackBANK0           cstackBANK0  00000
 __LcstackCOMMON          cstackCOMMON 00000
 __Leeprom_data           eeprom_data  00000
-__Lend_init              end_init     00170
+__Lend_init              end_init     00175
 __Lfunctab               functab      00000
 __Lidloc                 idloc        00000
-__Linit                  init         00170
+__Linit                  init         00175
 __Lintentry              intentry     00004
 __Lmaintext              maintext     00000
 __Lpowerup               powerup      00000
@@ -850,38 +850,38 @@ ___latbits               (abs)        00000
 ___sp                    stack        00000
 ___stackhi               (abs)        020EF
 ___stacklo               (abs)        0200E
-__end_of__initialization cinit        00183
-__end_of_hexToNibble     text4        00313
-__end_of_main            maintext     002DE
-__end_of_myIsr           intentry     00170
-__end_of_nibbleToHex     text3        00306
-__end_of_sendChar        text2        0031D
-__end_of_sendInt         text1        002F9
-__initialization         cinit        00171
+__end_of__initialization cinit        00188
+__end_of_hexToNibble     text4        00324
+__end_of_main            maintext     002EF
+__end_of_myIsr           intentry     00175
+__end_of_nibbleToHex     text3        00317
+__end_of_sendChar        text2        0032E
+__end_of_sendInt         text1        0030A
+__initialization         cinit        00176
 __pbssBANK0              bssBANK0     00020
 __pbssCOMMON             bssCOMMON    00077
 __pcstackBANK0           cstackBANK0  0002C
 __pcstackCOMMON          cstackCOMMON 00070
 __pintentry              intentry     00004
-__pmaintext              maintext     00186
-__ptext1                 text1        002DE
-__ptext2                 text2        00313
-__ptext3                 text3        002F9
-__ptext4                 text4        00306
+__pmaintext              maintext     0018B
+__ptext1                 text1        002EF
+__ptext2                 text2        00324
+__ptext3                 text3        0030A
+__ptext4                 text4        00317
 __size_of_hexToNibble    (abs)        00000
 __size_of_main           (abs)        00000
 __size_of_myIsr          (abs)        00000
 __size_of_nibbleToHex    (abs)        00000
 __size_of_sendChar       (abs)        00000
 __size_of_sendInt        (abs)        00000
-_hexToNibble             text4        00306
-_main                    maintext     00186
+_hexToNibble             text4        00317
+_main                    maintext     0018B
 _myIsr                   intentry     00004
-_nibbleToHex             text3        002F9
-_sendChar                text2        00313
-_sendInt                 text1        002DE
+_nibbleToHex             text3        0030A
+_sendChar                text2        00324
+_sendInt                 text1        002EF
 btemp                    (abs)        0007E
-end_of_initialization    cinit        00183
+end_of_initialization    cinit        00188
 hexToNibble@c            cstackCOMMON 00072
 int$flags                (abs)        0007E
 intlevel0                functab      00000
@@ -896,8 +896,8 @@ reset_vec                reset_vec    00000
 sendChar@c               cstackCOMMON 00072
 sendInt@i                cstackCOMMON 00075
 sendInt@tmp              cstackCOMMON 00074
-start                    init         00170
-start_initialization     cinit        00171
+start                    init         00175
+start_initialization     cinit        00176
 wtemp0                   (abs)        0007E
 
 
@@ -1091,17 +1091,17 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 /Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-		_sendInt       		CODE           	02DE	0000	28
-		_nibbleToHex   		CODE           	02F9	0000	14
-		_main          		CODE           	0186	0000	345
-		_myIsr         		CODE           	0004	0000	365
-		_sendChar      		CODE           	0313	0000	11
-		_hexToNibble   		CODE           	0306	0000	14
+		_sendInt       		CODE           	02EF	0000	28
+		_nibbleToHex   		CODE           	030A	0000	14
+		_main          		CODE           	018B	0000	357
+		_myIsr         		CODE           	0004	0000	370
+		_sendChar      		CODE           	0324	0000	11
+		_hexToNibble   		CODE           	0317	0000	14
 
-/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c estimated size: 777
+/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c estimated size: 794
 
 shared
-		__initialization		CODE           	0171	0000	19
+		__initialization		CODE           	0176	0000	19
 
 shared estimated size: 19
 

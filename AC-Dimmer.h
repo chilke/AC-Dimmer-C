@@ -16,7 +16,8 @@
 //Complement of 140
 #define ZCD_OFFSET_DELAY 0xFF74
 
-#define MAX_DELAY 8192
+//0x1FFF 13 bits
+#define MAX_DELAY 8191
 
 #define CMD_ACK 'K'
 #define CMD_NACK 'N'
@@ -28,8 +29,7 @@
 
 #define CMD_SET_CH0 0
 #define CMD_SET_CH1 1
-#define CMD_ACTIVATE 2
-#define CMD_MAX 2
+#define CMD_MAX 1
 
 #define STATE_NONE 0
 #define STATE_FAILED 1

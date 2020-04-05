@@ -1,6 +1,6 @@
 
 Memory Summary:
-    Program space        used   31Ah (   794) of   800h words   ( 38.8%)
+    Program space        used   32Bh (   811) of   800h words   ( 39.6%)
     Data space           used    1Ch (    28) of   100h bytes   ( 10.9%)
     EEPROM space         None available
     Data stack space     used     0h (     0) of    E2h bytes   (  0.0%)

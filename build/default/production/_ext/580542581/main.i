@@ -10671,12 +10671,12 @@ void __attribute__((picinterrupt(("")))) myIsr(void) {
                     LATAbits.LATA5 = 1;
                     T0CON0bits.T0EN = 0;
                 } else {
-                    if (Ch1Delay.value == 8192) {
+                    if (Ch1Delay.value == 8191) {
                         T0CON0bits.T0EN = 0;
                     } else {
                         Delay0.value = Ch1Delay.value;
                         Flags0.ch1on0 = 1;
-                        Delay1.value = 8192 - Ch1Delay.value;
+                        Delay1.value = 8191 - Ch1Delay.value;
                         Flags1.off2 = 1;
                     }
                 }
@@ -10684,45 +10684,45 @@ void __attribute__((picinterrupt(("")))) myIsr(void) {
                 Flags0.ch1aon = 1;
                 LATAbits.LATA5 = 1;
 
-                if (Ch0Delay.value == 8192) {
+                if (Ch0Delay.value == 8191) {
                     T0CON0bits.T0EN = 0;
                 } else {
                     Delay0.value = Ch0Delay.value;
                     Flags0.ch0on0 = 1;
-                    Delay1.value = 8192 - Ch0Delay.value;
+                    Delay1.value = 8191 - Ch0Delay.value;
                     Flags1.off2 = 1;
                 }
             } else if (Ch0Delay.value == Ch1Delay.value) {
-                if (Ch0Delay.value == 8192) {
+                if (Ch0Delay.value == 8191) {
                     T0CON0bits.T0EN = 0;
                 } else {
                     Delay0.value = Ch0Delay.value;
                     Flags0.ch0on0 = 1;
                     Flags0.ch1on0 = 1;
-                    Delay1.value = 8192 - Ch0Delay.value;
+                    Delay1.value = 8191 - Ch0Delay.value;
                     Flags1.off2 = 1;
                 }
             } else if (Ch0Delay.value > Ch1Delay.value) {
                 Delay0.value = Ch1Delay.value;
                 Flags0.ch1on0 = 1;
-                if (Ch0Delay.value == 8192) {
-                    Delay1.value = 8192 - Delay0.value;
+                if (Ch0Delay.value == 8191) {
+                    Delay1.value = 8191 - Delay0.value;
                     Flags1.off2 = 1;
                 } else {
                     Delay1.value = Ch0Delay.value - Ch1Delay.value;
                     Flags0.ch0on1 = 1;
-                    Delay2.value = 8192 - Ch0Delay.value;
+                    Delay2.value = 8191 - Ch0Delay.value;
                 }
             } else {
                 Delay0.value = Ch0Delay.value;
                 Flags0.ch0on0 = 1;
-                if (Ch1Delay.value == 8192) {
-                    Delay1.value = 8192 - Delay0.value;
+                if (Ch1Delay.value == 8191) {
+                    Delay1.value = 8191 - Delay0.value;
                     Flags1.off2 = 1;
                 } else {
                     Delay1.value = Ch1Delay.value - Ch0Delay.value;
                     Flags0.ch1on1 = 1;
-                    Delay2.value = 8192 - Ch1Delay.value;
+                    Delay2.value = 8191 - Ch1Delay.value;
                 }
             }
 
@@ -10875,6 +10875,8 @@ int main(void)
     RcvCnt = 0;
     Flags1.value = 0;
     Flags0.value = 0;
+    Ch0Delay.value = 8191;
+    Ch1Delay.value = 8191;
 
     while (1) {
         state = 0;
@@ -10907,7 +10909,7 @@ int main(void)
                             break;
                         case 2:
                             Cmd += hexToNibble(Rx);
-                            if (Cmd > 2) {
+                            if (Cmd > 1) {
                                 state = 1;
                             }
                             break;
@@ -10925,26 +10927,25 @@ int main(void)
                         case 6:
                             CmdVal.lsb += hexToNibble(Rx);
                             if (Cmd == 0) {
-                                if (Flags1.update || CmdVal.value > 8192) {
+                                if (Flags1.update || CmdVal.value > 8191) {
                                     state = 1;
                                 } else {
-                                    Ch0Delay.value = CmdVal.value;
+                                    Ch0Delay.value = 8191 -CmdVal.value;
                                     sendInt(Ch0Delay.msb);
                                     sendInt(Ch0Delay.lsb);
+                                    Flags1.update = 1;
                                     state = 2;
                                 }
                             } else if (Cmd == 1) {
-                                if (Flags1.update || CmdVal.value > 8192) {
+                                if (Flags1.update || CmdVal.value > 8191) {
                                     state = 1;
                                 } else {
-                                    Ch1Delay.value = CmdVal.value;
+                                    Ch1Delay.value = 8191 -CmdVal.value;
                                     sendInt(Ch1Delay.msb);
                                     sendInt(Ch1Delay.lsb);
+                                    Flags1.update = 1;
                                     state = 2;
                                 }
-                            } else {
-                                Flags1.update = 1;
-                                state = 2;
                             }
                             break;
                     }
