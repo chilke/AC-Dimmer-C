@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Sun Apr  5 12:22:08 2020
+                                                                                               Mon Apr  6 20:05:57 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16LF15323
@@ -550,7 +550,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    536                           
    537                           ;psect for function _main
    538  018B                     _main:	
-   539  018B                     l1523:	
+   539  018B                     l1519:	
    540                           ;incstack = 0
    541                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
    542                           
@@ -560,11 +560,11 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    545  018B  3004               	movlw	4
    546  018C  017E               	movlb	62	; select bank62
    547  018D  00B8               	movwf	56	;volatile
-   548  018E                     l1525:	
+   548  018E                     l1521:	
    549                           
    550                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 234:     ANSELC = 0b00000000;
    551  018E  01CE               	clrf	78	;volatile
-   552  018F                     l1527:	
+   552  018F                     l1523:	
    553                           
    554                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 238:     RA0PPS = 0xF;
    555  018F  300F               	movlw	15
@@ -576,12 +576,12 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    561                           
    562                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 244:     LATC = 0b00000000;
    563  0193  019A               	clrf	26	;volatile
-   564  0194                     l1529:	
+   564  0194                     l1525:	
    565                           
    566                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 246:     TRISA = 0b11001110;
    567  0194  30CE               	movlw	206
    568  0195  0092               	movwf	18	;volatile
-   569  0196                     l1531:	
+   569  0196                     l1527:	
    570                           
    571                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 248:     TRISC = 0b11111111;
    572  0196  30FF               	movlw	255
@@ -590,86 +590,86 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    575                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 252:     TX1CKPPS = 0x00;
    576  0198  017D               	movlb	61	; select bank61
    577  0199  01CC               	clrf	76	;volatile
-   578  019A                     l1533:	
+   578  019A                     l1529:	
    579                           
    580                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 253:     RX1DTPPS = 0x01;
    581  019A  3001               	movlw	1
    582  019B  00CB               	movwf	75	;volatile
-   583  019C                     l1535:	
+   583  019C                     l1531:	
    584                           
    585                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 259:     SP1BRGL = 16;
    586  019C  3010               	movlw	16
    587  019D  0142               	movlb	2	; select bank2
    588  019E  009B               	movwf	27	;volatile
-   589  019F                     l1537:	
+   589  019F                     l1533:	
    590                           
    591                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 261:     TX1STA = 0b00100100;
    592  019F  3024               	movlw	36
    593  01A0  009E               	movwf	30	;volatile
-   594  01A1                     l1539:	
+   594  01A1                     l1535:	
    595                           
    596                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 262:     RC1STA = 0b10010000;
    597  01A1  3090               	movlw	144
    598  01A2  009D               	movwf	29	;volatile
-   599  01A3                     l1541:	
+   599  01A3                     l1537:	
    600                           
    601                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 269:     T0CON0bits.T016BIT = 1;
    602  01A3  014B               	movlb	11	; select bank11
    603  01A4  161E               	bsf	30,4	;volatile
-   604  01A5                     l1543:	
+   604  01A5                     l1539:	
    605                           
    606                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 270:     T0CON1 = 0b01000011;
    607  01A5  3043               	movlw	67
    608  01A6  009F               	movwf	31	;volatile
-   609  01A7                     l1545:	
+   609  01A7                     l1541:	
    610                           
    611                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 273:     ZCDCON = 0b10000011;
    612  01A7  3083               	movlw	131
    613  01A8  0152               	movlb	18	; select bank18
    614  01A9  009F               	movwf	31	;volatile
-   615  01AA                     l1547:	
+   615  01AA                     l1543:	
    616                           
    617                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 277:     T2CLKCON = 0b00000110;
    618  01AA  3006               	movlw	6
    619  01AB  0145               	movlb	5	; select bank5
    620  01AC  0090               	movwf	16	;volatile
-   621  01AD                     l1549:	
+   621  01AD                     l1545:	
    622                           
    623                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 279:     PR2 = 133;
    624  01AD  3085               	movlw	133
    625  01AE  008D               	movwf	13	;volatile
-   626  01AF                     l1551:	
+   626  01AF                     l1547:	
    627                           
    628                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 280:     T2CON = 0b10010000;
    629  01AF  3090               	movlw	144
    630  01B0  008E               	movwf	14	;volatile
-   631  01B1                     l1553:	
+   631  01B1                     l1549:	
    632                           
    633                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 281:     PIE4bits.TMR2IE = 1;
    634  01B1  014E               	movlb	14	; select bank14
    635  01B2  149A               	bsf	26,1	;volatile
-   636  01B3                     l1555:	
+   636  01B3                     l1551:	
    637                           
    638                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 287:     INTCONbits.PEIE = 1;
    639  01B3  170B               	bsf	11,6	;volatile
-   640  01B4                     l1557:	
+   640  01B4                     l1553:	
    641                           
    642                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 288:     INTCONbits.GIE = 1;
    643  01B4  178B               	bsf	11,7	;volatile
-   644  01B5                     l1559:	
+   644  01B5                     l1555:	
    645                           
    646                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 291:     PIE0bits.TMR0IE = 1;
    647  01B5  1696               	bsf	22,5	;volatile
-   648  01B6                     l1561:	
+   648  01B6                     l1557:	
    649                           
    650                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 293:     RcvCnt = 0;
    651  01B6  0140               	movlb	0	; select bank0
    652  01B7  01AA               	clrf	_RcvCnt
-   653  01B8                     l1563:	
+   653  01B8                     l1559:	
    654                           
    655                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 294:     Flags1.value = 0;
    656  01B8  01A8               	clrf	_Flags1
-   657  01B9                     l1565:	
+   657  01B9                     l1561:	
    658                           
    659                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 295:     Flags0.value = 0;
    660  01B9  01FB               	clrf	_Flags0
@@ -685,64 +685,64 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    670  01BF  00A6               	movwf	_Ch1Delay
    671  01C0  301F               	movlw	31
    672  01C1  00A7               	movwf	_Ch1Delay+1
-   673  01C2                     l1567:	
+   673  01C2                     l1563:	
    674                           
    675                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 300:         state = 0;
    676  01C2  01F6               	clrf	main@state
-   677  01C3                     l1569:	
+   677  01C3                     l1565:	
    678                           
    679                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 301:         if (PIR3bits.RC1IF) {
    680  01C3  014E               	movlb	14	; select bank14
    681  01C4  1E8F               	btfss	15,5	;volatile
-   682  01C5  29C7               	goto	u851
-   683  01C6  29C8               	goto	u850
-   684  01C7                     u851:	
-   685  01C7  2ABF               	goto	l148
-   686  01C8                     u850:	
-   687  01C8                     l1571:	
+   682  01C5  29C7               	goto	u811
+   683  01C6  29C8               	goto	u810
+   684  01C7                     u811:	
+   685  01C7  2ABA               	goto	l148
+   686  01C8                     u810:	
+   687  01C8                     l1567:	
    688                           
    689                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 302:             if (RC1STAbits.FERR)
       +                           {
    690  01C8  0142               	movlb	2	; select bank2
    691  01C9  1D1D               	btfss	29,2	;volatile
-   692  01CA  29CC               	goto	u861
-   693  01CB  29CD               	goto	u860
-   694  01CC                     u861:	
-   695  01CC  29DE               	goto	l1581
-   696  01CD                     u860:	
-   697  01CD                     l1573:	
+   692  01CA  29CC               	goto	u821
+   693  01CB  29CD               	goto	u820
+   694  01CC                     u821:	
+   695  01CC  29DE               	goto	l1577
+   696  01CD                     u820:	
+   697  01CD                     l1569:	
    698                           
    699                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 303:                 RC1REG;
    700  01CD  0819               	movf	25,w	;volatile
-   701  01CE                     l1575:	
+   701  01CE                     l1571:	
    702                           
    703                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 305:                 if (Rx != 0 || R
       +                          cvCnt != 0) {
    704  01CE  0140               	movlb	0	; select bank0
    705  01CF  0829               	movf	_Rx,w
    706  01D0  1D03               	btfss	3,2
-   707  01D1  29D3               	goto	u871
-   708  01D2  29D4               	goto	u870
-   709  01D3                     u871:	
-   710  01D3  29D9               	goto	l1579
-   711  01D4                     u870:	
-   712  01D4                     l1577:	
+   707  01D1  29D3               	goto	u831
+   708  01D2  29D4               	goto	u830
+   709  01D3                     u831:	
+   710  01D3  29D9               	goto	l1575
+   711  01D4                     u830:	
+   712  01D4                     l1573:	
    713  01D4  082A               	movf	_RcvCnt,w
    714  01D5  1903               	btfsc	3,2
-   715  01D6  29D8               	goto	u881
-   716  01D7  29D9               	goto	u880
-   717  01D8                     u881:	
-   718  01D8  2ACB               	goto	l1663
-   719  01D9                     u880:	
-   720  01D9                     l1579:	
+   715  01D6  29D8               	goto	u841
+   716  01D7  29D9               	goto	u840
+   717  01D8                     u841:	
+   718  01D8  2AC6               	goto	l1659
+   719  01D9                     u840:	
+   720  01D9                     l1575:	
    721                           
    722                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 306:                     state = 3;
    723  01D9  3003               	movlw	3
    724  01DA  00AC               	movwf	??_main
    725  01DB  082C               	movf	??_main,w
    726  01DC  00F6               	movwf	main@state
-   727  01DD  2ACB               	goto	l1663
-   728  01DE                     l1581:	
+   727  01DD  2AC6               	goto	l1659
+   728  01DE                     l1577:	
    729                           
    730                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 309:                 Rx = RC1REG;
    731  01DE  0819               	movf	25,w	;volatile
@@ -750,35 +750,35 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    733  01E0  00AC               	movwf	??_main
    734  01E1  082C               	movf	??_main,w
    735  01E2  00A9               	movwf	_Rx
-   736  01E3                     l1583:	
+   736  01E3                     l1579:	
    737                           
    738                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 310:                 if (Rx == 'S') {
    739  01E3  3053               	movlw	83
    740  01E4  0629               	xorwf	_Rx,w
    741  01E5  1D03               	btfss	3,2
-   742  01E6  29E8               	goto	u891
-   743  01E7  29E9               	goto	u890
-   744  01E8                     u891:	
-   745  01E8  2A9A               	goto	l1653
-   746  01E9                     u890:	
-   747  01E9                     l1585:	
+   742  01E6  29E8               	goto	u851
+   743  01E7  29E9               	goto	u850
+   744  01E8                     u851:	
+   745  01E8  2A95               	goto	l1649
+   746  01E9                     u850:	
+   747  01E9                     l1581:	
    748                           
    749                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 311:                     if (RcvCnt !
       +                          = 0) {
    750  01E9  082A               	movf	_RcvCnt,w
    751  01EA  1903               	btfsc	3,2
-   752  01EB  29ED               	goto	u901
-   753  01EC  29EE               	goto	u900
-   754  01ED                     u901:	
-   755  01ED  29F2               	goto	l1589
-   756  01EE                     u900:	
-   757  01EE                     l1587:	
+   752  01EB  29ED               	goto	u861
+   753  01EC  29EE               	goto	u860
+   754  01ED                     u861:	
+   755  01ED  29F2               	goto	l1585
+   756  01EE                     u860:	
+   757  01EE                     l1583:	
    758                           
    759                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 312:                         sendChar
       +                          ('N');
    760  01EE  304E               	movlw	78
-   761  01EF  3183  2324  3181   	fcall	_sendChar
-   762  01F2                     l1589:	
+   761  01EF  3183  231F  3181   	fcall	_sendChar
+   762  01F2                     l1585:	
    763                           
    764                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 314:                     RcvCnt = 1;
    765  01F2  0140               	movlb	0	; select bank0
@@ -786,19 +786,19 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    767  01F4  0AAA               	incf	_RcvCnt,f
    768                           
    769                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 315:                 } else {
-   770  01F5  2ACB               	goto	l1663
-   771  01F6                     l1591:	
+   770  01F5  2AC6               	goto	l1659
+   771  01F6                     l1587:	
    772                           
    773                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 318:                             if (
       +                          Rx != 0) {
    774  01F6  0829               	movf	_Rx,w
    775  01F7  1903               	btfsc	3,2
-   776  01F8  29FA               	goto	u911
-   777  01F9  29FB               	goto	u910
-   778  01FA                     u911:	
-   779  01FA  29FE               	goto	l1595
-   780  01FB                     u910:	
-   781  01FB                     l1593:	
+   776  01F8  29FA               	goto	u871
+   777  01F9  29FB               	goto	u870
+   778  01FA                     u871:	
+   779  01FA  29FE               	goto	l1591
+   780  01FB                     u870:	
+   781  01FB                     l1589:	
    782                           
    783                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 319:                                 
       +                          state = 1;
@@ -807,25 +807,25 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    786                           
    787                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 320:                             } el
       +                          se {
-   788  01FD  2ABA               	goto	l1655
-   789  01FE                     l1595:	
+   788  01FD  2AB5               	goto	l1651
+   789  01FE                     l1591:	
    790                           
    791                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 321:                                 
       +                          RcvCnt--;
    792  01FE  3001               	movlw	1
    793  01FF  02AA               	subwf	_RcvCnt,f
-   794  0200  2ABA               	goto	l1655
-   795  0201                     l1597:	
+   794  0200  2AB5               	goto	l1651
+   795  0201                     l1593:	
    796                           
    797                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 325:                             Cmd 
       +                          = hexToNibble(Rx);
    798  0201  0829               	movf	_Rx,w
-   799  0202  3183  2317  3181   	fcall	_hexToNibble
+   799  0202  3183  2312  3181   	fcall	_hexToNibble
    800  0205  0140               	movlb	0	; select bank0
    801  0206  00AC               	movwf	??_main
    802  0207  082C               	movf	??_main,w
    803  0208  00AB               	movwf	_Cmd
-   804  0209                     l1599:	
+   804  0209                     l1595:	
    805                           
    806                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 326:                             Cmd 
       +                          <<= 4;
@@ -835,41 +835,41 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    810                           
    811                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 327:                             brea
       +                          k;
-   812  020C  2ABA               	goto	l1655
-   813  020D                     l1601:	
+   812  020C  2AB5               	goto	l1651
+   813  020D                     l1597:	
    814                           
    815                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 329:                             Cmd 
       +                          += hexToNibble(Rx);
    816  020D  0829               	movf	_Rx,w
-   817  020E  3183  2317  3181   	fcall	_hexToNibble
+   817  020E  3183  2312  3181   	fcall	_hexToNibble
    818  0211  0140               	movlb	0	; select bank0
    819  0212  00AC               	movwf	??_main
    820  0213  082C               	movf	??_main,w
    821  0214  07AB               	addwf	_Cmd,f
-   822  0215                     l1603:	
+   822  0215                     l1599:	
    823                           
    824                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 330:                             if (
       +                          Cmd > 1) {
    825  0215  3002               	movlw	2
    826  0216  022B               	subwf	_Cmd,w
    827  0217  1C03               	skipc
-   828  0218  2A1A               	goto	u921
-   829  0219  2A1B               	goto	u920
-   830  021A                     u921:	
-   831  021A  2ABA               	goto	l1655
-   832  021B                     u920:	
-   833  021B  29FB               	goto	l1593
-   834  021C                     l1607:	
+   828  0218  2A1A               	goto	u881
+   829  0219  2A1B               	goto	u880
+   830  021A                     u881:	
+   831  021A  2AB5               	goto	l1651
+   832  021B                     u880:	
+   833  021B  29FB               	goto	l1589
+   834  021C                     l1603:	
    835                           
    836                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 335:                             CmdV
       +                          al.msb = hexToNibble(Rx);
    837  021C  0829               	movf	_Rx,w
-   838  021D  3183  2317  3181   	fcall	_hexToNibble
+   838  021D  3183  2312  3181   	fcall	_hexToNibble
    839  0220  0140               	movlb	0	; select bank0
    840  0221  00AC               	movwf	??_main
    841  0222  082C               	movf	??_main,w
    842  0223  00A5               	movwf	_CmdVal+1
-   843  0224                     l1609:	
+   843  0224                     l1605:	
    844                           
    845                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 336:                             CmdV
       +                          al.msb <<= 4;
@@ -879,13 +879,13 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    849                           
    850                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 337:                             brea
       +                          k;
-   851  0227  2ABA               	goto	l1655
-   852  0228                     l1611:	
+   851  0227  2AB5               	goto	l1651
+   852  0228                     l1607:	
    853                           
    854                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 339:                             CmdV
       +                          al.msb += hexToNibble(Rx);
    855  0228  0829               	movf	_Rx,w
-   856  0229  3183  2317  3181   	fcall	_hexToNibble
+   856  0229  3183  2312  3181   	fcall	_hexToNibble
    857  022C  0140               	movlb	0	; select bank0
    858  022D  00AC               	movwf	??_main
    859  022E  082C               	movf	??_main,w
@@ -893,18 +893,18 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    861                           
    862                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 340:                             brea
       +                          k;
-   863  0230  2ABA               	goto	l1655
-   864  0231                     l1613:	
+   863  0230  2AB5               	goto	l1651
+   864  0231                     l1609:	
    865                           
    866                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 342:                             CmdV
       +                          al.lsb = hexToNibble(Rx);
    867  0231  0829               	movf	_Rx,w
-   868  0232  3183  2317  3181   	fcall	_hexToNibble
+   868  0232  3183  2312  3181   	fcall	_hexToNibble
    869  0235  0140               	movlb	0	; select bank0
    870  0236  00AC               	movwf	??_main
    871  0237  082C               	movf	??_main,w
    872  0238  00A4               	movwf	_CmdVal
-   873  0239                     l1615:	
+   873  0239                     l1611:	
    874                           
    875                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 343:                             CmdV
       +                          al.lsb <<= 4;
@@ -914,1400 +914,1397 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    879                           
    880                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 344:                             brea
       +                          k;
-   881  023C  2ABA               	goto	l1655
-   882  023D                     l1617:	
+   881  023C  2AB5               	goto	l1651
+   882  023D                     l1613:	
    883                           
    884                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 346:                             CmdV
       +                          al.lsb += hexToNibble(Rx);
    885  023D  0829               	movf	_Rx,w
-   886  023E  3183  2317  3181   	fcall	_hexToNibble
+   886  023E  3183  2312  3181   	fcall	_hexToNibble
    887  0241  0140               	movlb	0	; select bank0
    888  0242  00AC               	movwf	??_main
    889  0243  082C               	movf	??_main,w
    890  0244  07A4               	addwf	_CmdVal,f
-   891  0245                     l1619:	
+   891  0245                     l1615:	
    892                           
    893                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 347:                             if (
       +                          Cmd == 0) {
    894  0245  082B               	movf	_Cmd,w
    895  0246  1D03               	btfss	3,2
-   896  0247  2A49               	goto	u931
-   897  0248  2A4A               	goto	u930
-   898  0249                     u931:	
-   899  0249  2A71               	goto	l1635
-   900  024A                     u930:	
-   901  024A                     l1621:	
+   896  0247  2A49               	goto	u891
+   897  0248  2A4A               	goto	u890
+   898  0249                     u891:	
+   899  0249  2A6F               	goto	l1631
+   900  024A                     u890:	
+   901  024A                     l1617:	
    902                           
    903                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 348:                                 
-      +                          if (Flags1.update || CmdVal.value > 8191) {
-   904  024A  18A8               	btfsc	_Flags1,1
-   905  024B  2A4D               	goto	u941
-   906  024C  2A4E               	goto	u940
-   907  024D                     u941:	
-   908  024D  29FB               	goto	l1593
-   909  024E                     u940:	
-   910  024E                     l1623:	
-   911  024E  3020               	movlw	32
-   912  024F  0225               	subwf	_CmdVal+1,w
-   913  0250  3000               	movlw	0
-   914  0251  1903               	skipnz
-   915  0252  0224               	subwf	_CmdVal,w
-   916  0253  1C03               	skipc
-   917  0254  2A56               	goto	u951
-   918  0255  2A57               	goto	u950
-   919  0256                     u951:	
-   920  0256  2A58               	goto	l1625
-   921  0257                     u950:	
-   922  0257  29FB               	goto	l1593
-   923  0258                     l1625:	
-   924                           
-   925                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 351:                                 
+      +                          if (CmdVal.value > 8191) {
+   904  024A  3020               	movlw	32
+   905  024B  0225               	subwf	_CmdVal+1,w
+   906  024C  3000               	movlw	0
+   907  024D  1903               	skipnz
+   908  024E  0224               	subwf	_CmdVal,w
+   909  024F  1C03               	skipc
+   910  0250  2A52               	goto	u901
+   911  0251  2A53               	goto	u900
+   912  0252                     u901:	
+   913  0252  2A54               	goto	l170
+   914  0253                     u900:	
+   915  0253  29FB               	goto	l1589
+   916  0254                     l170:	
+   917                           
+   918                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 351:                                 
+      +                              Flags1.update = 0;
+   919  0254  10A8               	bcf	_Flags1,1
+   920  0255                     l1621:	
+   921                           
+   922                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 352:                                 
       +                              Ch0Delay.value = 8191 -CmdVal.value;
-   926  0258  30FF               	movlw	255
-   927  0259  00AC               	movwf	??_main
-   928  025A  301F               	movlw	31
-   929  025B  00AD               	movwf	??_main+1
-   930  025C  0824               	movf	_CmdVal,w
-   931  025D  022C               	subwf	??_main,w
-   932  025E  00F9               	movwf	_Ch0Delay
-   933  025F  0825               	movf	_CmdVal+1,w
-   934  0260  3B2D               	subwfb	??_main+1,w
-   935  0261  00FA               	movwf	_Ch0Delay+1
-   936  0262                     l1627:	
-   937                           
-   938                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 352:                                 
-      +                              sendInt(Ch0Delay.msb);
-   939  0262  087A               	movf	_Ch0Delay+1,w
-   940  0263  3182  22EF  3181   	fcall	_sendInt
-   941  0266                     l1629:	
-   942                           
-   943                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 353:                                 
-      +                              sendInt(Ch0Delay.lsb);
-   944  0266  0879               	movf	_Ch0Delay,w
-   945  0267  3182  22EF  3181   	fcall	_sendInt
-   946  026A                     l1631:	
-   947                           
-   948                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 354:                                 
+   923  0255  30FF               	movlw	255
+   924  0256  00AC               	movwf	??_main
+   925  0257  301F               	movlw	31
+   926  0258  00AD               	movwf	??_main+1
+   927  0259  0824               	movf	_CmdVal,w
+   928  025A  022C               	subwf	??_main,w
+   929  025B  00F9               	movwf	_Ch0Delay
+   930  025C  0825               	movf	_CmdVal+1,w
+   931  025D  3B2D               	subwfb	??_main+1,w
+   932  025E  00FA               	movwf	_Ch0Delay+1
+   933  025F                     l1623:	
+   934                           
+   935                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 353:                                 
+      +                              sendInt(CmdVal.msb);
+   936  025F  0825               	movf	_CmdVal+1,w
+   937  0260  3182  22EA  3181   	fcall	_sendInt
+   938  0263                     l1625:	
+   939                           
+   940                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 354:                                 
+      +                              sendInt(CmdVal.lsb);
+   941  0263  0140               	movlb	0	; select bank0
+   942  0264  0824               	movf	_CmdVal,w
+   943  0265  3182  22EA  3181   	fcall	_sendInt
+   944  0268                     l1627:	
+   945                           
+   946                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 355:                                 
       +                              Flags1.update = 1;
-   949  026A  0140               	movlb	0	; select bank0
-   950  026B  14A8               	bsf	_Flags1,1
-   951  026C                     l1633:	
-   952                           
-   953                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 355:                                 
+   947  0268  0140               	movlb	0	; select bank0
+   948  0269  14A8               	bsf	_Flags1,1
+   949  026A                     l1629:	
+   950                           
+   951                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 356:                                 
       +                              state = 2;
-   954  026C  3002               	movlw	2
-   955  026D  00AC               	movwf	??_main
-   956  026E  082C               	movf	??_main,w
-   957  026F  00F6               	movwf	main@state
-   958  0270  2ABA               	goto	l1655
-   959  0271                     l1635:	
-   960  0271  032B               	decf	_Cmd,w
-   961  0272  1D03               	btfss	3,2
-   962  0273  2A75               	goto	u961
-   963  0274  2A76               	goto	u960
-   964  0275                     u961:	
-   965  0275  2ABA               	goto	l1655
-   966  0276                     u960:	
-   967  0276                     l1637:	
-   968                           
-   969                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 358:                                 
-      +                          if (Flags1.update || CmdVal.value > 8191) {
-   970  0276  18A8               	btfsc	_Flags1,1
-   971  0277  2A79               	goto	u971
-   972  0278  2A7A               	goto	u970
-   973  0279                     u971:	
-   974  0279  29FB               	goto	l1593
-   975  027A                     u970:	
-   976  027A                     l1639:	
-   977  027A  3020               	movlw	32
-   978  027B  0225               	subwf	_CmdVal+1,w
-   979  027C  3000               	movlw	0
-   980  027D  1903               	skipnz
-   981  027E  0224               	subwf	_CmdVal,w
-   982  027F  1C03               	skipc
-   983  0280  2A82               	goto	u981
-   984  0281  2A83               	goto	u980
-   985  0282                     u981:	
-   986  0282  2A84               	goto	l1641
-   987  0283                     u980:	
-   988  0283  29FB               	goto	l1593
-   989  0284                     l1641:	
-   990                           
-   991                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 361:                                 
+   952  026A  3002               	movlw	2
+   953  026B  00AC               	movwf	??_main
+   954  026C  082C               	movf	??_main,w
+   955  026D  00F6               	movwf	main@state
+   956  026E  2AB5               	goto	l1651
+   957  026F                     l1631:	
+   958  026F  032B               	decf	_Cmd,w
+   959  0270  1D03               	btfss	3,2
+   960  0271  2A73               	goto	u911
+   961  0272  2A74               	goto	u910
+   962  0273                     u911:	
+   963  0273  2AB5               	goto	l1651
+   964  0274                     u910:	
+   965  0274                     l1633:	
+   966                           
+   967                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 359:                                 
+      +                          if (CmdVal.value > 8191) {
+   968  0274  3020               	movlw	32
+   969  0275  0225               	subwf	_CmdVal+1,w
+   970  0276  3000               	movlw	0
+   971  0277  1903               	skipnz
+   972  0278  0224               	subwf	_CmdVal,w
+   973  0279  1C03               	skipc
+   974  027A  2A7C               	goto	u921
+   975  027B  2A7D               	goto	u920
+   976  027C                     u921:	
+   977  027C  2A7E               	goto	l174
+   978  027D                     u920:	
+   979  027D  29FB               	goto	l1589
+   980  027E                     l174:	
+   981                           
+   982                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 362:                                 
+      +                              Flags1.update = 0;
+   983  027E  10A8               	bcf	_Flags1,1
+   984  027F                     l1637:	
+   985                           
+   986                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 363:                                 
       +                              Ch1Delay.value = 8191 -CmdVal.value;
-   992  0284  30FF               	movlw	255
-   993  0285  00AC               	movwf	??_main
-   994  0286  301F               	movlw	31
-   995  0287  00AD               	movwf	??_main+1
-   996  0288  0824               	movf	_CmdVal,w
-   997  0289  022C               	subwf	??_main,w
-   998  028A  00A6               	movwf	_Ch1Delay
-   999  028B  0825               	movf	_CmdVal+1,w
-  1000  028C  3B2D               	subwfb	??_main+1,w
-  1001  028D  00A7               	movwf	_Ch1Delay+1
-  1002  028E                     l1643:	
+   987  027F  30FF               	movlw	255
+   988  0280  00AC               	movwf	??_main
+   989  0281  301F               	movlw	31
+   990  0282  00AD               	movwf	??_main+1
+   991  0283  0824               	movf	_CmdVal,w
+   992  0284  022C               	subwf	??_main,w
+   993  0285  00A6               	movwf	_Ch1Delay
+   994  0286  0825               	movf	_CmdVal+1,w
+   995  0287  3B2D               	subwfb	??_main+1,w
+   996  0288  00A7               	movwf	_Ch1Delay+1
+   997  0289                     l1639:	
+   998                           
+   999                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 364:                                 
+      +                              sendInt(CmdVal.msb);
+  1000  0289  0825               	movf	_CmdVal+1,w
+  1001  028A  3182  22EA  3181   	fcall	_sendInt
+  1002  028D                     l1641:	
   1003                           
-  1004                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 362:                                 
-      +                              sendInt(Ch1Delay.msb);
-  1005  028E  0827               	movf	_Ch1Delay+1,w
-  1006  028F  3182  22EF  3181   	fcall	_sendInt
-  1007  0292                     l1645:	
-  1008                           
-  1009                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 363:                                 
-      +                              sendInt(Ch1Delay.lsb);
-  1010  0292  0140               	movlb	0	; select bank0
-  1011  0293  0826               	movf	_Ch1Delay,w
-  1012  0294  3182  22EF  3181   	fcall	_sendInt
-  1013  0297                     l1647:	
-  1014                           
-  1015                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 364:                                 
+  1004                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 365:                                 
+      +                              sendInt(CmdVal.lsb);
+  1005  028D  0140               	movlb	0	; select bank0
+  1006  028E  0824               	movf	_CmdVal,w
+  1007  028F  3182  22EA  3181   	fcall	_sendInt
+  1008  0292                     l1643:	
+  1009                           
+  1010                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 366:                                 
       +                              Flags1.update = 1;
-  1016  0297  0140               	movlb	0	; select bank0
-  1017  0298  14A8               	bsf	_Flags1,1
-  1018  0299  2A6C               	goto	l1633
-  1019  029A                     l1653:	
-  1020  029A  082A               	movf	_RcvCnt,w
-  1021  029B  3907               	andlw	7
-  1022  029C  00AC               	movwf	??_main
-  1023  029D  01AD               	clrf	??_main+1
-  1024                           
-  1025                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+  1011  0292  0140               	movlb	0	; select bank0
+  1012  0293  14A8               	bsf	_Flags1,1
+  1013  0294  2A6A               	goto	l1629
+  1014  0295                     l1649:	
+  1015  0295  082A               	movf	_RcvCnt,w
+  1016  0296  3907               	andlw	7
+  1017  0297  00AC               	movwf	??_main
+  1018  0298  01AD               	clrf	??_main+1
+  1019                           
+  1020                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
       +                          itches
-  1026                           ; Switch size 1, requested type "simple"
-  1027                           ; Number of cases is 1, Range of values is 0 to 0
-  1028                           ; switch strategies available:
-  1029                           ; Name         Instructions Cycles
-  1030                           ; simple_byte            4     3 (average)
-  1031                           ; direct_byte            8     6 (fixed)
-  1032                           ; jumptable            260     6 (fixed)
-  1033                           ;	Chosen strategy is simple_byte
-  1034  029E  082D               	movf	??_main+1,w
-  1035  029F  3A00               	xorlw	0	; case 0
-  1036  02A0  1903               	skipnz
-  1037  02A1  2AA3               	goto	l1747
-  1038  02A2  2ABA               	goto	l1655
-  1039  02A3                     l1747:	
-  1040                           
-  1041                           ; Switch size 1, requested type "simple"
-  1042                           ; Number of cases is 7, Range of values is 0 to 6
-  1043                           ; switch strategies available:
-  1044                           ; Name         Instructions Cycles
-  1045                           ; direct_byte           20     6 (fixed)
-  1046                           ; simple_byte           22    12 (average)
-  1047                           ; jumptable            260     6 (fixed)
-  1048                           ;	Chosen strategy is simple_byte
-  1049  02A3  082C               	movf	??_main,w
-  1050  02A4  3A00               	xorlw	0	; case 0
-  1051  02A5  1903               	skipnz
-  1052  02A6  29F6               	goto	l1591
-  1053  02A7  3A01               	xorlw	1	; case 1
-  1054  02A8  1903               	skipnz
-  1055  02A9  2A01               	goto	l1597
-  1056  02AA  3A03               	xorlw	3	; case 2
-  1057  02AB  1903               	skipnz
-  1058  02AC  2A0D               	goto	l1601
-  1059  02AD  3A01               	xorlw	1	; case 3
-  1060  02AE  1903               	skipnz
-  1061  02AF  2A1C               	goto	l1607
-  1062  02B0  3A07               	xorlw	7	; case 4
-  1063  02B1  1903               	skipnz
-  1064  02B2  2A28               	goto	l1611
-  1065  02B3  3A01               	xorlw	1	; case 5
-  1066  02B4  1903               	skipnz
-  1067  02B5  2A31               	goto	l1613
-  1068  02B6  3A03               	xorlw	3	; case 6
-  1069  02B7  1903               	skipnz
-  1070  02B8  2A3D               	goto	l1617
-  1071  02B9  2ABA               	goto	l1655
-  1072  02BA                     l1655:	
-  1073                           
-  1074                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 370:                     RcvCnt++;
-  1075  02BA  3001               	movlw	1
-  1076  02BB  00AC               	movwf	??_main
-  1077  02BC  082C               	movf	??_main,w
-  1078  02BD  07AA               	addwf	_RcvCnt,f
-  1079  02BE  2ACB               	goto	l1663
-  1080  02BF                     l148:	
-  1081  02BF  0142               	movlb	2	; select bank2
-  1082  02C0  1C9D               	btfss	29,1	;volatile
-  1083  02C1  2AC3               	goto	u991
-  1084  02C2  2AC4               	goto	u990
-  1085  02C3                     u991:	
-  1086  02C3  2ACB               	goto	l1663
-  1087  02C4                     u990:	
-  1088  02C4                     l1657:	
+  1021                           ; Switch size 1, requested type "simple"
+  1022                           ; Number of cases is 1, Range of values is 0 to 0
+  1023                           ; switch strategies available:
+  1024                           ; Name         Instructions Cycles
+  1025                           ; simple_byte            4     3 (average)
+  1026                           ; direct_byte            8     6 (fixed)
+  1027                           ; jumptable            260     6 (fixed)
+  1028                           ;	Chosen strategy is simple_byte
+  1029  0299  082D               	movf	??_main+1,w
+  1030  029A  3A00               	xorlw	0	; case 0
+  1031  029B  1903               	skipnz
+  1032  029C  2A9E               	goto	l1743
+  1033  029D  2AB5               	goto	l1651
+  1034  029E                     l1743:	
+  1035                           
+  1036                           ; Switch size 1, requested type "simple"
+  1037                           ; Number of cases is 7, Range of values is 0 to 6
+  1038                           ; switch strategies available:
+  1039                           ; Name         Instructions Cycles
+  1040                           ; direct_byte           20     6 (fixed)
+  1041                           ; simple_byte           22    12 (average)
+  1042                           ; jumptable            260     6 (fixed)
+  1043                           ;	Chosen strategy is simple_byte
+  1044  029E  082C               	movf	??_main,w
+  1045  029F  3A00               	xorlw	0	; case 0
+  1046  02A0  1903               	skipnz
+  1047  02A1  29F6               	goto	l1587
+  1048  02A2  3A01               	xorlw	1	; case 1
+  1049  02A3  1903               	skipnz
+  1050  02A4  2A01               	goto	l1593
+  1051  02A5  3A03               	xorlw	3	; case 2
+  1052  02A6  1903               	skipnz
+  1053  02A7  2A0D               	goto	l1597
+  1054  02A8  3A01               	xorlw	1	; case 3
+  1055  02A9  1903               	skipnz
+  1056  02AA  2A1C               	goto	l1603
+  1057  02AB  3A07               	xorlw	7	; case 4
+  1058  02AC  1903               	skipnz
+  1059  02AD  2A28               	goto	l1607
+  1060  02AE  3A01               	xorlw	1	; case 5
+  1061  02AF  1903               	skipnz
+  1062  02B0  2A31               	goto	l1609
+  1063  02B1  3A03               	xorlw	3	; case 6
+  1064  02B2  1903               	skipnz
+  1065  02B3  2A3D               	goto	l1613
+  1066  02B4  2AB5               	goto	l1651
+  1067  02B5                     l1651:	
+  1068                           
+  1069                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 372:                     RcvCnt++;
+  1070  02B5  3001               	movlw	1
+  1071  02B6  00AC               	movwf	??_main
+  1072  02B7  082C               	movf	??_main,w
+  1073  02B8  07AA               	addwf	_RcvCnt,f
+  1074  02B9  2AC6               	goto	l1659
+  1075  02BA                     l148:	
+  1076  02BA  0142               	movlb	2	; select bank2
+  1077  02BB  1C9D               	btfss	29,1	;volatile
+  1078  02BC  2ABE               	goto	u931
+  1079  02BD  2ABF               	goto	u930
+  1080  02BE                     u931:	
+  1081  02BE  2AC6               	goto	l1659
+  1082  02BF                     u930:	
+  1083  02BF                     l1653:	
+  1084                           
+  1085                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 376:             sendChar('O');
+  1086  02BF  304F               	movlw	79
+  1087  02C0  3183  231F  3181   	fcall	_sendChar
+  1088  02C3                     l1655:	
   1089                           
-  1090                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 374:             sendChar('O');
-  1091  02C4  304F               	movlw	79
-  1092  02C5  3183  2324  3181   	fcall	_sendChar
-  1093  02C8                     l1659:	
+  1090                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 377:             RC1STAbits.CREN = 0;
+  1091  02C3  0142               	movlb	2	; select bank2
+  1092  02C4  121D               	bcf	29,4	;volatile
+  1093  02C5                     l1657:	
   1094                           
-  1095                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 375:             RC1STAbits.CREN = 0;
-  1096  02C8  0142               	movlb	2	; select bank2
-  1097  02C9  121D               	bcf	29,4	;volatile
-  1098  02CA                     l1661:	
-  1099                           
-  1100                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 376:             RC1STAbits.CREN = 1;
-  1101  02CA  161D               	bsf	29,4	;volatile
-  1102  02CB                     l1663:	
-  1103                           
-  1104                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 379:         if (state == 2) {
-  1105  02CB  3002               	movlw	2
-  1106  02CC  0676               	xorwf	main@state,w
-  1107  02CD  1D03               	btfss	3,2
-  1108  02CE  2AD0               	goto	u1001
-  1109  02CF  2AD1               	goto	u1000
-  1110  02D0                     u1001:	
-  1111  02D0  2AD8               	goto	l1669
-  1112  02D1                     u1000:	
-  1113  02D1                     l1665:	
+  1095                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 378:             RC1STAbits.CREN = 1;
+  1096  02C5  161D               	bsf	29,4	;volatile
+  1097  02C6                     l1659:	
+  1098                           
+  1099                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 381:         if (state == 2) {
+  1100  02C6  3002               	movlw	2
+  1101  02C7  0676               	xorwf	main@state,w
+  1102  02C8  1D03               	btfss	3,2
+  1103  02C9  2ACB               	goto	u941
+  1104  02CA  2ACC               	goto	u940
+  1105  02CB                     u941:	
+  1106  02CB  2AD3               	goto	l1665
+  1107  02CC                     u940:	
+  1108  02CC                     l1661:	
+  1109                           
+  1110                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 382:             sendChar('K');
+  1111  02CC  304B               	movlw	75
+  1112  02CD  3183  231F  3181   	fcall	_sendChar
+  1113  02D0                     l1663:	
   1114                           
-  1115                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 380:             sendChar('K');
-  1116  02D1  304B               	movlw	75
-  1117  02D2  3183  2324  3181   	fcall	_sendChar
-  1118  02D5                     l1667:	
-  1119                           
-  1120                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 381:             RcvCnt = 0;
-  1121  02D5  0140               	movlb	0	; select bank0
-  1122  02D6  01AA               	clrf	_RcvCnt
-  1123                           
-  1124                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 382:         } else if (state == 1) {
-  1125  02D7  29C2               	goto	l1567
-  1126  02D8                     l1669:	
-  1127  02D8  0376               	decf	main@state,w
-  1128  02D9  1D03               	btfss	3,2
-  1129  02DA  2ADC               	goto	u1011
-  1130  02DB  2ADD               	goto	u1010
-  1131  02DC                     u1011:	
-  1132  02DC  2AE2               	goto	l1675
-  1133  02DD                     u1010:	
-  1134  02DD                     l1671:	
-  1135                           
-  1136                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 383:             sendChar('N');
-  1137  02DD  304E               	movlw	78
-  1138  02DE  3183  2324  3181   	fcall	_sendChar
-  1139  02E1  2AD5               	goto	l1667
-  1140  02E2                     l1675:	
-  1141  02E2  3003               	movlw	3
-  1142  02E3  0676               	xorwf	main@state,w
-  1143  02E4  1D03               	btfss	3,2
-  1144  02E5  2AE7               	goto	u1021
-  1145  02E6  2AE8               	goto	u1020
-  1146  02E7                     u1021:	
-  1147  02E7  2AED               	goto	l183
-  1148  02E8                     u1020:	
-  1149  02E8                     l1677:	
-  1150                           
-  1151                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 386:             sendChar('Z');
-  1152  02E8  305A               	movlw	90
-  1153  02E9  3183  2324  3181   	fcall	_sendChar
-  1154  02EC  2AD5               	goto	l1667
-  1155  02ED                     l183:	
-  1156  02ED  29C2               	goto	l1567
-  1157  02EE  2975               	ljmp	start
-  1158  02EF                     __end_of_main:	
-  1159                           
-  1160                           	psect	text1
-  1161  02EF                     __ptext1:	
-  1162 ;; *************** function _sendInt *****************
-  1163 ;; Defined at:
-  1164 ;;		line 213 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
-  1165 ;; Parameters:    Size  Location     Type
-  1166 ;;  i               1    wreg     unsigned char 
-  1167 ;; Auto vars:     Size  Location     Type
-  1168 ;;  i               1    5[COMMON] unsigned char 
-  1169 ;;  tmp             1    4[COMMON] unsigned char 
-  1170 ;; Return value:  Size  Location     Type
-  1171 ;;                  1    wreg      void 
-  1172 ;; Registers used:
-  1173 ;;		wreg, status,2, status,0, pclath, cstack
-  1174 ;; Tracked objects:
-  1175 ;;		On entry : 0/0
-  1176 ;;		On exit  : 0/0
-  1177 ;;		Unchanged: 0/0
-  1178 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1179 ;;      Params:         0       0       0       0
-  1180 ;;      Locals:         2       0       0       0
-  1181 ;;      Temps:          1       0       0       0
-  1182 ;;      Totals:         3       0       0       0
-  1183 ;;Total ram usage:        3 bytes
-  1184 ;; Hardware stack levels used:    1
-  1185 ;; Hardware stack levels required when called:    2
-  1186 ;; This function calls:
-  1187 ;;		_nibbleToHex
-  1188 ;;		_sendChar
-  1189 ;; This function is called by:
-  1190 ;;		_main
-  1191 ;; This function uses a non-reentrant model
-  1192 ;;
-  1193                           
-  1194                           
-  1195                           ;psect for function _sendInt
-  1196  02EF                     _sendInt:	
-  1197                           
-  1198                           ;incstack = 0
-  1199                           ; Regs used in _sendInt: [wreg+status,2+status,0+pclath+cstack]
-  1200                           ;sendInt@i stored from wreg
-  1201  02EF  00F5               	movwf	sendInt@i
-  1202  02F0                     l1133:	
-  1203                           
-  1204                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 214:     uchar tmp = i;
-  1205  02F0  0875               	movf	sendInt@i,w
-  1206  02F1  00F3               	movwf	??_sendInt
-  1207  02F2  0873               	movf	??_sendInt,w
-  1208  02F3  00F4               	movwf	sendInt@tmp
-  1209                           
-  1210                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 215:     tmp >>= 4;
-  1211  02F4  0EF4               	swapf	sendInt@tmp,f
-  1212  02F5  300F               	movlw	15
-  1213  02F6  05F4               	andwf	sendInt@tmp,f
-  1214  02F7                     l1135:	
-  1215                           
-  1216                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 216:     sendChar(nibbleToHex(tmp));
-  1217  02F7  0874               	movf	sendInt@tmp,w
-  1218  02F8  3183  230A  3182   	fcall	_nibbleToHex
-  1219  02FB  3183  2324  3182   	fcall	_sendChar
-  1220  02FE                     l1137:	
-  1221                           
-  1222                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 217:     i &= 0xF;
-  1223  02FE  300F               	movlw	15
-  1224  02FF  00F3               	movwf	??_sendInt
-  1225  0300  0873               	movf	??_sendInt,w
-  1226  0301  05F5               	andwf	sendInt@i,f
-  1227  0302                     l1139:	
-  1228                           
-  1229                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 218:     sendChar(nibbleToHex(i));
-  1230  0302  0875               	movf	sendInt@i,w
-  1231  0303  3183  230A  3182   	fcall	_nibbleToHex
-  1232  0306  3183  2324  3182   	fcall	_sendChar
-  1233  0309                     l138:	
-  1234  0309  0008               	return
-  1235  030A                     __end_of_sendInt:	
-  1236                           
-  1237                           	psect	text2
-  1238  0324                     __ptext2:	
-  1239 ;; *************** function _sendChar *****************
-  1240 ;; Defined at:
-  1241 ;;		line 208 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
-  1242 ;; Parameters:    Size  Location     Type
-  1243 ;;  c               1    wreg     unsigned char 
-  1244 ;; Auto vars:     Size  Location     Type
-  1245 ;;  c               1    2[COMMON] unsigned char 
-  1246 ;; Return value:  Size  Location     Type
-  1247 ;;                  1    wreg      void 
-  1248 ;; Registers used:
-  1249 ;;		wreg
-  1250 ;; Tracked objects:
-  1251 ;;		On entry : 0/0
-  1252 ;;		On exit  : 0/0
-  1253 ;;		Unchanged: 0/0
-  1254 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1255 ;;      Params:         0       0       0       0
-  1256 ;;      Locals:         1       0       0       0
-  1257 ;;      Temps:          0       0       0       0
-  1258 ;;      Totals:         1       0       0       0
-  1259 ;;Total ram usage:        1 bytes
-  1260 ;; Hardware stack levels used:    1
-  1261 ;; Hardware stack levels required when called:    1
-  1262 ;; This function calls:
-  1263 ;;		Nothing
-  1264 ;; This function is called by:
-  1265 ;;		_sendInt
-  1266 ;;		_main
-  1267 ;; This function uses a non-reentrant model
-  1268 ;;
-  1269                           
-  1270                           
-  1271                           ;psect for function _sendChar
-  1272  0324                     _sendChar:	
-  1273                           
-  1274                           ;incstack = 0
-  1275                           ; Regs used in _sendChar: [wreg]
-  1276                           ;sendChar@c stored from wreg
-  1277  0324  00F2               	movwf	sendChar@c
-  1278  0325                     l1129:	
-  1279  0325                     l132:	
-  1280                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 209:     while (!PIR3bits.TX1IF);
-  1281                           
-  1282  0325  014E               	movlb	14	; select bank14
-  1283  0326  1E0F               	btfss	15,4	;volatile
-  1284  0327  2B29               	goto	u441
-  1285  0328  2B2A               	goto	u440
-  1286  0329                     u441:	
-  1287  0329  2B25               	goto	l132
-  1288  032A                     u440:	
-  1289  032A                     l1131:	
-  1290                           
-  1291                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 210:     TX1REG = c;
-  1292  032A  0872               	movf	sendChar@c,w
-  1293  032B  0142               	movlb	2	; select bank2
-  1294  032C  009A               	movwf	26	;volatile
-  1295  032D                     l135:	
-  1296  032D  0008               	return
-  1297  032E                     __end_of_sendChar:	
-  1298                           
-  1299                           	psect	text3
-  1300  030A                     __ptext3:	
-  1301 ;; *************** function _nibbleToHex *****************
-  1302 ;; Defined at:
-  1303 ;;		line 201 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
-  1304 ;; Parameters:    Size  Location     Type
-  1305 ;;  i               1    wreg     unsigned char 
-  1306 ;; Auto vars:     Size  Location     Type
-  1307 ;;  i               1    2[COMMON] unsigned char 
-  1308 ;; Return value:  Size  Location     Type
-  1309 ;;                  1    wreg      unsigned char 
-  1310 ;; Registers used:
-  1311 ;;		wreg, status,2, status,0
-  1312 ;; Tracked objects:
-  1313 ;;		On entry : 0/0
-  1314 ;;		On exit  : 0/0
-  1315 ;;		Unchanged: 0/0
-  1316 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1317 ;;      Params:         0       0       0       0
-  1318 ;;      Locals:         1       0       0       0
-  1319 ;;      Temps:          0       0       0       0
-  1320 ;;      Totals:         1       0       0       0
-  1321 ;;Total ram usage:        1 bytes
-  1322 ;; Hardware stack levels used:    1
-  1323 ;; Hardware stack levels required when called:    1
-  1324 ;; This function calls:
-  1325 ;;		Nothing
-  1326 ;; This function is called by:
-  1327 ;;		_sendInt
-  1328 ;; This function uses a non-reentrant model
-  1329 ;;
-  1330                           
-  1331                           
-  1332                           ;psect for function _nibbleToHex
-  1333  030A                     _nibbleToHex:	
-  1334                           
-  1335                           ;incstack = 0
-  1336                           ; Regs used in _nibbleToHex: [wreg+status,2+status,0]
-  1337                           ;nibbleToHex@i stored from wreg
-  1338  030A  00F2               	movwf	nibbleToHex@i
-  1339  030B                     l1119:	
-  1340                           
-  1341                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 202:     if (i >= 10) {
-  1342  030B  300A               	movlw	10
-  1343  030C  0272               	subwf	nibbleToHex@i,w
-  1344  030D  1C03               	skipc
-  1345  030E  2B10               	goto	u431
-  1346  030F  2B11               	goto	u430
-  1347  0310                     u431:	
-  1348  0310  2B14               	goto	l1125
-  1349  0311                     u430:	
-  1350  0311                     l1121:	
-  1351                           
-  1352                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 203:         return 'A'+i-10;
-  1353  0311  0872               	movf	nibbleToHex@i,w
-  1354  0312  3E37               	addlw	55
-  1355  0313  2B16               	goto	l129
-  1356  0314                     l1125:	
-  1357                           
-  1358                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 205:     return '0'+i;
-  1359  0314  0872               	movf	nibbleToHex@i,w
-  1360  0315  3E30               	addlw	48
-  1361  0316                     l129:	
-  1362  0316  0008               	return
-  1363  0317                     __end_of_nibbleToHex:	
-  1364                           
-  1365                           	psect	text4
-  1366  0317                     __ptext4:	
-  1367 ;; *************** function _hexToNibble *****************
-  1368 ;; Defined at:
-  1369 ;;		line 221 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
-  1370 ;; Parameters:    Size  Location     Type
-  1371 ;;  c               1    wreg     unsigned char 
-  1372 ;; Auto vars:     Size  Location     Type
-  1373 ;;  c               1    2[COMMON] unsigned char 
-  1374 ;; Return value:  Size  Location     Type
-  1375 ;;                  1    wreg      unsigned char 
-  1376 ;; Registers used:
-  1377 ;;		wreg, status,2, status,0
-  1378 ;; Tracked objects:
-  1379 ;;		On entry : 0/0
-  1380 ;;		On exit  : 0/0
-  1381 ;;		Unchanged: 0/0
-  1382 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1383 ;;      Params:         0       0       0       0
-  1384 ;;      Locals:         1       0       0       0
-  1385 ;;      Temps:          0       0       0       0
-  1386 ;;      Totals:         1       0       0       0
-  1387 ;;Total ram usage:        1 bytes
-  1388 ;; Hardware stack levels used:    1
-  1389 ;; Hardware stack levels required when called:    1
-  1390 ;; This function calls:
-  1391 ;;		Nothing
-  1392 ;; This function is called by:
-  1393 ;;		_main
-  1394 ;; This function uses a non-reentrant model
-  1395 ;;
-  1396                           
-  1397                           
-  1398                           ;psect for function _hexToNibble
-  1399  0317                     _hexToNibble:	
-  1400                           
-  1401                           ;incstack = 0
-  1402                           ; Regs used in _hexToNibble: [wreg+status,2+status,0]
-  1403                           ;hexToNibble@c stored from wreg
-  1404  0317  00F2               	movwf	hexToNibble@c
-  1405  0318                     l1141:	
-  1406                           
-  1407                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 222:     if (c >= 'A') {
-  1408  0318  3041               	movlw	65
-  1409  0319  0272               	subwf	hexToNibble@c,w
-  1410  031A  1C03               	skipc
-  1411  031B  2B1D               	goto	u451
-  1412  031C  2B1E               	goto	u450
-  1413  031D                     u451:	
-  1414  031D  2B21               	goto	l1147
-  1415  031E                     u450:	
-  1416  031E                     l1143:	
-  1417                           
-  1418                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 223:         return c-'A'+10;
-  1419  031E  0872               	movf	hexToNibble@c,w
-  1420  031F  3EC9               	addlw	201
-  1421  0320  2B23               	goto	l142
-  1422  0321                     l1147:	
-  1423                           
-  1424                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 225:     return c-'0';
-  1425  0321  0872               	movf	hexToNibble@c,w
-  1426  0322  3ED0               	addlw	208
-  1427  0323                     l142:	
-  1428  0323  0008               	return
-  1429  0324                     __end_of_hexToNibble:	
-  1430                           
-  1431                           	psect	intentry
-  1432  0004                     __pintentry:	
-  1433 ;; *************** function _myIsr *****************
-  1434 ;; Defined at:
-  1435 ;;		line 59 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
-  1436 ;; Parameters:    Size  Location     Type
-  1437 ;;		None
-  1438 ;; Auto vars:     Size  Location     Type
-  1439 ;;		None
-  1440 ;; Return value:  Size  Location     Type
-  1441 ;;                  1    wreg      void 
-  1442 ;; Registers used:
-  1443 ;;		wreg, fsr0l, fsr0h, status,2, status,0
-  1444 ;; Tracked objects:
-  1445 ;;		On entry : 0/0
-  1446 ;;		On exit  : 0/0
-  1447 ;;		Unchanged: 0/0
-  1448 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1449 ;;      Params:         0       0       0       0
-  1450 ;;      Locals:         0       0       0       0
-  1451 ;;      Temps:          2       0       0       0
-  1452 ;;      Totals:         2       0       0       0
-  1453 ;;Total ram usage:        2 bytes
-  1454 ;; Hardware stack levels used:    1
-  1455 ;; This function calls:
-  1456 ;;		Nothing
-  1457 ;; This function is called by:
-  1458 ;;		Interrupt level 1
-  1459 ;; This function uses a non-reentrant model
-  1460 ;;
+  1115                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 383:             RcvCnt = 0;
+  1116  02D0  0140               	movlb	0	; select bank0
+  1117  02D1  01AA               	clrf	_RcvCnt
+  1118                           
+  1119                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 384:         } else if (state == 1) {
+  1120  02D2  29C2               	goto	l1563
+  1121  02D3                     l1665:	
+  1122  02D3  0376               	decf	main@state,w
+  1123  02D4  1D03               	btfss	3,2
+  1124  02D5  2AD7               	goto	u951
+  1125  02D6  2AD8               	goto	u950
+  1126  02D7                     u951:	
+  1127  02D7  2ADD               	goto	l1671
+  1128  02D8                     u950:	
+  1129  02D8                     l1667:	
+  1130                           
+  1131                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 385:             sendChar('N');
+  1132  02D8  304E               	movlw	78
+  1133  02D9  3183  231F  3181   	fcall	_sendChar
+  1134  02DC  2AD0               	goto	l1663
+  1135  02DD                     l1671:	
+  1136  02DD  3003               	movlw	3
+  1137  02DE  0676               	xorwf	main@state,w
+  1138  02DF  1D03               	btfss	3,2
+  1139  02E0  2AE2               	goto	u961
+  1140  02E1  2AE3               	goto	u960
+  1141  02E2                     u961:	
+  1142  02E2  2AE8               	goto	l179
+  1143  02E3                     u960:	
+  1144  02E3                     l1673:	
+  1145                           
+  1146                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 388:             sendChar('Z');
+  1147  02E3  305A               	movlw	90
+  1148  02E4  3183  231F  3181   	fcall	_sendChar
+  1149  02E7  2AD0               	goto	l1663
+  1150  02E8                     l179:	
+  1151  02E8  29C2               	goto	l1563
+  1152  02E9  2975               	ljmp	start
+  1153  02EA                     __end_of_main:	
+  1154                           
+  1155                           	psect	text1
+  1156  02EA                     __ptext1:	
+  1157 ;; *************** function _sendInt *****************
+  1158 ;; Defined at:
+  1159 ;;		line 213 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
+  1160 ;; Parameters:    Size  Location     Type
+  1161 ;;  i               1    wreg     unsigned char 
+  1162 ;; Auto vars:     Size  Location     Type
+  1163 ;;  i               1    5[COMMON] unsigned char 
+  1164 ;;  tmp             1    4[COMMON] unsigned char 
+  1165 ;; Return value:  Size  Location     Type
+  1166 ;;                  1    wreg      void 
+  1167 ;; Registers used:
+  1168 ;;		wreg, status,2, status,0, pclath, cstack
+  1169 ;; Tracked objects:
+  1170 ;;		On entry : 0/0
+  1171 ;;		On exit  : 0/0
+  1172 ;;		Unchanged: 0/0
+  1173 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1174 ;;      Params:         0       0       0       0
+  1175 ;;      Locals:         2       0       0       0
+  1176 ;;      Temps:          1       0       0       0
+  1177 ;;      Totals:         3       0       0       0
+  1178 ;;Total ram usage:        3 bytes
+  1179 ;; Hardware stack levels used:    1
+  1180 ;; Hardware stack levels required when called:    2
+  1181 ;; This function calls:
+  1182 ;;		_nibbleToHex
+  1183 ;;		_sendChar
+  1184 ;; This function is called by:
+  1185 ;;		_main
+  1186 ;; This function uses a non-reentrant model
+  1187 ;;
+  1188                           
+  1189                           
+  1190                           ;psect for function _sendInt
+  1191  02EA                     _sendInt:	
+  1192                           
+  1193                           ;incstack = 0
+  1194                           ; Regs used in _sendInt: [wreg+status,2+status,0+pclath+cstack]
+  1195                           ;sendInt@i stored from wreg
+  1196  02EA  00F5               	movwf	sendInt@i
+  1197  02EB                     l1129:	
+  1198                           
+  1199                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 214:     uchar tmp = i;
+  1200  02EB  0875               	movf	sendInt@i,w
+  1201  02EC  00F3               	movwf	??_sendInt
+  1202  02ED  0873               	movf	??_sendInt,w
+  1203  02EE  00F4               	movwf	sendInt@tmp
+  1204                           
+  1205                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 215:     tmp >>= 4;
+  1206  02EF  0EF4               	swapf	sendInt@tmp,f
+  1207  02F0  300F               	movlw	15
+  1208  02F1  05F4               	andwf	sendInt@tmp,f
+  1209  02F2                     l1131:	
+  1210                           
+  1211                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 216:     sendChar(nibbleToHex(tmp));
+  1212  02F2  0874               	movf	sendInt@tmp,w
+  1213  02F3  3183  2305  3182   	fcall	_nibbleToHex
+  1214  02F6  3183  231F  3182   	fcall	_sendChar
+  1215  02F9                     l1133:	
+  1216                           
+  1217                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 217:     i &= 0xF;
+  1218  02F9  300F               	movlw	15
+  1219  02FA  00F3               	movwf	??_sendInt
+  1220  02FB  0873               	movf	??_sendInt,w
+  1221  02FC  05F5               	andwf	sendInt@i,f
+  1222  02FD                     l1135:	
+  1223                           
+  1224                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 218:     sendChar(nibbleToHex(i));
+  1225  02FD  0875               	movf	sendInt@i,w
+  1226  02FE  3183  2305  3182   	fcall	_nibbleToHex
+  1227  0301  3183  231F  3182   	fcall	_sendChar
+  1228  0304                     l138:	
+  1229  0304  0008               	return
+  1230  0305                     __end_of_sendInt:	
+  1231                           
+  1232                           	psect	text2
+  1233  031F                     __ptext2:	
+  1234 ;; *************** function _sendChar *****************
+  1235 ;; Defined at:
+  1236 ;;		line 208 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
+  1237 ;; Parameters:    Size  Location     Type
+  1238 ;;  c               1    wreg     unsigned char 
+  1239 ;; Auto vars:     Size  Location     Type
+  1240 ;;  c               1    2[COMMON] unsigned char 
+  1241 ;; Return value:  Size  Location     Type
+  1242 ;;                  1    wreg      void 
+  1243 ;; Registers used:
+  1244 ;;		wreg
+  1245 ;; Tracked objects:
+  1246 ;;		On entry : 0/0
+  1247 ;;		On exit  : 0/0
+  1248 ;;		Unchanged: 0/0
+  1249 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1250 ;;      Params:         0       0       0       0
+  1251 ;;      Locals:         1       0       0       0
+  1252 ;;      Temps:          0       0       0       0
+  1253 ;;      Totals:         1       0       0       0
+  1254 ;;Total ram usage:        1 bytes
+  1255 ;; Hardware stack levels used:    1
+  1256 ;; Hardware stack levels required when called:    1
+  1257 ;; This function calls:
+  1258 ;;		Nothing
+  1259 ;; This function is called by:
+  1260 ;;		_sendInt
+  1261 ;;		_main
+  1262 ;; This function uses a non-reentrant model
+  1263 ;;
+  1264                           
+  1265                           
+  1266                           ;psect for function _sendChar
+  1267  031F                     _sendChar:	
+  1268                           
+  1269                           ;incstack = 0
+  1270                           ; Regs used in _sendChar: [wreg]
+  1271                           ;sendChar@c stored from wreg
+  1272  031F  00F2               	movwf	sendChar@c
+  1273  0320                     l1125:	
+  1274  0320                     l132:	
+  1275                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 209:     while (!PIR3bits.TX1IF);
+  1276                           
+  1277  0320  014E               	movlb	14	; select bank14
+  1278  0321  1E0F               	btfss	15,4	;volatile
+  1279  0322  2B24               	goto	u421
+  1280  0323  2B25               	goto	u420
+  1281  0324                     u421:	
+  1282  0324  2B20               	goto	l132
+  1283  0325                     u420:	
+  1284  0325                     l1127:	
+  1285                           
+  1286                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 210:     TX1REG = c;
+  1287  0325  0872               	movf	sendChar@c,w
+  1288  0326  0142               	movlb	2	; select bank2
+  1289  0327  009A               	movwf	26	;volatile
+  1290  0328                     l135:	
+  1291  0328  0008               	return
+  1292  0329                     __end_of_sendChar:	
+  1293                           
+  1294                           	psect	text3
+  1295  0305                     __ptext3:	
+  1296 ;; *************** function _nibbleToHex *****************
+  1297 ;; Defined at:
+  1298 ;;		line 201 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
+  1299 ;; Parameters:    Size  Location     Type
+  1300 ;;  i               1    wreg     unsigned char 
+  1301 ;; Auto vars:     Size  Location     Type
+  1302 ;;  i               1    2[COMMON] unsigned char 
+  1303 ;; Return value:  Size  Location     Type
+  1304 ;;                  1    wreg      unsigned char 
+  1305 ;; Registers used:
+  1306 ;;		wreg, status,2, status,0
+  1307 ;; Tracked objects:
+  1308 ;;		On entry : 0/0
+  1309 ;;		On exit  : 0/0
+  1310 ;;		Unchanged: 0/0
+  1311 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1312 ;;      Params:         0       0       0       0
+  1313 ;;      Locals:         1       0       0       0
+  1314 ;;      Temps:          0       0       0       0
+  1315 ;;      Totals:         1       0       0       0
+  1316 ;;Total ram usage:        1 bytes
+  1317 ;; Hardware stack levels used:    1
+  1318 ;; Hardware stack levels required when called:    1
+  1319 ;; This function calls:
+  1320 ;;		Nothing
+  1321 ;; This function is called by:
+  1322 ;;		_sendInt
+  1323 ;; This function uses a non-reentrant model
+  1324 ;;
+  1325                           
+  1326                           
+  1327                           ;psect for function _nibbleToHex
+  1328  0305                     _nibbleToHex:	
+  1329                           
+  1330                           ;incstack = 0
+  1331                           ; Regs used in _nibbleToHex: [wreg+status,2+status,0]
+  1332                           ;nibbleToHex@i stored from wreg
+  1333  0305  00F2               	movwf	nibbleToHex@i
+  1334  0306                     l1115:	
+  1335                           
+  1336                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 202:     if (i >= 10) {
+  1337  0306  300A               	movlw	10
+  1338  0307  0272               	subwf	nibbleToHex@i,w
+  1339  0308  1C03               	skipc
+  1340  0309  2B0B               	goto	u411
+  1341  030A  2B0C               	goto	u410
+  1342  030B                     u411:	
+  1343  030B  2B0F               	goto	l1121
+  1344  030C                     u410:	
+  1345  030C                     l1117:	
+  1346                           
+  1347                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 203:         return 'A'+i-10;
+  1348  030C  0872               	movf	nibbleToHex@i,w
+  1349  030D  3E37               	addlw	55
+  1350  030E  2B11               	goto	l129
+  1351  030F                     l1121:	
+  1352                           
+  1353                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 205:     return '0'+i;
+  1354  030F  0872               	movf	nibbleToHex@i,w
+  1355  0310  3E30               	addlw	48
+  1356  0311                     l129:	
+  1357  0311  0008               	return
+  1358  0312                     __end_of_nibbleToHex:	
+  1359                           
+  1360                           	psect	text4
+  1361  0312                     __ptext4:	
+  1362 ;; *************** function _hexToNibble *****************
+  1363 ;; Defined at:
+  1364 ;;		line 221 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
+  1365 ;; Parameters:    Size  Location     Type
+  1366 ;;  c               1    wreg     unsigned char 
+  1367 ;; Auto vars:     Size  Location     Type
+  1368 ;;  c               1    2[COMMON] unsigned char 
+  1369 ;; Return value:  Size  Location     Type
+  1370 ;;                  1    wreg      unsigned char 
+  1371 ;; Registers used:
+  1372 ;;		wreg, status,2, status,0
+  1373 ;; Tracked objects:
+  1374 ;;		On entry : 0/0
+  1375 ;;		On exit  : 0/0
+  1376 ;;		Unchanged: 0/0
+  1377 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1378 ;;      Params:         0       0       0       0
+  1379 ;;      Locals:         1       0       0       0
+  1380 ;;      Temps:          0       0       0       0
+  1381 ;;      Totals:         1       0       0       0
+  1382 ;;Total ram usage:        1 bytes
+  1383 ;; Hardware stack levels used:    1
+  1384 ;; Hardware stack levels required when called:    1
+  1385 ;; This function calls:
+  1386 ;;		Nothing
+  1387 ;; This function is called by:
+  1388 ;;		_main
+  1389 ;; This function uses a non-reentrant model
+  1390 ;;
+  1391                           
+  1392                           
+  1393                           ;psect for function _hexToNibble
+  1394  0312                     _hexToNibble:	
+  1395                           
+  1396                           ;incstack = 0
+  1397                           ; Regs used in _hexToNibble: [wreg+status,2+status,0]
+  1398                           ;hexToNibble@c stored from wreg
+  1399  0312  00F2               	movwf	hexToNibble@c
+  1400  0313                     l1137:	
+  1401                           
+  1402                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 222:     if (c >= 'A') {
+  1403  0313  3041               	movlw	65
+  1404  0314  0272               	subwf	hexToNibble@c,w
+  1405  0315  1C03               	skipc
+  1406  0316  2B18               	goto	u431
+  1407  0317  2B19               	goto	u430
+  1408  0318                     u431:	
+  1409  0318  2B1C               	goto	l1143
+  1410  0319                     u430:	
+  1411  0319                     l1139:	
+  1412                           
+  1413                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 223:         return c-'A'+10;
+  1414  0319  0872               	movf	hexToNibble@c,w
+  1415  031A  3EC9               	addlw	201
+  1416  031B  2B1E               	goto	l142
+  1417  031C                     l1143:	
+  1418                           
+  1419                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 225:     return c-'0';
+  1420  031C  0872               	movf	hexToNibble@c,w
+  1421  031D  3ED0               	addlw	208
+  1422  031E                     l142:	
+  1423  031E  0008               	return
+  1424  031F                     __end_of_hexToNibble:	
+  1425                           
+  1426                           	psect	intentry
+  1427  0004                     __pintentry:	
+  1428 ;; *************** function _myIsr *****************
+  1429 ;; Defined at:
+  1430 ;;		line 59 in file "/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c"
+  1431 ;; Parameters:    Size  Location     Type
+  1432 ;;		None
+  1433 ;; Auto vars:     Size  Location     Type
+  1434 ;;		None
+  1435 ;; Return value:  Size  Location     Type
+  1436 ;;                  1    wreg      void 
+  1437 ;; Registers used:
+  1438 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+  1439 ;; Tracked objects:
+  1440 ;;		On entry : 0/0
+  1441 ;;		On exit  : 0/0
+  1442 ;;		Unchanged: 0/0
+  1443 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1444 ;;      Params:         0       0       0       0
+  1445 ;;      Locals:         0       0       0       0
+  1446 ;;      Temps:          2       0       0       0
+  1447 ;;      Totals:         2       0       0       0
+  1448 ;;Total ram usage:        2 bytes
+  1449 ;; Hardware stack levels used:    1
+  1450 ;; This function calls:
+  1451 ;;		Nothing
+  1452 ;; This function is called by:
+  1453 ;;		Interrupt level 1
+  1454 ;; This function uses a non-reentrant model
+  1455 ;;
+  1456                           
+  1457  0004                     _myIsr:	
+  1458                           
+  1459                           ;incstack = 0
+  1460  0004  147E               	bsf	int$flags,0	;set compiler interrupt flag (level 1)
   1461                           
-  1462  0004                     _myIsr:	
-  1463                           
-  1464                           ;incstack = 0
-  1465  0004  147E               	bsf	int$flags,0	;set compiler interrupt flag (level 1)
-  1466                           
-  1467                           ; Regs used in _myIsr: [wreg-fsr0h+status,2+status,0]
-  1468  0005  3180               	pagesel	$
-  1469  0006                     i1l1151:	
-  1470                           
-  1471                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 61:     if (PIR4bits.TMR2IF) {
-  1472  0006  014E               	movlb	14	; select bank14
-  1473  0007  1C90               	btfss	16,1	;volatile
-  1474  0008  280A               	goto	u46_21
-  1475  0009  280B               	goto	u46_20
-  1476  000A                     u46_21:	
-  1477  000A  290C               	goto	i1l87
-  1478  000B                     u46_20:	
-  1479  000B                     i1l1153:	
-  1480                           
-  1481                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 62:         PIR4bits.TMR2IF = 0;
-  1482  000B  1090               	bcf	16,1	;volatile
-  1483  000C                     i1l1155:	
+  1462                           ; Regs used in _myIsr: [wreg-fsr0h+status,2+status,0]
+  1463  0005  3180               	pagesel	$
+  1464  0006                     i1l1147:	
+  1465                           
+  1466                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 61:     if (PIR4bits.TMR2IF) {
+  1467  0006  014E               	movlb	14	; select bank14
+  1468  0007  1C90               	btfss	16,1	;volatile
+  1469  0008  280A               	goto	u44_21
+  1470  0009  280B               	goto	u44_20
+  1471  000A                     u44_21:	
+  1472  000A  290C               	goto	i1l87
+  1473  000B                     u44_20:	
+  1474  000B                     i1l1149:	
+  1475                           
+  1476                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 62:         PIR4bits.TMR2IF = 0;
+  1477  000B  1090               	bcf	16,1	;volatile
+  1478  000C                     i1l1151:	
+  1479                           
+  1480                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 67:         TMR0H = (0xFF74 >> 8);
+  1481  000C  30FF               	movlw	255
+  1482  000D  014B               	movlb	11	; select bank11
+  1483  000E  009D               	movwf	29	;volatile
   1484                           
-  1485                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 67:         TMR0H = (0xFF74 >> 8);
-  1486  000C  30FF               	movlw	255
-  1487  000D  014B               	movlb	11	; select bank11
-  1488  000E  009D               	movwf	29	;volatile
+  1485                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 68:         TMR0L = (0xFF74 & 0xFF);
+  1486  000F  3074               	movlw	116
+  1487  0010  009C               	movwf	28	;volatile
+  1488  0011                     i1l1153:	
   1489                           
-  1490                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 68:         TMR0L = (0xFF74 & 0xFF);
-  1491  000F  3074               	movlw	116
-  1492  0010  009C               	movwf	28	;volatile
-  1493  0011                     i1l1157:	
+  1490                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 69:         Flags0.delay = 0;
+  1491  0011  30FC               	movlw	-4
+  1492  0012  05FB               	andwf	_Flags0,f
+  1493  0013                     i1l1155:	
   1494                           
-  1495                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 69:         Flags0.delay = 0;
-  1496  0011  30FC               	movlw	-4
-  1497  0012  05FB               	andwf	_Flags0,f
-  1498  0013                     i1l1159:	
-  1499                           
-  1500                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 71:         if (Flags1.update) {
-  1501  0013  0140               	movlb	0	; select bank0
-  1502  0014  1CA8               	btfss	_Flags1,1
-  1503  0015  2817               	goto	u47_21
-  1504  0016  2818               	goto	u47_20
-  1505  0017                     u47_21:	
-  1506  0017  2973               	goto	i1l125
-  1507  0018                     u47_20:	
-  1508  0018                     i1l1161:	
+  1495                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 71:         if (Flags1.update) {
+  1496  0013  0140               	movlb	0	; select bank0
+  1497  0014  1CA8               	btfss	_Flags1,1
+  1498  0015  2817               	goto	u45_21
+  1499  0016  2818               	goto	u45_20
+  1500  0017                     u45_21:	
+  1501  0017  2973               	goto	i1l125
+  1502  0018                     u45_20:	
+  1503  0018                     i1l1157:	
+  1504                           
+  1505                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 72:             T0CON0bits.T0EN = 1;
+  1506  0018  014B               	movlb	11	; select bank11
+  1507  0019  179E               	bsf	30,7	;volatile
+  1508  001A                     i1l1159:	
   1509                           
-  1510                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 72:             T0CON0bits.T0EN = 1;
-  1511  0018  014B               	movlb	11	; select bank11
-  1512  0019  179E               	bsf	30,7	;volatile
-  1513  001A                     i1l1163:	
-  1514                           
-  1515                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 74:             Flags0.value = 0;
-  1516  001A  01FB               	clrf	_Flags0
+  1510                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 74:             Flags0.value = 0;
+  1511  001A  01FB               	clrf	_Flags0
+  1512                           
+  1513                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 75:             Flags1.value = 0;
+  1514  001B  0140               	movlb	0	; select bank0
+  1515  001C  01A8               	clrf	_Flags1
+  1516  001D                     i1l1161:	
   1517                           
-  1518                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 75:             Flags1.value = 0;
-  1519  001B  0140               	movlb	0	; select bank0
-  1520  001C  01A8               	clrf	_Flags1
-  1521  001D                     i1l1165:	
-  1522                           
-  1523                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 76:             Delay0.value = 0xFFFF
+  1518                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 76:             Delay0.value = 0xFFFF
       +                          ;
-  1524  001D  30FF               	movlw	255
-  1525  001E  00F7               	movwf	_Delay0
-  1526  001F  30FF               	movlw	255
-  1527  0020  00F8               	movwf	_Delay0+1
-  1528  0021                     i1l1167:	
-  1529                           
-  1530                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 77:             Delay1.value = 0xFFFF
+  1519  001D  30FF               	movlw	255
+  1520  001E  00F7               	movwf	_Delay0
+  1521  001F  30FF               	movlw	255
+  1522  0020  00F8               	movwf	_Delay0+1
+  1523  0021                     i1l1163:	
+  1524                           
+  1525                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 77:             Delay1.value = 0xFFFF
       +                          ;
-  1531  0021  30FF               	movlw	255
-  1532  0022  00A2               	movwf	_Delay1
-  1533  0023  30FF               	movlw	255
-  1534  0024  00A3               	movwf	_Delay1+1
-  1535  0025                     i1l1169:	
-  1536                           
-  1537                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 78:             Delay2.value = 0xFFFF
+  1526  0021  30FF               	movlw	255
+  1527  0022  00A2               	movwf	_Delay1
+  1528  0023  30FF               	movlw	255
+  1529  0024  00A3               	movwf	_Delay1+1
+  1530  0025                     i1l1165:	
+  1531                           
+  1532                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 78:             Delay2.value = 0xFFFF
       +                          ;
-  1538  0025  30FF               	movlw	255
-  1539  0026  00A0               	movwf	_Delay2
-  1540  0027  30FF               	movlw	255
-  1541  0028  00A1               	movwf	_Delay2+1
-  1542  0029                     i1l1171:	
-  1543                           
-  1544                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 80:             LATAbits.LATA4 = 0;
-  1545  0029  1218               	bcf	24,4	;volatile
-  1546  002A                     i1l1173:	
-  1547                           
-  1548                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 81:             LATAbits.LATA5 = 0;
-  1549  002A  1298               	bcf	24,5	;volatile
-  1550  002B                     i1l1175:	
-  1551                           
-  1552                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 83:             if (Ch0Delay.value ==
+  1533  0025  30FF               	movlw	255
+  1534  0026  00A0               	movwf	_Delay2
+  1535  0027  30FF               	movlw	255
+  1536  0028  00A1               	movwf	_Delay2+1
+  1537  0029                     i1l1167:	
+  1538                           
+  1539                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 80:             LATAbits.LATA4 = 0;
+  1540  0029  1218               	bcf	24,4	;volatile
+  1541  002A                     i1l1169:	
+  1542                           
+  1543                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 81:             LATAbits.LATA5 = 0;
+  1544  002A  1298               	bcf	24,5	;volatile
+  1545  002B                     i1l1171:	
+  1546                           
+  1547                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 83:             if (Ch0Delay.value ==
       +                           0) {
-  1553  002B  0879               	movf	_Ch0Delay,w
-  1554  002C  047A               	iorwf	_Ch0Delay+1,w
-  1555  002D  1D03               	btfss	3,2
-  1556  002E  2830               	goto	u48_21
-  1557  002F  2831               	goto	u48_20
-  1558  0030                     u48_21:	
-  1559  0030  285A               	goto	i1l1195
-  1560  0031                     u48_20:	
-  1561  0031                     i1l1177:	
-  1562                           
-  1563                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 84:                 Flags0.ch0aon = 1
+  1548  002B  0879               	movf	_Ch0Delay,w
+  1549  002C  047A               	iorwf	_Ch0Delay+1,w
+  1550  002D  1D03               	btfss	3,2
+  1551  002E  2830               	goto	u46_21
+  1552  002F  2831               	goto	u46_20
+  1553  0030                     u46_21:	
+  1554  0030  285A               	goto	i1l1191
+  1555  0031                     u46_20:	
+  1556  0031                     i1l1173:	
+  1557                           
+  1558                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 84:                 Flags0.ch0aon = 1
       +                          ;
-  1564  0031  177B               	bsf	_Flags0,6
-  1565                           
-  1566                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 85:                 LATAbits.LATA4 = 
+  1559  0031  177B               	bsf	_Flags0,6
+  1560                           
+  1561                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 85:                 LATAbits.LATA4 = 
       +                          1;
-  1567  0032  1618               	bsf	24,4	;volatile
-  1568  0033                     i1l1179:	
-  1569                           
-  1570                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 87:                 if (Ch1Delay.valu
+  1562  0032  1618               	bsf	24,4	;volatile
+  1563  0033                     i1l1175:	
+  1564                           
+  1565                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 87:                 if (Ch1Delay.valu
       +                          e == 0) {
-  1571  0033  0826               	movf	_Ch1Delay,w
-  1572  0034  0427               	iorwf	_Ch1Delay+1,w
-  1573  0035  1D03               	btfss	3,2
-  1574  0036  2838               	goto	u49_21
-  1575  0037  2839               	goto	u49_20
-  1576  0038                     u49_21:	
-  1577  0038  283E               	goto	i1l1183
-  1578  0039                     u49_20:	
-  1579  0039                     i1l1181:	
-  1580                           
-  1581                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 88:                     Flags0.ch1aon
+  1566  0033  0826               	movf	_Ch1Delay,w
+  1567  0034  0427               	iorwf	_Ch1Delay+1,w
+  1568  0035  1D03               	btfss	3,2
+  1569  0036  2838               	goto	u47_21
+  1570  0037  2839               	goto	u47_20
+  1571  0038                     u47_21:	
+  1572  0038  283E               	goto	i1l1179
+  1573  0039                     u47_20:	
+  1574  0039                     i1l1177:	
+  1575                           
+  1576                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 88:                     Flags0.ch1aon
       +                           = 1;
-  1582  0039  17FB               	bsf	_Flags0,7
-  1583                           
-  1584                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 89:                     LATAbits.LATA
+  1577  0039  17FB               	bsf	_Flags0,7
+  1578                           
+  1579                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 89:                     LATAbits.LATA
       +                          5 = 1;
-  1585  003A  1698               	bsf	24,5	;volatile
-  1586                           
-  1587                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 90:                     T0CON0bits.T0
+  1580  003A  1698               	bsf	24,5	;volatile
+  1581                           
+  1582                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 90:                     T0CON0bits.T0
       +                          EN = 0;
-  1588  003B  014B               	movlb	11	; select bank11
-  1589  003C  139E               	bcf	30,7	;volatile
-  1590                           
-  1591                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 91:                 } else {
-  1592  003D  2904               	goto	i1l1257
-  1593  003E                     i1l1183:	
-  1594                           
-  1595                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 92:                     if (Ch1Delay.
+  1583  003B  014B               	movlb	11	; select bank11
+  1584  003C  139E               	bcf	30,7	;volatile
+  1585                           
+  1586                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 91:                 } else {
+  1587  003D  2904               	goto	i1l1253
+  1588  003E                     i1l1179:	
+  1589                           
+  1590                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 92:                     if (Ch1Delay.
       +                          value == 8191) {
-  1596  003E  0A26               	incf	_Ch1Delay,w
-  1597  003F  301F               	movlw	31
-  1598  0040  1903               	skipnz
-  1599  0041  0627               	xorwf	_Ch1Delay+1,w
-  1600  0042  1D03               	btfss	3,2
-  1601  0043  2845               	goto	u50_21
-  1602  0044  2846               	goto	u50_20
-  1603  0045                     u50_21:	
-  1604  0045  2849               	goto	i1l1187
-  1605  0046                     u50_20:	
-  1606  0046                     i1l1185:	
-  1607                           
-  1608                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 93:                         T0CON0bit
+  1591  003E  0A26               	incf	_Ch1Delay,w
+  1592  003F  301F               	movlw	31
+  1593  0040  1903               	skipnz
+  1594  0041  0627               	xorwf	_Ch1Delay+1,w
+  1595  0042  1D03               	btfss	3,2
+  1596  0043  2845               	goto	u48_21
+  1597  0044  2846               	goto	u48_20
+  1598  0045                     u48_21:	
+  1599  0045  2849               	goto	i1l1183
+  1600  0046                     u48_20:	
+  1601  0046                     i1l1181:	
+  1602                           
+  1603                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 93:                         T0CON0bit
       +                          s.T0EN = 0;
-  1609  0046  014B               	movlb	11	; select bank11
-  1610  0047  139E               	bcf	30,7	;volatile
-  1611                           
-  1612                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 94:                     } else {
-  1613  0048  2904               	goto	i1l1257
-  1614  0049                     i1l1187:	
-  1615                           
-  1616                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 95:                         Delay0.va
+  1604  0046  014B               	movlb	11	; select bank11
+  1605  0047  139E               	bcf	30,7	;volatile
+  1606                           
+  1607                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 94:                     } else {
+  1608  0048  2904               	goto	i1l1253
+  1609  0049                     i1l1183:	
+  1610                           
+  1611                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 95:                         Delay0.va
       +                          lue = Ch1Delay.value;
-  1617  0049  0827               	movf	_Ch1Delay+1,w
-  1618  004A  00F8               	movwf	_Delay0+1
-  1619  004B  0826               	movf	_Ch1Delay,w
-  1620  004C  00F7               	movwf	_Delay0
-  1621  004D                     i1l1189:	
-  1622                           
-  1623                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 96:                         Flags0.ch
+  1612  0049  0827               	movf	_Ch1Delay+1,w
+  1613  004A  00F8               	movwf	_Delay0+1
+  1614  004B  0826               	movf	_Ch1Delay,w
+  1615  004C  00F7               	movwf	_Delay0
+  1616  004D                     i1l1185:	
+  1617                           
+  1618                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 96:                         Flags0.ch
       +                          1on0 = 1;
-  1624  004D  15FB               	bsf	_Flags0,3
-  1625  004E                     i1l1191:	
-  1626                           
-  1627                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 97:                         Delay1.va
+  1619  004D  15FB               	bsf	_Flags0,3
+  1620  004E                     i1l1187:	
+  1621                           
+  1622                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 97:                         Delay1.va
       +                          lue = 8191 - Ch1Delay.value;
-  1628  004E  30FF               	movlw	255
-  1629  004F  00F0               	movwf	??_myIsr
-  1630  0050  301F               	movlw	31
-  1631  0051  00F1               	movwf	??_myIsr+1
-  1632  0052  0826               	movf	_Ch1Delay,w
-  1633  0053  0270               	subwf	??_myIsr,w
-  1634  0054  00A2               	movwf	_Delay1
-  1635  0055  0827               	movf	_Ch1Delay+1,w
-  1636  0056  3B71               	subwfb	??_myIsr+1,w
-  1637  0057  00A3               	movwf	_Delay1+1
-  1638  0058                     i1l1193:	
-  1639                           
-  1640                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 98:                         Flags1.of
+  1623  004E  30FF               	movlw	255
+  1624  004F  00F0               	movwf	??_myIsr
+  1625  0050  301F               	movlw	31
+  1626  0051  00F1               	movwf	??_myIsr+1
+  1627  0052  0826               	movf	_Ch1Delay,w
+  1628  0053  0270               	subwf	??_myIsr,w
+  1629  0054  00A2               	movwf	_Delay1
+  1630  0055  0827               	movf	_Ch1Delay+1,w
+  1631  0056  3B71               	subwfb	??_myIsr+1,w
+  1632  0057  00A3               	movwf	_Delay1+1
+  1633  0058                     i1l1189:	
+  1634                           
+  1635                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 98:                         Flags1.of
       +                          f2 = 1;
-  1641  0058  1428               	bsf	_Flags1,0
-  1642  0059  2904               	goto	i1l1257
-  1643  005A                     i1l1195:	
-  1644  005A  0826               	movf	_Ch1Delay,w
-  1645  005B  0427               	iorwf	_Ch1Delay+1,w
-  1646  005C  1D03               	btfss	3,2
-  1647  005D  285F               	goto	u51_21
-  1648  005E  2860               	goto	u51_20
-  1649  005F                     u51_21:	
-  1650  005F  287E               	goto	i1l1211
-  1651  0060                     u51_20:	
-  1652  0060                     i1l1197:	
-  1653                           
-  1654                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 102:                 Flags0.ch1aon = 
+  1636  0058  1428               	bsf	_Flags1,0
+  1637  0059  2904               	goto	i1l1253
+  1638  005A                     i1l1191:	
+  1639  005A  0826               	movf	_Ch1Delay,w
+  1640  005B  0427               	iorwf	_Ch1Delay+1,w
+  1641  005C  1D03               	btfss	3,2
+  1642  005D  285F               	goto	u49_21
+  1643  005E  2860               	goto	u49_20
+  1644  005F                     u49_21:	
+  1645  005F  287E               	goto	i1l1207
+  1646  0060                     u49_20:	
+  1647  0060                     i1l1193:	
+  1648                           
+  1649                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 102:                 Flags0.ch1aon = 
       +                          1;
-  1655  0060  17FB               	bsf	_Flags0,7
-  1656                           
-  1657                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 103:                 LATAbits.LATA5 =
+  1650  0060  17FB               	bsf	_Flags0,7
+  1651                           
+  1652                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 103:                 LATAbits.LATA5 =
       +                           1;
-  1658  0061  1698               	bsf	24,5	;volatile
-  1659  0062                     i1l1199:	
-  1660                           
-  1661                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 105:                 if (Ch0Delay.val
+  1653  0061  1698               	bsf	24,5	;volatile
+  1654  0062                     i1l1195:	
+  1655                           
+  1656                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 105:                 if (Ch0Delay.val
       +                          ue == 8191) {
-  1662  0062  0A79               	incf	_Ch0Delay,w
-  1663  0063  301F               	movlw	31
-  1664  0064  1903               	skipnz
-  1665  0065  067A               	xorwf	_Ch0Delay+1,w
-  1666  0066  1D03               	btfss	3,2
-  1667  0067  2869               	goto	u52_21
-  1668  0068  286A               	goto	u52_20
-  1669  0069                     u52_21:	
-  1670  0069  286D               	goto	i1l1203
-  1671  006A                     u52_20:	
-  1672  006A                     i1l1201:	
-  1673                           
-  1674                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 106:                     T0CON0bits.T
+  1657  0062  0A79               	incf	_Ch0Delay,w
+  1658  0063  301F               	movlw	31
+  1659  0064  1903               	skipnz
+  1660  0065  067A               	xorwf	_Ch0Delay+1,w
+  1661  0066  1D03               	btfss	3,2
+  1662  0067  2869               	goto	u50_21
+  1663  0068  286A               	goto	u50_20
+  1664  0069                     u50_21:	
+  1665  0069  286D               	goto	i1l1199
+  1666  006A                     u50_20:	
+  1667  006A                     i1l1197:	
+  1668                           
+  1669                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 106:                     T0CON0bits.T
       +                          0EN = 0;
-  1675  006A  014B               	movlb	11	; select bank11
-  1676  006B  139E               	bcf	30,7	;volatile
-  1677                           
-  1678                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 107:                 } else {
-  1679  006C  2904               	goto	i1l1257
-  1680  006D                     i1l1203:	
-  1681                           
-  1682                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 108:                     Delay0.value
+  1670  006A  014B               	movlb	11	; select bank11
+  1671  006B  139E               	bcf	30,7	;volatile
+  1672                           
+  1673                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 107:                 } else {
+  1674  006C  2904               	goto	i1l1253
+  1675  006D                     i1l1199:	
+  1676                           
+  1677                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 108:                     Delay0.value
       +                           = Ch0Delay.value;
-  1683  006D  087A               	movf	_Ch0Delay+1,w
-  1684  006E  00F8               	movwf	_Delay0+1
-  1685  006F  0879               	movf	_Ch0Delay,w
-  1686  0070  00F7               	movwf	_Delay0
-  1687  0071                     i1l1205:	
-  1688                           
-  1689                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 109:                     Flags0.ch0on
+  1678  006D  087A               	movf	_Ch0Delay+1,w
+  1679  006E  00F8               	movwf	_Delay0+1
+  1680  006F  0879               	movf	_Ch0Delay,w
+  1681  0070  00F7               	movwf	_Delay0
+  1682  0071                     i1l1201:	
+  1683                           
+  1684                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 109:                     Flags0.ch0on
       +                          0 = 1;
-  1690  0071  157B               	bsf	_Flags0,2
-  1691  0072                     i1l1207:	
-  1692                           
-  1693                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 110:                     Delay1.value
+  1685  0071  157B               	bsf	_Flags0,2
+  1686  0072                     i1l1203:	
+  1687                           
+  1688                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 110:                     Delay1.value
       +                           = 8191 - Ch0Delay.value;
-  1694  0072  30FF               	movlw	255
-  1695  0073  00F0               	movwf	??_myIsr
-  1696  0074  301F               	movlw	31
-  1697  0075  00F1               	movwf	??_myIsr+1
-  1698  0076  0879               	movf	_Ch0Delay,w
-  1699  0077  0270               	subwf	??_myIsr,w
-  1700  0078  00A2               	movwf	_Delay1
-  1701  0079  087A               	movf	_Ch0Delay+1,w
-  1702  007A  3B71               	subwfb	??_myIsr+1,w
-  1703  007B  00A3               	movwf	_Delay1+1
-  1704  007C                     i1l1209:	
-  1705                           
-  1706                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 111:                     Flags1.off2 
+  1689  0072  30FF               	movlw	255
+  1690  0073  00F0               	movwf	??_myIsr
+  1691  0074  301F               	movlw	31
+  1692  0075  00F1               	movwf	??_myIsr+1
+  1693  0076  0879               	movf	_Ch0Delay,w
+  1694  0077  0270               	subwf	??_myIsr,w
+  1695  0078  00A2               	movwf	_Delay1
+  1696  0079  087A               	movf	_Ch0Delay+1,w
+  1697  007A  3B71               	subwfb	??_myIsr+1,w
+  1698  007B  00A3               	movwf	_Delay1+1
+  1699  007C                     i1l1205:	
+  1700                           
+  1701                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 111:                     Flags1.off2 
       +                          = 1;
-  1707  007C  1428               	bsf	_Flags1,0
-  1708  007D  2904               	goto	i1l1257
-  1709  007E                     i1l1211:	
-  1710  007E  0827               	movf	_Ch1Delay+1,w
-  1711  007F  067A               	xorwf	_Ch0Delay+1,w
-  1712  0080  1D03               	skipz
-  1713  0081  2884               	goto	u53_25
-  1714  0082  0826               	movf	_Ch1Delay,w
-  1715  0083  0679               	xorwf	_Ch0Delay,w
-  1716  0084                     u53_25:	
-  1717  0084  1D03               	skipz
-  1718  0085  2887               	goto	u53_21
-  1719  0086  2888               	goto	u53_20
-  1720  0087                     u53_21:	
-  1721  0087  28A5               	goto	i1l1227
-  1722  0088                     u53_20:	
-  1723  0088                     i1l1213:	
-  1724                           
-  1725                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 114:                 if (Ch0Delay.val
+  1702  007C  1428               	bsf	_Flags1,0
+  1703  007D  2904               	goto	i1l1253
+  1704  007E                     i1l1207:	
+  1705  007E  0827               	movf	_Ch1Delay+1,w
+  1706  007F  067A               	xorwf	_Ch0Delay+1,w
+  1707  0080  1D03               	skipz
+  1708  0081  2884               	goto	u51_25
+  1709  0082  0826               	movf	_Ch1Delay,w
+  1710  0083  0679               	xorwf	_Ch0Delay,w
+  1711  0084                     u51_25:	
+  1712  0084  1D03               	skipz
+  1713  0085  2887               	goto	u51_21
+  1714  0086  2888               	goto	u51_20
+  1715  0087                     u51_21:	
+  1716  0087  28A5               	goto	i1l1223
+  1717  0088                     u51_20:	
+  1718  0088                     i1l1209:	
+  1719                           
+  1720                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 114:                 if (Ch0Delay.val
       +                          ue == 8191) {
-  1726  0088  0A79               	incf	_Ch0Delay,w
-  1727  0089  301F               	movlw	31
-  1728  008A  1903               	skipnz
-  1729  008B  067A               	xorwf	_Ch0Delay+1,w
-  1730  008C  1D03               	btfss	3,2
-  1731  008D  288F               	goto	u54_21
-  1732  008E  2890               	goto	u54_20
-  1733  008F                     u54_21:	
-  1734  008F  2893               	goto	i1l1217
-  1735  0090                     u54_20:	
-  1736  0090                     i1l1215:	
-  1737                           
-  1738                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 115:                     T0CON0bits.T
+  1721  0088  0A79               	incf	_Ch0Delay,w
+  1722  0089  301F               	movlw	31
+  1723  008A  1903               	skipnz
+  1724  008B  067A               	xorwf	_Ch0Delay+1,w
+  1725  008C  1D03               	btfss	3,2
+  1726  008D  288F               	goto	u52_21
+  1727  008E  2890               	goto	u52_20
+  1728  008F                     u52_21:	
+  1729  008F  2893               	goto	i1l1213
+  1730  0090                     u52_20:	
+  1731  0090                     i1l1211:	
+  1732                           
+  1733                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 115:                     T0CON0bits.T
       +                          0EN = 0;
-  1739  0090  014B               	movlb	11	; select bank11
-  1740  0091  139E               	bcf	30,7	;volatile
-  1741                           
-  1742                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 116:                 } else {
-  1743  0092  2904               	goto	i1l1257
-  1744  0093                     i1l1217:	
-  1745                           
-  1746                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 117:                     Delay0.value
+  1734  0090  014B               	movlb	11	; select bank11
+  1735  0091  139E               	bcf	30,7	;volatile
+  1736                           
+  1737                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 116:                 } else {
+  1738  0092  2904               	goto	i1l1253
+  1739  0093                     i1l1213:	
+  1740                           
+  1741                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 117:                     Delay0.value
       +                           = Ch0Delay.value;
-  1747  0093  087A               	movf	_Ch0Delay+1,w
-  1748  0094  00F8               	movwf	_Delay0+1
-  1749  0095  0879               	movf	_Ch0Delay,w
-  1750  0096  00F7               	movwf	_Delay0
-  1751  0097                     i1l1219:	
-  1752                           
-  1753                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 118:                     Flags0.ch0on
+  1742  0093  087A               	movf	_Ch0Delay+1,w
+  1743  0094  00F8               	movwf	_Delay0+1
+  1744  0095  0879               	movf	_Ch0Delay,w
+  1745  0096  00F7               	movwf	_Delay0
+  1746  0097                     i1l1215:	
+  1747                           
+  1748                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 118:                     Flags0.ch0on
       +                          0 = 1;
-  1754  0097  157B               	bsf	_Flags0,2
-  1755  0098                     i1l1221:	
-  1756                           
-  1757                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 119:                     Flags0.ch1on
+  1749  0097  157B               	bsf	_Flags0,2
+  1750  0098                     i1l1217:	
+  1751                           
+  1752                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 119:                     Flags0.ch1on
       +                          0 = 1;
-  1758  0098  15FB               	bsf	_Flags0,3
-  1759  0099                     i1l1223:	
-  1760                           
-  1761                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 120:                     Delay1.value
+  1753  0098  15FB               	bsf	_Flags0,3
+  1754  0099                     i1l1219:	
+  1755                           
+  1756                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 120:                     Delay1.value
       +                           = 8191 - Ch0Delay.value;
-  1762  0099  30FF               	movlw	255
-  1763  009A  00F0               	movwf	??_myIsr
-  1764  009B  301F               	movlw	31
-  1765  009C  00F1               	movwf	??_myIsr+1
-  1766  009D  0879               	movf	_Ch0Delay,w
-  1767  009E  0270               	subwf	??_myIsr,w
-  1768  009F  00A2               	movwf	_Delay1
-  1769  00A0  087A               	movf	_Ch0Delay+1,w
-  1770  00A1  3B71               	subwfb	??_myIsr+1,w
-  1771  00A2  00A3               	movwf	_Delay1+1
-  1772  00A3                     i1l1225:	
-  1773                           
-  1774                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 121:                     Flags1.off2 
+  1757  0099  30FF               	movlw	255
+  1758  009A  00F0               	movwf	??_myIsr
+  1759  009B  301F               	movlw	31
+  1760  009C  00F1               	movwf	??_myIsr+1
+  1761  009D  0879               	movf	_Ch0Delay,w
+  1762  009E  0270               	subwf	??_myIsr,w
+  1763  009F  00A2               	movwf	_Delay1
+  1764  00A0  087A               	movf	_Ch0Delay+1,w
+  1765  00A1  3B71               	subwfb	??_myIsr+1,w
+  1766  00A2  00A3               	movwf	_Delay1+1
+  1767  00A3                     i1l1221:	
+  1768                           
+  1769                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 121:                     Flags1.off2 
       +                          = 1;
-  1775  00A3  1428               	bsf	_Flags1,0
-  1776  00A4  2904               	goto	i1l1257
-  1777  00A5                     i1l1227:	
-  1778  00A5  087A               	movf	_Ch0Delay+1,w
-  1779  00A6  0227               	subwf	_Ch1Delay+1,w
-  1780  00A7  1D03               	skipz
-  1781  00A8  28AB               	goto	u55_25
-  1782  00A9  0879               	movf	_Ch0Delay,w
-  1783  00AA  0226               	subwf	_Ch1Delay,w
-  1784  00AB                     u55_25:	
-  1785  00AB  1803               	skipnc
-  1786  00AC  28AE               	goto	u55_21
-  1787  00AD  28AF               	goto	u55_20
-  1788  00AE                     u55_21:	
-  1789  00AE  28DA               	goto	i1l1243
-  1790  00AF                     u55_20:	
-  1791  00AF                     i1l1229:	
-  1792                           
-  1793                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 124:                 Delay0.value = C
+  1770  00A3  1428               	bsf	_Flags1,0
+  1771  00A4  2904               	goto	i1l1253
+  1772  00A5                     i1l1223:	
+  1773  00A5  087A               	movf	_Ch0Delay+1,w
+  1774  00A6  0227               	subwf	_Ch1Delay+1,w
+  1775  00A7  1D03               	skipz
+  1776  00A8  28AB               	goto	u53_25
+  1777  00A9  0879               	movf	_Ch0Delay,w
+  1778  00AA  0226               	subwf	_Ch1Delay,w
+  1779  00AB                     u53_25:	
+  1780  00AB  1803               	skipnc
+  1781  00AC  28AE               	goto	u53_21
+  1782  00AD  28AF               	goto	u53_20
+  1783  00AE                     u53_21:	
+  1784  00AE  28DA               	goto	i1l1239
+  1785  00AF                     u53_20:	
+  1786  00AF                     i1l1225:	
+  1787                           
+  1788                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 124:                 Delay0.value = C
       +                          h1Delay.value;
-  1794  00AF  0827               	movf	_Ch1Delay+1,w
-  1795  00B0  00F8               	movwf	_Delay0+1
-  1796  00B1  0826               	movf	_Ch1Delay,w
-  1797  00B2  00F7               	movwf	_Delay0
-  1798  00B3                     i1l1231:	
-  1799                           
-  1800                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 125:                 Flags0.ch1on0 = 
+  1789  00AF  0827               	movf	_Ch1Delay+1,w
+  1790  00B0  00F8               	movwf	_Delay0+1
+  1791  00B1  0826               	movf	_Ch1Delay,w
+  1792  00B2  00F7               	movwf	_Delay0
+  1793  00B3                     i1l1227:	
+  1794                           
+  1795                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 125:                 Flags0.ch1on0 = 
       +                          1;
-  1801  00B3  15FB               	bsf	_Flags0,3
-  1802  00B4                     i1l1233:	
-  1803                           
-  1804                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 126:                 if (Ch0Delay.val
+  1796  00B3  15FB               	bsf	_Flags0,3
+  1797  00B4                     i1l1229:	
+  1798                           
+  1799                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 126:                 if (Ch0Delay.val
       +                          ue == 8191) {
-  1805  00B4  0A79               	incf	_Ch0Delay,w
-  1806  00B5  301F               	movlw	31
-  1807  00B6  1903               	skipnz
-  1808  00B7  067A               	xorwf	_Ch0Delay+1,w
-  1809  00B8  1D03               	btfss	3,2
-  1810  00B9  28BB               	goto	u56_21
-  1811  00BA  28BC               	goto	u56_20
-  1812  00BB                     u56_21:	
-  1813  00BB  28C8               	goto	i1l1239
-  1814  00BC                     u56_20:	
-  1815  00BC                     i1l1235:	
-  1816                           
-  1817                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 127:                     Delay1.value
+  1800  00B4  0A79               	incf	_Ch0Delay,w
+  1801  00B5  301F               	movlw	31
+  1802  00B6  1903               	skipnz
+  1803  00B7  067A               	xorwf	_Ch0Delay+1,w
+  1804  00B8  1D03               	btfss	3,2
+  1805  00B9  28BB               	goto	u54_21
+  1806  00BA  28BC               	goto	u54_20
+  1807  00BB                     u54_21:	
+  1808  00BB  28C8               	goto	i1l1235
+  1809  00BC                     u54_20:	
+  1810  00BC                     i1l1231:	
+  1811                           
+  1812                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 127:                     Delay1.value
       +                           = 8191 - Delay0.value;
-  1818  00BC  30FF               	movlw	255
-  1819  00BD  00F0               	movwf	??_myIsr
-  1820  00BE  301F               	movlw	31
-  1821  00BF  00F1               	movwf	??_myIsr+1
-  1822  00C0  0877               	movf	_Delay0,w
-  1823  00C1  0270               	subwf	??_myIsr,w
-  1824  00C2  00A2               	movwf	_Delay1
-  1825  00C3  0878               	movf	_Delay0+1,w
-  1826  00C4  3B71               	subwfb	??_myIsr+1,w
-  1827  00C5  00A3               	movwf	_Delay1+1
-  1828  00C6                     i1l1237:	
-  1829                           
-  1830                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 128:                     Flags1.off2 
+  1813  00BC  30FF               	movlw	255
+  1814  00BD  00F0               	movwf	??_myIsr
+  1815  00BE  301F               	movlw	31
+  1816  00BF  00F1               	movwf	??_myIsr+1
+  1817  00C0  0877               	movf	_Delay0,w
+  1818  00C1  0270               	subwf	??_myIsr,w
+  1819  00C2  00A2               	movwf	_Delay1
+  1820  00C3  0878               	movf	_Delay0+1,w
+  1821  00C4  3B71               	subwfb	??_myIsr+1,w
+  1822  00C5  00A3               	movwf	_Delay1+1
+  1823  00C6                     i1l1233:	
+  1824                           
+  1825                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 128:                     Flags1.off2 
       +                          = 1;
-  1831  00C6  1428               	bsf	_Flags1,0
-  1832                           
-  1833                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 129:                 } else {
-  1834  00C7  2904               	goto	i1l1257
-  1835  00C8                     i1l1239:	
-  1836                           
-  1837                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 130:                     Delay1.value
+  1826  00C6  1428               	bsf	_Flags1,0
+  1827                           
+  1828                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 129:                 } else {
+  1829  00C7  2904               	goto	i1l1253
+  1830  00C8                     i1l1235:	
+  1831                           
+  1832                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 130:                     Delay1.value
       +                           = Ch0Delay.value - Ch1Delay.value;
-  1838  00C8  0826               	movf	_Ch1Delay,w
-  1839  00C9  0279               	subwf	_Ch0Delay,w
-  1840  00CA  00A2               	movwf	_Delay1
-  1841  00CB  0827               	movf	_Ch1Delay+1,w
-  1842  00CC  3B7A               	subwfb	_Ch0Delay+1,w
-  1843  00CD  00A3               	movwf	_Delay1+1
-  1844  00CE                     i1l1241:	
-  1845                           
-  1846                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 131:                     Flags0.ch0on
+  1833  00C8  0826               	movf	_Ch1Delay,w
+  1834  00C9  0279               	subwf	_Ch0Delay,w
+  1835  00CA  00A2               	movwf	_Delay1
+  1836  00CB  0827               	movf	_Ch1Delay+1,w
+  1837  00CC  3B7A               	subwfb	_Ch0Delay+1,w
+  1838  00CD  00A3               	movwf	_Delay1+1
+  1839  00CE                     i1l1237:	
+  1840                           
+  1841                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 131:                     Flags0.ch0on
       +                          1 = 1;
-  1847  00CE  167B               	bsf	_Flags0,4
-  1848                           
-  1849                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 132:                     Delay2.value
+  1842  00CE  167B               	bsf	_Flags0,4
+  1843                           
+  1844                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 132:                     Delay2.value
       +                           = 8191 - Ch0Delay.value;
-  1850  00CF  30FF               	movlw	255
-  1851  00D0  00F0               	movwf	??_myIsr
-  1852  00D1  301F               	movlw	31
-  1853  00D2  00F1               	movwf	??_myIsr+1
-  1854  00D3  0879               	movf	_Ch0Delay,w
-  1855  00D4  0270               	subwf	??_myIsr,w
-  1856  00D5  00A0               	movwf	_Delay2
-  1857  00D6  087A               	movf	_Ch0Delay+1,w
-  1858  00D7  3B71               	subwfb	??_myIsr+1,w
-  1859  00D8  00A1               	movwf	_Delay2+1
-  1860  00D9  2904               	goto	i1l1257
-  1861  00DA                     i1l1243:	
-  1862                           
-  1863                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 135:                 Delay0.value = C
+  1845  00CF  30FF               	movlw	255
+  1846  00D0  00F0               	movwf	??_myIsr
+  1847  00D1  301F               	movlw	31
+  1848  00D2  00F1               	movwf	??_myIsr+1
+  1849  00D3  0879               	movf	_Ch0Delay,w
+  1850  00D4  0270               	subwf	??_myIsr,w
+  1851  00D5  00A0               	movwf	_Delay2
+  1852  00D6  087A               	movf	_Ch0Delay+1,w
+  1853  00D7  3B71               	subwfb	??_myIsr+1,w
+  1854  00D8  00A1               	movwf	_Delay2+1
+  1855  00D9  2904               	goto	i1l1253
+  1856  00DA                     i1l1239:	
+  1857                           
+  1858                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 135:                 Delay0.value = C
       +                          h0Delay.value;
-  1864  00DA  087A               	movf	_Ch0Delay+1,w
-  1865  00DB  00F8               	movwf	_Delay0+1
-  1866  00DC  0879               	movf	_Ch0Delay,w
-  1867  00DD  00F7               	movwf	_Delay0
-  1868  00DE                     i1l1245:	
-  1869                           
-  1870                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 136:                 Flags0.ch0on0 = 
+  1859  00DA  087A               	movf	_Ch0Delay+1,w
+  1860  00DB  00F8               	movwf	_Delay0+1
+  1861  00DC  0879               	movf	_Ch0Delay,w
+  1862  00DD  00F7               	movwf	_Delay0
+  1863  00DE                     i1l1241:	
+  1864                           
+  1865                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 136:                 Flags0.ch0on0 = 
       +                          1;
-  1871  00DE  157B               	bsf	_Flags0,2
-  1872  00DF                     i1l1247:	
-  1873                           
-  1874                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 137:                 if (Ch1Delay.val
+  1866  00DE  157B               	bsf	_Flags0,2
+  1867  00DF                     i1l1243:	
+  1868                           
+  1869                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 137:                 if (Ch1Delay.val
       +                          ue == 8191) {
-  1875  00DF  0A26               	incf	_Ch1Delay,w
-  1876  00E0  301F               	movlw	31
-  1877  00E1  1903               	skipnz
-  1878  00E2  0627               	xorwf	_Ch1Delay+1,w
-  1879  00E3  1D03               	btfss	3,2
-  1880  00E4  28E6               	goto	u57_21
-  1881  00E5  28E7               	goto	u57_20
-  1882  00E6                     u57_21:	
-  1883  00E6  28F3               	goto	i1l1253
-  1884  00E7                     u57_20:	
-  1885  00E7                     i1l1249:	
-  1886                           
-  1887                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 138:                     Delay1.value
+  1870  00DF  0A26               	incf	_Ch1Delay,w
+  1871  00E0  301F               	movlw	31
+  1872  00E1  1903               	skipnz
+  1873  00E2  0627               	xorwf	_Ch1Delay+1,w
+  1874  00E3  1D03               	btfss	3,2
+  1875  00E4  28E6               	goto	u55_21
+  1876  00E5  28E7               	goto	u55_20
+  1877  00E6                     u55_21:	
+  1878  00E6  28F3               	goto	i1l1249
+  1879  00E7                     u55_20:	
+  1880  00E7                     i1l1245:	
+  1881                           
+  1882                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 138:                     Delay1.value
       +                           = 8191 - Delay0.value;
-  1888  00E7  30FF               	movlw	255
-  1889  00E8  00F0               	movwf	??_myIsr
-  1890  00E9  301F               	movlw	31
-  1891  00EA  00F1               	movwf	??_myIsr+1
-  1892  00EB  0877               	movf	_Delay0,w
-  1893  00EC  0270               	subwf	??_myIsr,w
-  1894  00ED  00A2               	movwf	_Delay1
-  1895  00EE  0878               	movf	_Delay0+1,w
-  1896  00EF  3B71               	subwfb	??_myIsr+1,w
-  1897  00F0  00A3               	movwf	_Delay1+1
-  1898  00F1                     i1l1251:	
-  1899                           
-  1900                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 139:                     Flags1.off2 
+  1883  00E7  30FF               	movlw	255
+  1884  00E8  00F0               	movwf	??_myIsr
+  1885  00E9  301F               	movlw	31
+  1886  00EA  00F1               	movwf	??_myIsr+1
+  1887  00EB  0877               	movf	_Delay0,w
+  1888  00EC  0270               	subwf	??_myIsr,w
+  1889  00ED  00A2               	movwf	_Delay1
+  1890  00EE  0878               	movf	_Delay0+1,w
+  1891  00EF  3B71               	subwfb	??_myIsr+1,w
+  1892  00F0  00A3               	movwf	_Delay1+1
+  1893  00F1                     i1l1247:	
+  1894                           
+  1895                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 139:                     Flags1.off2 
       +                          = 1;
-  1901  00F1  1428               	bsf	_Flags1,0
-  1902                           
-  1903                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 140:                 } else {
-  1904  00F2  2904               	goto	i1l1257
-  1905  00F3                     i1l1253:	
-  1906                           
-  1907                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 141:                     Delay1.value
+  1896  00F1  1428               	bsf	_Flags1,0
+  1897                           
+  1898                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 140:                 } else {
+  1899  00F2  2904               	goto	i1l1253
+  1900  00F3                     i1l1249:	
+  1901                           
+  1902                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 141:                     Delay1.value
       +                           = Ch1Delay.value - Ch0Delay.value;
-  1908  00F3  0879               	movf	_Ch0Delay,w
-  1909  00F4  0226               	subwf	_Ch1Delay,w
-  1910  00F5  00A2               	movwf	_Delay1
-  1911  00F6  087A               	movf	_Ch0Delay+1,w
-  1912  00F7  3B27               	subwfb	_Ch1Delay+1,w
-  1913  00F8  00A3               	movwf	_Delay1+1
-  1914  00F9                     i1l1255:	
-  1915                           
-  1916                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 142:                     Flags0.ch1on
+  1903  00F3  0879               	movf	_Ch0Delay,w
+  1904  00F4  0226               	subwf	_Ch1Delay,w
+  1905  00F5  00A2               	movwf	_Delay1
+  1906  00F6  087A               	movf	_Ch0Delay+1,w
+  1907  00F7  3B27               	subwfb	_Ch1Delay+1,w
+  1908  00F8  00A3               	movwf	_Delay1+1
+  1909  00F9                     i1l1251:	
+  1910                           
+  1911                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 142:                     Flags0.ch1on
       +                          1 = 1;
-  1917  00F9  16FB               	bsf	_Flags0,5
-  1918                           
-  1919                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 143:                     Delay2.value
+  1912  00F9  16FB               	bsf	_Flags0,5
+  1913                           
+  1914                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 143:                     Delay2.value
       +                           = 8191 - Ch1Delay.value;
-  1920  00FA  30FF               	movlw	255
-  1921  00FB  00F0               	movwf	??_myIsr
-  1922  00FC  301F               	movlw	31
-  1923  00FD  00F1               	movwf	??_myIsr+1
-  1924  00FE  0826               	movf	_Ch1Delay,w
-  1925  00FF  0270               	subwf	??_myIsr,w
-  1926  0100  00A0               	movwf	_Delay2
-  1927  0101  0827               	movf	_Ch1Delay+1,w
-  1928  0102  3B71               	subwfb	??_myIsr+1,w
-  1929  0103  00A1               	movwf	_Delay2+1
-  1930  0104                     i1l1257:	
-  1931                           
-  1932                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 148:             Delay0.value = ~Dela
+  1915  00FA  30FF               	movlw	255
+  1916  00FB  00F0               	movwf	??_myIsr
+  1917  00FC  301F               	movlw	31
+  1918  00FD  00F1               	movwf	??_myIsr+1
+  1919  00FE  0826               	movf	_Ch1Delay,w
+  1920  00FF  0270               	subwf	??_myIsr,w
+  1921  0100  00A0               	movwf	_Delay2
+  1922  0101  0827               	movf	_Ch1Delay+1,w
+  1923  0102  3B71               	subwfb	??_myIsr+1,w
+  1924  0103  00A1               	movwf	_Delay2+1
+  1925  0104                     i1l1253:	
+  1926                           
+  1927                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 148:             Delay0.value = ~Dela
       +                          y0.value;
-  1933  0104  09F7               	comf	_Delay0,f
-  1934  0105  09F8               	comf	_Delay0+1,f
-  1935  0106                     i1l1259:	
-  1936                           
-  1937                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 149:             Delay1.value = ~Dela
+  1928  0104  09F7               	comf	_Delay0,f
+  1929  0105  09F8               	comf	_Delay0+1,f
+  1930  0106                     i1l1255:	
+  1931                           
+  1932                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 149:             Delay1.value = ~Dela
       +                          y1.value;
-  1938  0106  0140               	movlb	0	; select bank0
-  1939  0107  09A2               	comf	_Delay1,f
-  1940  0108  09A3               	comf	_Delay1+1,f
-  1941  0109                     i1l1261:	
-  1942                           
-  1943                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 150:             Delay2.value = ~Dela
+  1933  0106  0140               	movlb	0	; select bank0
+  1934  0107  09A2               	comf	_Delay1,f
+  1935  0108  09A3               	comf	_Delay1+1,f
+  1936  0109                     i1l1257:	
+  1937                           
+  1938                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 150:             Delay2.value = ~Dela
       +                          y2.value;
-  1944  0109  09A0               	comf	_Delay2,f
-  1945  010A  09A1               	comf	_Delay2+1,f
-  1946  010B  2973               	goto	i1l125
-  1947  010C                     i1l87:	
-  1948                           
-  1949                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 153:         PIR0bits.TMR0IF = 0;
-  1950  010C  128C               	bcf	12,5	;volatile
-  1951                           
-  1952                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 154:         switch(Flags0.delay) {
-  1953  010D  295B               	goto	i1l1291
-  1954  010E                     i1l1263:	
+  1939  0109  09A0               	comf	_Delay2,f
+  1940  010A  09A1               	comf	_Delay2+1,f
+  1941  010B  2973               	goto	i1l125
+  1942  010C                     i1l87:	
+  1943                           
+  1944                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 153:         PIR0bits.TMR0IF = 0;
+  1945  010C  128C               	bcf	12,5	;volatile
+  1946                           
+  1947                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 154:         switch(Flags0.delay) {
+  1948  010D  295B               	goto	i1l1287
+  1949  010E                     i1l1259:	
+  1950                           
+  1951                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 156:                 TMR0H = Delay0.m
+      +                          sb;
+  1952  010E  0878               	movf	_Delay0+1,w
+  1953  010F  014B               	movlb	11	; select bank11
+  1954  0110  009D               	movwf	29	;volatile
   1955                           
-  1956                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 156:                 TMR0H = Delay0.m
+  1956                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 157:                 TMR0L = Delay0.l
       +                          sb;
-  1957  010E  0878               	movf	_Delay0+1,w
-  1958  010F  014B               	movlb	11	; select bank11
-  1959  0110  009D               	movwf	29	;volatile
-  1960                           
-  1961                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 157:                 TMR0L = Delay0.l
+  1957  0111  0877               	movf	_Delay0,w
+  1958  0112  009C               	movwf	28	;volatile
+  1959                           
+  1960                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 158:                 break;
+  1961  0113  2972               	goto	i1l112
+  1962  0114                     i1l1261:	
+  1963                           
+  1964                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 160:                 TMR0H = Delay1.m
       +                          sb;
-  1962  0111  0877               	movf	_Delay0,w
-  1963  0112  009C               	movwf	28	;volatile
-  1964                           
-  1965                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 158:                 break;
-  1966  0113  2972               	goto	i1l112
-  1967  0114                     i1l1265:	
-  1968                           
-  1969                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 160:                 TMR0H = Delay1.m
+  1965  0114  0140               	movlb	0	; select bank0
+  1966  0115  0823               	movf	_Delay1+1,w
+  1967  0116  014B               	movlb	11	; select bank11
+  1968  0117  009D               	movwf	29	;volatile
+  1969                           
+  1970                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 161:                 TMR0L = Delay1.l
       +                          sb;
-  1970  0114  0140               	movlb	0	; select bank0
-  1971  0115  0823               	movf	_Delay1+1,w
-  1972  0116  014B               	movlb	11	; select bank11
-  1973  0117  009D               	movwf	29	;volatile
-  1974                           
-  1975                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 161:                 TMR0L = Delay1.l
-      +                          sb;
-  1976  0118  0140               	movlb	0	; select bank0
-  1977  0119  0822               	movf	_Delay1,w
-  1978  011A  014B               	movlb	11	; select bank11
-  1979  011B  009C               	movwf	28	;volatile
-  1980  011C                     i1l1267:	
-  1981                           
-  1982                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 162:                 if (Flags0.ch0on
+  1971  0118  0140               	movlb	0	; select bank0
+  1972  0119  0822               	movf	_Delay1,w
+  1973  011A  014B               	movlb	11	; select bank11
+  1974  011B  009C               	movwf	28	;volatile
+  1975  011C                     i1l1263:	
+  1976                           
+  1977                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 162:                 if (Flags0.ch0on
       +                          0) {
-  1983  011C  1D7B               	btfss	_Flags0,2
-  1984  011D  291F               	goto	u58_21
-  1985  011E  2920               	goto	u58_20
-  1986  011F                     u58_21:	
-  1987  011F  2922               	goto	i1l114
-  1988  0120                     u58_20:	
-  1989  0120                     i1l1269:	
-  1990                           
-  1991                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 163:                     LATAbits.LAT
+  1978  011C  1D7B               	btfss	_Flags0,2
+  1979  011D  291F               	goto	u56_21
+  1980  011E  2920               	goto	u56_20
+  1981  011F                     u56_21:	
+  1982  011F  2922               	goto	i1l114
+  1983  0120                     u56_20:	
+  1984  0120                     i1l1265:	
+  1985                           
+  1986                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 163:                     LATAbits.LAT
       +                          A4 = 1;
-  1992  0120  0140               	movlb	0	; select bank0
-  1993  0121  1618               	bsf	24,4	;volatile
-  1994  0122                     i1l114:	
-  1995                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 164:                 }
-  1996                           
-  1997                           
-  1998                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 165:                 if (Flags0.ch1on
+  1987  0120  0140               	movlb	0	; select bank0
+  1988  0121  1618               	bsf	24,4	;volatile
+  1989  0122                     i1l114:	
+  1990                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 164:                 }
+  1991                           
+  1992                           
+  1993                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 165:                 if (Flags0.ch1on
       +                          0) {
-  1999  0122  1DFB               	btfss	_Flags0,3
-  2000  0123  2925               	goto	u59_21
-  2001  0124  2926               	goto	u59_20
-  2002  0125                     u59_21:	
-  2003  0125  2972               	goto	i1l112
-  2004  0126                     u59_20:	
-  2005  0126                     i1l1271:	
-  2006                           
-  2007                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 166:                     LATAbits.LAT
+  1994  0122  1DFB               	btfss	_Flags0,3
+  1995  0123  2925               	goto	u57_21
+  1996  0124  2926               	goto	u57_20
+  1997  0125                     u57_21:	
+  1998  0125  2972               	goto	i1l112
+  1999  0126                     u57_20:	
+  2000  0126                     i1l1267:	
+  2001                           
+  2002                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 166:                     LATAbits.LAT
       +                          A5 = 1;
-  2008  0126  0140               	movlb	0	; select bank0
-  2009  0127  1698               	bsf	24,5	;volatile
-  2010  0128  2972               	goto	i1l112
-  2011  0129                     i1l1273:	
-  2012                           
-  2013                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 170:                 TMR0H = Delay2.m
+  2003  0126  0140               	movlb	0	; select bank0
+  2004  0127  1698               	bsf	24,5	;volatile
+  2005  0128  2972               	goto	i1l112
+  2006  0129                     i1l1269:	
+  2007                           
+  2008                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 170:                 TMR0H = Delay2.m
       +                          sb;
-  2014  0129  0140               	movlb	0	; select bank0
-  2015  012A  0821               	movf	_Delay2+1,w
-  2016  012B  014B               	movlb	11	; select bank11
-  2017  012C  009D               	movwf	29	;volatile
-  2018                           
-  2019                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 171:                 TMR0L = Delay2.l
+  2009  0129  0140               	movlb	0	; select bank0
+  2010  012A  0821               	movf	_Delay2+1,w
+  2011  012B  014B               	movlb	11	; select bank11
+  2012  012C  009D               	movwf	29	;volatile
+  2013                           
+  2014                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 171:                 TMR0L = Delay2.l
       +                          sb;
-  2020  012D  0140               	movlb	0	; select bank0
-  2021  012E  0820               	movf	_Delay2,w
-  2022  012F  014B               	movlb	11	; select bank11
-  2023  0130  009C               	movwf	28	;volatile
-  2024  0131                     i1l1275:	
-  2025                           
-  2026                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 172:                 if (Flags0.ch0on
+  2015  012D  0140               	movlb	0	; select bank0
+  2016  012E  0820               	movf	_Delay2,w
+  2017  012F  014B               	movlb	11	; select bank11
+  2018  0130  009C               	movwf	28	;volatile
+  2019  0131                     i1l1271:	
+  2020                           
+  2021                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 172:                 if (Flags0.ch0on
       +                          1) {
-  2027  0131  1E7B               	btfss	_Flags0,4
-  2028  0132  2934               	goto	u60_21
-  2029  0133  2935               	goto	u60_20
-  2030  0134                     u60_21:	
-  2031  0134  2937               	goto	i1l117
-  2032  0135                     u60_20:	
-  2033  0135                     i1l1277:	
-  2034                           
-  2035                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 173:                     LATAbits.LAT
+  2022  0131  1E7B               	btfss	_Flags0,4
+  2023  0132  2934               	goto	u58_21
+  2024  0133  2935               	goto	u58_20
+  2025  0134                     u58_21:	
+  2026  0134  2937               	goto	i1l117
+  2027  0135                     u58_20:	
+  2028  0135                     i1l1273:	
+  2029                           
+  2030                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 173:                     LATAbits.LAT
       +                          A4 = 1;
-  2036  0135  0140               	movlb	0	; select bank0
-  2037  0136  1618               	bsf	24,4	;volatile
-  2038  0137                     i1l117:	
-  2039                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 174:                 }
-  2040                           
-  2041                           
-  2042                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 175:                 if (Flags0.ch1on
+  2031  0135  0140               	movlb	0	; select bank0
+  2032  0136  1618               	bsf	24,4	;volatile
+  2033  0137                     i1l117:	
+  2034                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 174:                 }
+  2035                           
+  2036                           
+  2037                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 175:                 if (Flags0.ch1on
       +                          1) {
-  2043  0137  1EFB               	btfss	_Flags0,5
-  2044  0138  293A               	goto	u61_21
-  2045  0139  293B               	goto	u61_20
-  2046  013A                     u61_21:	
-  2047  013A  293D               	goto	i1l118
-  2048  013B                     u61_20:	
-  2049  013B                     i1l1279:	
-  2050                           
-  2051                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 176:                     LATAbits.LAT
+  2038  0137  1EFB               	btfss	_Flags0,5
+  2039  0138  293A               	goto	u59_21
+  2040  0139  293B               	goto	u59_20
+  2041  013A                     u59_21:	
+  2042  013A  293D               	goto	i1l118
+  2043  013B                     u59_20:	
+  2044  013B                     i1l1275:	
+  2045                           
+  2046                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 176:                     LATAbits.LAT
       +                          A5 = 1;
-  2052  013B  0140               	movlb	0	; select bank0
-  2053  013C  1698               	bsf	24,5	;volatile
-  2054  013D                     i1l118:	
-  2055                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 177:                 }
-  2056                           
-  2057                           
-  2058                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 178:                 if (Flags1.off2)
+  2047  013B  0140               	movlb	0	; select bank0
+  2048  013C  1698               	bsf	24,5	;volatile
+  2049  013D                     i1l118:	
+  2050                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 177:                 }
+  2051                           
+  2052                           
+  2053                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 178:                 if (Flags1.off2)
       +                           {
-  2059  013D  0140               	movlb	0	; select bank0
-  2060  013E  1C28               	btfss	_Flags1,0
-  2061  013F  2941               	goto	u62_21
-  2062  0140  2942               	goto	u62_20
-  2063  0141                     u62_21:	
-  2064  0141  2972               	goto	i1l112
-  2065  0142                     u62_20:	
-  2066  0142                     i1l1281:	
-  2067                           
-  2068                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 179:                     if (!Flags0.
+  2054  013D  0140               	movlb	0	; select bank0
+  2055  013E  1C28               	btfss	_Flags1,0
+  2056  013F  2941               	goto	u60_21
+  2057  0140  2942               	goto	u60_20
+  2058  0141                     u60_21:	
+  2059  0141  2972               	goto	i1l112
+  2060  0142                     u60_20:	
+  2061  0142                     i1l1277:	
+  2062                           
+  2063                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 179:                     if (!Flags0.
       +                          ch0aon) {
-  2069  0142  1B7B               	btfsc	_Flags0,6
-  2070  0143  2945               	goto	u63_21
-  2071  0144  2946               	goto	u63_20
-  2072  0145                     u63_21:	
-  2073  0145  2947               	goto	i1l120
-  2074  0146                     u63_20:	
-  2075  0146                     i1l1283:	
-  2076                           
-  2077                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 180:                         LATAbits
+  2064  0142  1B7B               	btfsc	_Flags0,6
+  2065  0143  2945               	goto	u61_21
+  2066  0144  2946               	goto	u61_20
+  2067  0145                     u61_21:	
+  2068  0145  2947               	goto	i1l120
+  2069  0146                     u61_20:	
+  2070  0146                     i1l1279:	
+  2071                           
+  2072                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 180:                         LATAbits
       +                          .LATA4 = 0;
-  2078  0146  1218               	bcf	24,4	;volatile
-  2079  0147                     i1l120:	
-  2080                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 181:                     }
-  2081                           
-  2082                           
-  2083                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 182:                     if (!Flags0.
+  2073  0146  1218               	bcf	24,4	;volatile
+  2074  0147                     i1l120:	
+  2075                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 181:                     }
+  2076                           
+  2077                           
+  2078                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 182:                     if (!Flags0.
       +                          ch1aon) {
-  2084  0147  1BFB               	btfsc	_Flags0,7
-  2085  0148  294A               	goto	u64_21
-  2086  0149  294B               	goto	u64_20
-  2087  014A                     u64_21:	
-  2088  014A  2972               	goto	i1l112
-  2089  014B                     u64_20:	
-  2090  014B                     i1l1285:	
-  2091                           
-  2092                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 183:                         LATAbits
+  2079  0147  1BFB               	btfsc	_Flags0,7
+  2080  0148  294A               	goto	u62_21
+  2081  0149  294B               	goto	u62_20
+  2082  014A                     u62_21:	
+  2083  014A  2972               	goto	i1l112
+  2084  014B                     u62_20:	
+  2085  014B                     i1l1281:	
+  2086                           
+  2087                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 183:                         LATAbits
       +                          .LATA5 = 0;
-  2093  014B  1298               	bcf	24,5	;volatile
-  2094  014C  2972               	goto	i1l112
-  2095  014D                     i1l122:	
-  2096                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 187:             case 3:
-  2097                           
-  2098                           
-  2099                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 188:                 if (!Flags0.ch0a
+  2088  014B  1298               	bcf	24,5	;volatile
+  2089  014C  2972               	goto	i1l112
+  2090  014D                     i1l122:	
+  2091                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 187:             case 3:
+  2092                           
+  2093                           
+  2094                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 188:                 if (!Flags0.ch0a
       +                          on) {
-  2100  014D  1B7B               	btfsc	_Flags0,6
-  2101  014E  2950               	goto	u65_21
-  2102  014F  2951               	goto	u65_20
-  2103  0150                     u65_21:	
-  2104  0150  2953               	goto	i1l123
-  2105  0151                     u65_20:	
-  2106  0151                     i1l1287:	
-  2107                           
-  2108                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 189:                     LATAbits.LAT
+  2095  014D  1B7B               	btfsc	_Flags0,6
+  2096  014E  2950               	goto	u63_21
+  2097  014F  2951               	goto	u63_20
+  2098  0150                     u63_21:	
+  2099  0150  2953               	goto	i1l123
+  2100  0151                     u63_20:	
+  2101  0151                     i1l1283:	
+  2102                           
+  2103                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 189:                     LATAbits.LAT
       +                          A4 = 0;
-  2109  0151  0140               	movlb	0	; select bank0
-  2110  0152  1218               	bcf	24,4	;volatile
-  2111  0153                     i1l123:	
-  2112                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 190:                 }
-  2113                           
-  2114                           
-  2115                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 191:                 if (!Flags0.ch1a
+  2104  0151  0140               	movlb	0	; select bank0
+  2105  0152  1218               	bcf	24,4	;volatile
+  2106  0153                     i1l123:	
+  2107                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 190:                 }
+  2108                           
+  2109                           
+  2110                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 191:                 if (!Flags0.ch1a
       +                          on) {
-  2116  0153  1BFB               	btfsc	_Flags0,7
-  2117  0154  2956               	goto	u66_21
-  2118  0155  2957               	goto	u66_20
-  2119  0156                     u66_21:	
-  2120  0156  2959               	goto	i1l124
-  2121  0157                     u66_20:	
-  2122  0157                     i1l1289:	
-  2123                           
-  2124                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 192:                     LATAbits.LAT
+  2111  0153  1BFB               	btfsc	_Flags0,7
+  2112  0154  2956               	goto	u64_21
+  2113  0155  2957               	goto	u64_20
+  2114  0156                     u64_21:	
+  2115  0156  2959               	goto	i1l124
+  2116  0157                     u64_20:	
+  2117  0157                     i1l1285:	
+  2118                           
+  2119                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 192:                     LATAbits.LAT
       +                          A5 = 0;
-  2125  0157  0140               	movlb	0	; select bank0
-  2126  0158  1298               	bcf	24,5	;volatile
-  2127  0159                     i1l124:	
-  2128                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 193:                 }
-  2129                           
-  2130  0159  03FB               	decf	_Flags0,f	;# 
-  2131                           
-  2132                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 195:         }
-  2133  015A  2972               	goto	i1l112
-  2134  015B                     i1l1291:	
-  2135  015B  087B               	movf	_Flags0,w
-  2136  015C  3903               	andlw	3
-  2137  015D  00F0               	movwf	??_myIsr
-  2138  015E  01F1               	clrf	??_myIsr+1
-  2139                           
-  2140                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+  2120  0157  0140               	movlb	0	; select bank0
+  2121  0158  1298               	bcf	24,5	;volatile
+  2122  0159                     i1l124:	
+  2123                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 193:                 }
+  2124                           
+  2125  0159  03FB               	decf	_Flags0,f	;# 
+  2126                           
+  2127                           ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 195:         }
+  2128  015A  2972               	goto	i1l112
+  2129  015B                     i1l1287:	
+  2130  015B  087B               	movf	_Flags0,w
+  2131  015C  3903               	andlw	3
+  2132  015D  00F0               	movwf	??_myIsr
+  2133  015E  01F1               	clrf	??_myIsr+1
+  2134                           
+  2135                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
       +                          itches
-  2141                           ; Switch size 1, requested type "simple"
-  2142                           ; Number of cases is 1, Range of values is 0 to 0
-  2143                           ; switch strategies available:
-  2144                           ; Name         Instructions Cycles
-  2145                           ; simple_byte            4     3 (average)
-  2146                           ; direct_byte            8     6 (fixed)
-  2147                           ; jumptable            260     6 (fixed)
-  2148                           ;	Chosen strategy is simple_byte
-  2149  015F  0871               	movf	??_myIsr+1,w
-  2150  0160  3A00               	xorlw	0	; case 0
-  2151  0161  1903               	skipnz
-  2152  0162  2964               	goto	i1l1749
-  2153  0163  2972               	goto	i1l112
-  2154  0164                     i1l1749:	
-  2155                           
-  2156                           ; Switch size 1, requested type "simple"
-  2157                           ; Number of cases is 4, Range of values is 0 to 3
-  2158                           ; switch strategies available:
-  2159                           ; Name         Instructions Cycles
-  2160                           ; simple_byte           13     7 (average)
-  2161                           ; direct_byte           14     6 (fixed)
-  2162                           ; jumptable            260     6 (fixed)
-  2163                           ;	Chosen strategy is simple_byte
-  2164  0164  0870               	movf	??_myIsr,w
-  2165  0165  3A00               	xorlw	0	; case 0
-  2166  0166  1903               	skipnz
-  2167  0167  290E               	goto	i1l1263
-  2168  0168  3A01               	xorlw	1	; case 1
-  2169  0169  1903               	skipnz
-  2170  016A  2914               	goto	i1l1265
-  2171  016B  3A03               	xorlw	3	; case 2
-  2172  016C  1903               	skipnz
-  2173  016D  2929               	goto	i1l1273
-  2174  016E  3A01               	xorlw	1	; case 3
-  2175  016F  1903               	skipnz
-  2176  0170  294D               	goto	i1l122
-  2177  0171  2972               	goto	i1l112
-  2178  0172                     i1l112:	
-  2179  0172  0AFB               	incf	_Flags0,f	;# 
-  2180  0173                     i1l125:	
-  2181  0173  107E               	bcf	int$flags,0	;clear compiler interrupt flag (level 1)
-  2182  0174  0009               	retfie
-  2183  0175                     __end_of_myIsr:	
-  2184  007E                     btemp	set	126	;btemp
-  2185  007E                     int$flags	set	126
-  2186  007E                     wtemp0	set	126
+  2136                           ; Switch size 1, requested type "simple"
+  2137                           ; Number of cases is 1, Range of values is 0 to 0
+  2138                           ; switch strategies available:
+  2139                           ; Name         Instructions Cycles
+  2140                           ; simple_byte            4     3 (average)
+  2141                           ; direct_byte            8     6 (fixed)
+  2142                           ; jumptable            260     6 (fixed)
+  2143                           ;	Chosen strategy is simple_byte
+  2144  015F  0871               	movf	??_myIsr+1,w
+  2145  0160  3A00               	xorlw	0	; case 0
+  2146  0161  1903               	skipnz
+  2147  0162  2964               	goto	i1l1745
+  2148  0163  2972               	goto	i1l112
+  2149  0164                     i1l1745:	
+  2150                           
+  2151                           ; Switch size 1, requested type "simple"
+  2152                           ; Number of cases is 4, Range of values is 0 to 3
+  2153                           ; switch strategies available:
+  2154                           ; Name         Instructions Cycles
+  2155                           ; simple_byte           13     7 (average)
+  2156                           ; direct_byte           14     6 (fixed)
+  2157                           ; jumptable            260     6 (fixed)
+  2158                           ;	Chosen strategy is simple_byte
+  2159  0164  0870               	movf	??_myIsr,w
+  2160  0165  3A00               	xorlw	0	; case 0
+  2161  0166  1903               	skipnz
+  2162  0167  290E               	goto	i1l1259
+  2163  0168  3A01               	xorlw	1	; case 1
+  2164  0169  1903               	skipnz
+  2165  016A  2914               	goto	i1l1261
+  2166  016B  3A03               	xorlw	3	; case 2
+  2167  016C  1903               	skipnz
+  2168  016D  2929               	goto	i1l1269
+  2169  016E  3A01               	xorlw	1	; case 3
+  2170  016F  1903               	skipnz
+  2171  0170  294D               	goto	i1l122
+  2172  0171  2972               	goto	i1l112
+  2173  0172                     i1l112:	
+  2174  0172  0AFB               	incf	_Flags0,f	;# 
+  2175  0173                     i1l125:	
+  2176  0173  107E               	bcf	int$flags,0	;clear compiler interrupt flag (level 1)
+  2177  0174  0009               	retfie
+  2178  0175                     __end_of_myIsr:	
+  2179  007E                     btemp	set	126	;btemp
+  2180  007E                     int$flags	set	126
+  2181  007E                     wtemp0	set	126
 
 
 Data Sizes:
@@ -2557,134 +2554,133 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Sun Apr  5 12:22:08 2020
+Symbol Table                                                                                   Mon Apr  6 20:05:57 2020
 
             __CFG_CP$OFF 0000                       _Rx 0029              __CFG_LVP$ON 0000  
-                    l132 0325                      l142 0323                      l135 032D  
-                    l129 0316                      l138 0309                      l148 02BF  
-                    l183 02ED                      u430 0311                      _PR2 028D  
-                    u431 0310                      u440 032A                      u441 0329  
-                    u450 031E                      u451 031D                      u900 01EE  
-                    u901 01ED                      u910 01FB                      u911 01FA  
-                    u920 021B                      u921 021A                      u930 024A  
-                    u850 01C8                      u931 0249                      u851 01C7  
-                    u940 024E                      u860 01CD                      u941 024D  
-                    u861 01CC                      u950 0257                      u870 01D4  
-                    u951 0256                      u871 01D3                      u960 0276  
-                    u880 01D9                      u961 0275                      u881 01D8  
-                    u970 027A                      u890 01E9                      u971 0279  
-                    u891 01E8                      u980 0283                      u981 0282  
-                    u990 02C4                      u991 02C3                      _Cmd 002B  
-           __CFG_BORV$HI 0000            __CFG_BBEN$OFF 0000             __CFG_ZCD$OFF 0000  
-                   l1121 0311                     l1131 032A                     l1141 0318  
-                   l1125 0314                     l1133 02F0                     l1143 031E  
-                   l1119 030B                     l1135 02F7                     l1129 0325  
-                   l1137 02FE                     l1147 0321                     l1139 0302  
-                   l1601 020D                     l1611 0228                     l1603 0215  
-                   l1531 0196                     l1523 018B                     l1621 024A  
-                   l1613 0231                     l1541 01A3                     l1533 019A  
-                   l1525 018E                     l1631 026A                     l1623 024E  
-                   l1615 0239                     l1607 021C                     l1551 01AF  
-                   l1543 01A5                     l1535 019C                     l1527 018F  
-                   l1641 0284                     l1633 026C                     l1625 0258  
-                   l1617 023D                     l1609 0224                     l1561 01B6  
-                   l1553 01B1                     l1545 01A7                     l1537 019F  
-                   l1529 0194                     l1643 028E                     l1627 0262  
-                   l1635 0271                     l1619 0245                     l1571 01C8  
-                   l1563 01B8                     l1555 01B3                     l1547 01AA  
-                   l1539 01A1                     l1661 02CA                     l1645 0292  
-                   l1637 0276                     l1629 0266                     l1653 029A  
-                   l1573 01CD                     l1581 01DE                     l1565 01B9  
-                   l1557 01B4                     l1549 01AD                     l1671 02DD  
-                   l1647 0297                     l1639 027A                     l1655 02BA  
-                   l1591 01F6                     l1583 01E3                     l1663 02CB  
-                   l1575 01CE                     l1567 01C2                     l1559 01B5  
-                   l1665 02D1                     l1657 02C4                     l1593 01FB  
-                   l1585 01E9                     l1577 01D4                     l1569 01C3  
-                   l1675 02E2                     l1667 02D5                     l1659 02C8  
-                   l1747 02A3                     l1595 01FE                     l1587 01EE  
-                   l1579 01D9                     l1677 02E8                     l1669 02D8  
-                   l1597 0201                     l1589 01F2                     l1599 0209  
-                   u1000 02D1                     u1001 02D0                     u1010 02DD  
-                   u1011 02DC                     u1020 02E8                     u1021 02E7  
-                   _LATA 0018                     _LATC 001A                     i1l87 010C  
-                   _main 018B             hexToNibble@c 0072                     btemp 007E  
-          __CFG_BOREN$ON 0000                     start 0175            __CFG_MCLRE$ON 0000  
-           ?_nibbleToHex 0070                    ?_main 0070            __CFG_WDTE$OFF 0000  
-                  _T2CON 028E                    i1l120 0147                    i1l112 0172  
-                  i1l122 014D                    i1l114 0122                    i1l123 0153  
-                  i1l124 0159                    i1l117 0137                    i1l125 0173  
-                  i1l118 013D                    _TMR0H 059D                    _TMR0L 059C  
-                  u50_20 0046                    u50_21 0045                    u51_20 0060  
-                  u51_21 005F                    u60_20 0135                    u52_20 006A  
-                  u60_21 0134                    u52_21 0069                    u61_20 013B  
-                  u53_20 0088                    u61_21 013A                    u53_21 0087  
-                  u53_25 0084                    u62_20 0142                    u54_20 0090  
-                  u46_20 000B                    u62_21 0141                    u54_21 008F  
-                  u46_21 000A                    u63_20 0146                    u55_20 00AF  
-                  u47_20 0018                    u63_21 0145                    u55_21 00AE  
-                  u47_21 0017                    u55_25 00AB                    u64_20 014B  
-                  u56_20 00BC                    u48_20 0031                    u64_21 014A  
-                  u56_21 00BB                    u48_21 0030                    u65_20 0151  
-                  u57_20 00E7                    u49_20 0039                    u65_21 0150  
-                  u57_21 00E6                    u49_21 0038                    _TRISA 0012  
-                  _TRISC 0014                    u66_20 0157                    u58_20 0120  
-                  u66_21 0156                    u58_21 011F                    u59_20 0126  
-                  u59_21 0125           __CFG_FCMEN$OFF 0000            __CFG_WRTB$OFF 0000  
-          __CFG_WRTC$OFF 0000                    _myIsr 0004          __end_of_sendInt 030A  
-                  status 0003                    wtemp0 007E           __CFG_CSWEN$OFF 0000  
-        __initialization 0176             __end_of_main 02EF           __CFG_SAFEN$OFF 0000  
-                 ??_main 002C                   ?_myIsr 0070                   _ANSELA 1F38  
-                 _ANSELC 1F4E                   _T0CON1 059F                   _RA0PPS 1F10  
-                 _RC1REG 0119                   _RC1STA 011D                   i1l1201 006A  
-                 i1l1203 006D                   i1l1211 007E                   i1l1221 0098  
-                 i1l1213 0088                   i1l1205 0071                   i1l1231 00B3  
-                 i1l1223 0099                   i1l1215 0090                   i1l1207 0072  
-                 i1l1151 0006                   i1l1241 00CE                   i1l1233 00B4  
-                 i1l1225 00A3                   i1l1217 0093                   i1l1209 007C  
-                 i1l1161 0018                   i1l1153 000B                   i1l1251 00F1  
-                 i1l1235 00BC                   i1l1243 00DA                   i1l1219 0097  
-                 i1l1227 00A5                   i1l1171 0029                   i1l1163 001A  
-                 i1l1155 000C                   i1l1261 0109                   i1l1253 00F3  
-                 i1l1245 00DE                   i1l1237 00C6                   i1l1229 00AF  
-                 i1l1181 0039                   i1l1173 002A                   i1l1165 001D  
-                 i1l1157 0011                   i1l1271 0126                   i1l1263 010E  
-                 i1l1255 00F9                   i1l1247 00DF                   i1l1239 00C8  
-                 i1l1191 004E                   i1l1183 003E                   i1l1175 002B  
-                 i1l1167 0021                   i1l1159 0013                   i1l1281 0142  
-                 i1l1273 0129                   i1l1265 0114                   i1l1249 00E7  
-                 i1l1193 0058                   i1l1185 0046                   i1l1257 0104  
-                 i1l1177 0031                   i1l1169 0025                   i1l1283 0146  
-                 i1l1275 0131                   i1l1267 011C                   i1l1291 015B  
-                 i1l1259 0106                   i1l1187 0049                   i1l1179 0033  
-                 i1l1195 005A                   i1l1285 014B                   i1l1277 0135  
-                 i1l1269 0120                   i1l1197 0060                   i1l1189 004D  
-                 i1l1287 0151                   i1l1279 013B                   i1l1199 0062  
-                 i1l1289 0157                   i1l1749 0164           __CFG_WDTCCS$SC 0000  
-                 _ZCDCON 091F                   _TX1REG 011A                   _TX1STA 011E  
-                 _CmdVal 0024                   _Delay0 0077                   _Delay1 0022  
-                 _Delay2 0020                   _Flags0 007B                   _Flags1 0028  
-         __CFG_PWRTE$OFF 0000                   _RcvCnt 002A     __size_of_hexToNibble 000D  
-         __CFG_STVREN$ON 0000         __end_of_sendChar 032E                ??_sendInt 0073  
-__end_of__initialization 0188           __pcstackCOMMON 0070            __end_of_myIsr 0175  
-   __size_of_nibbleToHex 000D                  ??_myIsr 0070               __pbssBANK0 0020  
-             __pmaintext 018B          __CFG_PPS1WAY$ON 0000               __pintentry 0004  
-           nibbleToHex@i 0072                  _SP1BRGL 011B                ?_sendChar 0070  
-                __ptext1 02EF                  __ptext2 0324                  __ptext3 030A  
-                __ptext4 0317          __CFG_WRTAPP$OFF 0000                  _sendInt 02EF  
-        __CFG_WRTSAF$OFF 0000     end_of_initialization 0188               ??_sendChar 0072  
-  __CFG_WDTCPS$WDTCPS_31 0000         __CFG_FEXTOSC$OFF 0000            ??_hexToNibble 0072  
-    start_initialization 0176         __CFG_LPBOREN$OFF 0000            ??_nibbleToHex 0072  
-    __end_of_hexToNibble 0324              __pbssCOMMON 0077                ___latbits 0000  
-          __pcstackBANK0 002C               sendInt@tmp 0074        __size_of_sendChar 000A  
-    __end_of_nibbleToHex 0317                 ?_sendInt 0070     __CFG_RSTOSC$HFINTPLL 0000  
-               _T2CLKCON 0290           __size_of_myIsr 0171                 _LATAbits 0018  
-               _Ch0Delay 0079                 _PIE0bits 0716                 _Ch1Delay 0026  
-               _PIE4bits 071A              _hexToNibble 0317                 _PIR0bits 070C  
-               _PIR3bits 070F                 _PIR4bits 0710                 _RX1DTPPS 1ECB  
-      __CFG_BBSIZE$BB512 0000                 _TX1CKPPS 1ECC                main@state 0076  
-            _nibbleToHex 030A                sendChar@c 0072               _T0CON0bits 059E  
-       __size_of_sendInt 001B            __size_of_main 0164                 _sendChar 0324  
-   __CFG_WDTCWS$WDTCWS_7 0000               _RC1STAbits 011D                 int$flags 007E  
-             _INTCONbits 000B                 intlevel1 0000                 sendInt@i 0075  
-      __CFG_CLKOUTEN$OFF 0000             ?_hexToNibble 0070  
+                    l132 0320                      l142 031E                      l135 0328  
+                    l129 0311                      l138 0304                      l170 0254  
+                    l148 02BA                      l174 027E                      l179 02E8  
+                    u410 030C                      u411 030B                      u420 0325  
+                    u421 0324                      u430 0319                      _PR2 028D  
+                    u431 0318                      u810 01C8                      u811 01C7  
+                    u900 0253                      u820 01CD                      u901 0252  
+                    u821 01CC                      u910 0274                      u830 01D4  
+                    u911 0273                      u831 01D3                      u920 027D  
+                    u840 01D9                      u921 027C                      u841 01D8  
+                    u930 02BF                      u850 01E9                      u931 02BE  
+                    u851 01E8                      u940 02CC                      u860 01EE  
+                    u941 02CB                      u861 01ED                      u950 02D8  
+                    u870 01FB                      u951 02D7                      u871 01FA  
+                    u960 02E3                      u880 021B                      u961 02E2  
+                    u881 021A                      u890 024A                      u891 0249  
+                    _Cmd 002B             __CFG_BORV$HI 0000            __CFG_BBEN$OFF 0000  
+           __CFG_ZCD$OFF 0000                     l1121 030F                     l1115 0306  
+                   l1131 02F2                     l1117 030C                     l1125 0320  
+                   l1133 02F9                     l1143 031C                     l1127 0325  
+                   l1135 02FD                     l1137 0313                     l1129 02EB  
+                   l1139 0319                     l1521 018E                     l1611 0239  
+                   l1603 021C                     l1531 019C                     l1523 018F  
+                   l1621 0255                     l1613 023D                     l1605 0224  
+                   l1541 01A7                     l1533 019F                     l1525 0194  
+                   l1623 025F                     l1631 026F                     l1615 0245  
+                   l1607 0228                     l1551 01B3                     l1543 01AA  
+                   l1535 01A1                     l1527 0196                     l1519 018B  
+                   l1641 028D                     l1633 0274                     l1625 0263  
+                   l1617 024A                     l1609 0231                     l1561 01B9  
+                   l1553 01B4                     l1545 01AD                     l1537 01A3  
+                   l1529 019A                     l1643 0292                     l1627 0268  
+                   l1651 02B5                     l1571 01CE                     l1563 01C2  
+                   l1555 01B5                     l1547 01AF                     l1539 01A5  
+                   l1661 02CC                     l1653 02BF                     l1637 027F  
+                   l1629 026A                     l1581 01E9                     l1573 01D4  
+                   l1565 01C3                     l1557 01B6                     l1549 01B1  
+                   l1671 02DD                     l1663 02D0                     l1655 02C3  
+                   l1743 029E                     l1639 0289                     l1591 01FE  
+                   l1583 01EE                     l1575 01D9                     l1567 01C8  
+                   l1559 01B8                     l1673 02E3                     l1665 02D3  
+                   l1657 02C5                     l1593 0201                     l1585 01F2  
+                   l1649 0295                     l1569 01CD                     l1577 01DE  
+                   l1667 02D8                     l1595 0209                     l1587 01F6  
+                   l1579 01E3                     l1659 02C6                     l1597 020D  
+                   l1589 01FB                     l1599 0215                     _LATA 0018  
+                   _LATC 001A                     i1l87 010C                     _main 018B  
+           hexToNibble@c 0072                     btemp 007E            __CFG_BOREN$ON 0000  
+                   start 0175            __CFG_MCLRE$ON 0000             ?_nibbleToHex 0070  
+                  ?_main 0070            __CFG_WDTE$OFF 0000                    _T2CON 028E  
+                  i1l120 0147                    i1l112 0172                    i1l122 014D  
+                  i1l114 0122                    i1l123 0153                    i1l124 0159  
+                  i1l117 0137                    i1l125 0173                    i1l118 013D  
+                  _TMR0H 059D                    _TMR0L 059C                    u50_20 006A  
+                  u50_21 0069                    u51_20 0088                    u51_21 0087  
+                  u51_25 0084                    u60_20 0142                    u52_20 0090  
+                  u44_20 000B                    u60_21 0141                    u52_21 008F  
+                  u44_21 000A                    u61_20 0146                    u53_20 00AF  
+                  u45_20 0018                    u61_21 0145                    u53_21 00AE  
+                  u45_21 0017                    u53_25 00AB                    u62_20 014B  
+                  u54_20 00BC                    u46_20 0031                    u62_21 014A  
+                  u54_21 00BB                    u46_21 0030                    u63_20 0151  
+                  u55_20 00E7                    u47_20 0039                    u63_21 0150  
+                  u55_21 00E6                    u47_21 0038                    u64_20 0157  
+                  u56_20 0120                    u48_20 0046                    u64_21 0156  
+                  u56_21 011F                    u48_21 0045                    u57_20 0126  
+                  u49_20 0060                    u57_21 0125                    u49_21 005F  
+                  _TRISA 0012                    _TRISC 0014                    u58_20 0135  
+                  u58_21 0134                    u59_20 013B                    u59_21 013A  
+         __CFG_FCMEN$OFF 0000            __CFG_WRTB$OFF 0000            __CFG_WRTC$OFF 0000  
+                  _myIsr 0004          __end_of_sendInt 0305                    status 0003  
+                  wtemp0 007E           __CFG_CSWEN$OFF 0000          __initialization 0176  
+           __end_of_main 02EA           __CFG_SAFEN$OFF 0000                   ??_main 002C  
+                 ?_myIsr 0070                   _ANSELA 1F38                   _ANSELC 1F4E  
+                 _T0CON1 059F                   _RA0PPS 1F10                   _RC1REG 0119  
+                 _RC1STA 011D                   i1l1201 0071                   i1l1211 0090  
+                 i1l1203 0072                   i1l1221 00A3                   i1l1213 0093  
+                 i1l1205 007C                   i1l1231 00BC                   i1l1215 0097  
+                 i1l1223 00A5                   i1l1207 007E                   i1l1151 000C  
+                 i1l1241 00DE                   i1l1233 00C6                   i1l1225 00AF  
+                 i1l1217 0098                   i1l1209 0088                   i1l1161 001D  
+                 i1l1153 0011                   i1l1251 00F9                   i1l1243 00DF  
+                 i1l1235 00C8                   i1l1227 00B3                   i1l1219 0099  
+                 i1l1171 002B                   i1l1163 0021                   i1l1155 0013  
+                 i1l1147 0006                   i1l1261 0114                   i1l1245 00E7  
+                 i1l1237 00CE                   i1l1229 00B4                   i1l1181 0046  
+                 i1l1253 0104                   i1l1173 0031                   i1l1165 0025  
+                 i1l1157 0018                   i1l1149 000B                   i1l1271 0131  
+                 i1l1263 011C                   i1l1255 0106                   i1l1247 00F1  
+                 i1l1239 00DA                   i1l1183 0049                   i1l1175 0033  
+                 i1l1191 005A                   i1l1167 0029                   i1l1159 001A  
+                 i1l1281 014B                   i1l1273 0135                   i1l1265 0120  
+                 i1l1257 0109                   i1l1249 00F3                   i1l1193 0060  
+                 i1l1185 004D                   i1l1177 0039                   i1l1169 002A  
+                 i1l1283 0151                   i1l1275 013B                   i1l1267 0126  
+                 i1l1259 010E                   i1l1195 0062                   i1l1187 004E  
+                 i1l1179 003E                   i1l1285 0157                   i1l1277 0142  
+                 i1l1269 0129                   i1l1197 006A                   i1l1189 0058  
+                 i1l1279 0146                   i1l1287 015B                   i1l1199 006D  
+                 i1l1745 0164           __CFG_WDTCCS$SC 0000                   _ZCDCON 091F  
+                 _TX1REG 011A                   _TX1STA 011E                   _CmdVal 0024  
+                 _Delay0 0077                   _Delay1 0022                   _Delay2 0020  
+                 _Flags0 007B                   _Flags1 0028           __CFG_PWRTE$OFF 0000  
+                 _RcvCnt 002A     __size_of_hexToNibble 000D           __CFG_STVREN$ON 0000  
+       __end_of_sendChar 0329                ??_sendInt 0073  __end_of__initialization 0188  
+         __pcstackCOMMON 0070            __end_of_myIsr 0175     __size_of_nibbleToHex 000D  
+                ??_myIsr 0070               __pbssBANK0 0020               __pmaintext 018B  
+        __CFG_PPS1WAY$ON 0000               __pintentry 0004             nibbleToHex@i 0072  
+                _SP1BRGL 011B                ?_sendChar 0070                  __ptext1 02EA  
+                __ptext2 031F                  __ptext3 0305                  __ptext4 0312  
+        __CFG_WRTAPP$OFF 0000                  _sendInt 02EA          __CFG_WRTSAF$OFF 0000  
+   end_of_initialization 0188               ??_sendChar 0072    __CFG_WDTCPS$WDTCPS_31 0000  
+       __CFG_FEXTOSC$OFF 0000            ??_hexToNibble 0072      start_initialization 0176  
+       __CFG_LPBOREN$OFF 0000            ??_nibbleToHex 0072      __end_of_hexToNibble 031F  
+            __pbssCOMMON 0077                ___latbits 0000            __pcstackBANK0 002C  
+             sendInt@tmp 0074        __size_of_sendChar 000A      __end_of_nibbleToHex 0312  
+               ?_sendInt 0070     __CFG_RSTOSC$HFINTPLL 0000                 _T2CLKCON 0290  
+         __size_of_myIsr 0171                 _LATAbits 0018                 _Ch0Delay 0079  
+               _PIE0bits 0716                 _Ch1Delay 0026                 _PIE4bits 071A  
+            _hexToNibble 0312                 _PIR0bits 070C                 _PIR3bits 070F  
+               _PIR4bits 0710                 _RX1DTPPS 1ECB        __CFG_BBSIZE$BB512 0000  
+               _TX1CKPPS 1ECC                main@state 0076              _nibbleToHex 0305  
+              sendChar@c 0072               _T0CON0bits 059E         __size_of_sendInt 001B  
+          __size_of_main 015F                 _sendChar 031F     __CFG_WDTCWS$WDTCWS_7 0000  
+             _RC1STAbits 011D                 int$flags 007E               _INTCONbits 000B  
+               intlevel1 0000                 sendInt@i 0075        __CFG_CLKOUTEN$OFF 0000  
+           ?_hexToNibble 0070  

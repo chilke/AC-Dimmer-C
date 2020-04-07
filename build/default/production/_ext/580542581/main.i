@@ -10927,22 +10927,24 @@ int main(void)
                         case 6:
                             CmdVal.lsb += hexToNibble(Rx);
                             if (Cmd == 0) {
-                                if (Flags1.update || CmdVal.value > 8191) {
+                                if (CmdVal.value > 8191) {
                                     state = 1;
                                 } else {
+                                    Flags1.update = 0;
                                     Ch0Delay.value = 8191 -CmdVal.value;
-                                    sendInt(Ch0Delay.msb);
-                                    sendInt(Ch0Delay.lsb);
+                                    sendInt(CmdVal.msb);
+                                    sendInt(CmdVal.lsb);
                                     Flags1.update = 1;
                                     state = 2;
                                 }
                             } else if (Cmd == 1) {
-                                if (Flags1.update || CmdVal.value > 8191) {
+                                if (CmdVal.value > 8191) {
                                     state = 1;
                                 } else {
+                                    Flags1.update = 0;
                                     Ch1Delay.value = 8191 -CmdVal.value;
-                                    sendInt(Ch1Delay.msb);
-                                    sendInt(Ch1Delay.lsb);
+                                    sendInt(CmdVal.msb);
+                                    sendInt(CmdVal.lsb);
                                     Flags1.update = 1;
                                     state = 2;
                                 }

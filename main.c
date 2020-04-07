@@ -345,22 +345,24 @@ int main(void)
                         case 6:
                             CmdVal.lsb += hexToNibble(Rx);
                             if (Cmd == CMD_SET_CH0) {
-                                if (Flags1.update || CmdVal.value > MAX_DELAY) {
+                                if (CmdVal.value > MAX_DELAY) {
                                     state = STATE_FAILED;
                                 } else {
+                                    Flags1.update = 0;
                                     Ch0Delay.value = MAX_DELAY-CmdVal.value;
-                                    sendInt(Ch0Delay.msb);
-                                    sendInt(Ch0Delay.lsb);
+                                    sendInt(CmdVal.msb);
+                                    sendInt(CmdVal.lsb);
                                     Flags1.update = 1;
                                     state = STATE_PROCESSED;
                                 }
                             } else if (Cmd == CMD_SET_CH1) {
-                                if (Flags1.update || CmdVal.value > MAX_DELAY) {
+                                if (CmdVal.value > MAX_DELAY) {
                                     state = STATE_FAILED;
                                 } else {
+                                    Flags1.update = 0;
                                     Ch1Delay.value = MAX_DELAY-CmdVal.value;
-                                    sendInt(Ch1Delay.msb);
-                                    sendInt(Ch1Delay.lsb);
+                                    sendInt(CmdVal.msb);
+                                    sendInt(CmdVal.lsb);
                                     Flags1.update = 1;
                                     state = STATE_PROCESSED;
                                 }

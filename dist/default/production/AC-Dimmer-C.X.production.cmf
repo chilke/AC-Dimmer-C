@@ -11,22 +11,22 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$/tmp/xcdwnGcYk.o
+reset_vec CODE 0 0 0 1 2
+end_init CODE 0 175 175 1 2
+config CONFIG 0 8007 8007 5 2
 $dist/default/production/AC-Dimmer-C.X.production.o
 cinit CODE 0 176 176 15 2
-text1 CODE 0 2EF 2EF 1B 2
-text2 CODE 0 324 324 A 2
-text3 CODE 0 30A 30A D 2
-text4 CODE 0 317 317 D 2
-maintext CODE 0 18B 18B 164 2
+text1 CODE 0 2EA 2EA 1B 2
+text2 CODE 0 31F 31F A 2
+text3 CODE 0 305 305 D 2
+text4 CODE 0 312 312 D 2
+maintext CODE 0 18B 18B 15F 2
 cstackCOMMON COMMON 1 70 70 7 1
 cstackBANK0 BANK0 1 2C 2C 2 1
 intentry CODE 0 4 4 171 2
 bssBANK0 BANK0 1 20 20 C 1
 bssCOMMON COMMON 1 77 77 5 1
-$/tmp/xcDUjnAVE.o
-reset_vec CODE 0 0 0 1 2
-end_init CODE 0 175 175 1 2
-config CONFIG 0 8007 8007 5 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -40,9 +40,9 @@ BANK0 2E-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
 CONST 1-3 2
-CONST 32E-7FF 2
+CONST 329-7FF 2
 ENTRY 1-3 2
-ENTRY 32E-7FF 2
+ENTRY 329-7FF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
@@ -100,7 +100,7 @@ SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 STACK 200E-20EF 1
 CODE 1-3 2
-CODE 32E-7FF 2
+CODE 329-7FF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -114,9 +114,9 @@ SFR9 480-4EF 1
 BIGRAM 2000-20EF 1
 COMMON 7C-7D 1
 STRCODE 1-3 2
-STRCODE 32E-7FF 2
+STRCODE 329-7FF 2
 STRING 1-3 2
-STRING 32E-7FF 2
+STRING 329-7FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -131,30 +131,30 @@ STRING 32E-7FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/AC-Dimmer-C.X.production.o
-176 cinit CODE >807:/tmp/xc0X3038u.s
-176 cinit CODE >810:/tmp/xc0X3038u.s
-176 cinit CODE >855:/tmp/xc0X3038u.s
-177 cinit CODE >856:/tmp/xc0X3038u.s
-178 cinit CODE >857:/tmp/xc0X3038u.s
-179 cinit CODE >858:/tmp/xc0X3038u.s
-17A cinit CODE >859:/tmp/xc0X3038u.s
-17B cinit CODE >863:/tmp/xc0X3038u.s
-17C cinit CODE >864:/tmp/xc0X3038u.s
-17D cinit CODE >865:/tmp/xc0X3038u.s
-17E cinit CODE >866:/tmp/xc0X3038u.s
-17F cinit CODE >867:/tmp/xc0X3038u.s
-180 cinit CODE >868:/tmp/xc0X3038u.s
-181 cinit CODE >869:/tmp/xc0X3038u.s
-182 cinit CODE >870:/tmp/xc0X3038u.s
-183 cinit CODE >871:/tmp/xc0X3038u.s
-184 cinit CODE >872:/tmp/xc0X3038u.s
-185 cinit CODE >873:/tmp/xc0X3038u.s
-186 cinit CODE >874:/tmp/xc0X3038u.s
-187 cinit CODE >875:/tmp/xc0X3038u.s
-188 cinit CODE >881:/tmp/xc0X3038u.s
-188 cinit CODE >883:/tmp/xc0X3038u.s
-189 cinit CODE >884:/tmp/xc0X3038u.s
-18A cinit CODE >885:/tmp/xc0X3038u.s
+176 cinit CODE >807:/tmp/xcoBhlPQc.s
+176 cinit CODE >810:/tmp/xcoBhlPQc.s
+176 cinit CODE >855:/tmp/xcoBhlPQc.s
+177 cinit CODE >856:/tmp/xcoBhlPQc.s
+178 cinit CODE >857:/tmp/xcoBhlPQc.s
+179 cinit CODE >858:/tmp/xcoBhlPQc.s
+17A cinit CODE >859:/tmp/xcoBhlPQc.s
+17B cinit CODE >863:/tmp/xcoBhlPQc.s
+17C cinit CODE >864:/tmp/xcoBhlPQc.s
+17D cinit CODE >865:/tmp/xcoBhlPQc.s
+17E cinit CODE >866:/tmp/xcoBhlPQc.s
+17F cinit CODE >867:/tmp/xcoBhlPQc.s
+180 cinit CODE >868:/tmp/xcoBhlPQc.s
+181 cinit CODE >869:/tmp/xcoBhlPQc.s
+182 cinit CODE >870:/tmp/xcoBhlPQc.s
+183 cinit CODE >871:/tmp/xcoBhlPQc.s
+184 cinit CODE >872:/tmp/xcoBhlPQc.s
+185 cinit CODE >873:/tmp/xcoBhlPQc.s
+186 cinit CODE >874:/tmp/xcoBhlPQc.s
+187 cinit CODE >875:/tmp/xcoBhlPQc.s
+188 cinit CODE >881:/tmp/xcoBhlPQc.s
+188 cinit CODE >883:/tmp/xcoBhlPQc.s
+189 cinit CODE >884:/tmp/xcoBhlPQc.s
+18A cinit CODE >885:/tmp/xcoBhlPQc.s
 4 intentry CODE >59:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 6 intentry CODE >61:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 B intentry CODE >62:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
@@ -264,27 +264,27 @@ FA intentry CODE >143:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 15A intentry CODE >195:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 172 intentry CODE >196:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 173 intentry CODE >199:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-317 text4 CODE >221:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-318 text4 CODE >222:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-31E text4 CODE >223:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-321 text4 CODE >225:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-323 text4 CODE >226:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-30A text3 CODE >201:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-30B text3 CODE >202:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-311 text3 CODE >203:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-314 text3 CODE >205:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-316 text3 CODE >206:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-324 text2 CODE >208:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-325 text2 CODE >209:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-32A text2 CODE >210:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-32D text2 CODE >211:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2EF text1 CODE >213:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2F0 text1 CODE >214:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2F4 text1 CODE >215:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2F7 text1 CODE >216:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2FE text1 CODE >217:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-302 text1 CODE >218:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-309 text1 CODE >219:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+312 text4 CODE >221:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+313 text4 CODE >222:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+319 text4 CODE >223:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+31C text4 CODE >225:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+31E text4 CODE >226:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+305 text3 CODE >201:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+306 text3 CODE >202:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+30C text3 CODE >203:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+30F text3 CODE >205:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+311 text3 CODE >206:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+31F text2 CODE >208:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+320 text2 CODE >209:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+325 text2 CODE >210:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+328 text2 CODE >211:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2EA text1 CODE >213:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2EB text1 CODE >214:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2EF text1 CODE >215:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2F2 text1 CODE >216:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2F9 text1 CODE >217:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2FD text1 CODE >218:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+304 text1 CODE >219:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 18B maintext CODE >228:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 18B maintext CODE >232:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 18E maintext CODE >234:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
@@ -345,31 +345,35 @@ FA intentry CODE >143:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 23D maintext CODE >346:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 245 maintext CODE >347:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 24A maintext CODE >348:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-258 maintext CODE >351:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-262 maintext CODE >352:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-266 maintext CODE >353:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-26A maintext CODE >354:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-26C maintext CODE >355:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-271 maintext CODE >357:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-276 maintext CODE >358:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-284 maintext CODE >361:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-28E maintext CODE >362:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-292 maintext CODE >363:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-297 maintext CODE >364:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-29A maintext CODE >369:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2BA maintext CODE >370:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2BF maintext CODE >373:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2C4 maintext CODE >374:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2C8 maintext CODE >375:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2CA maintext CODE >376:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2CB maintext CODE >379:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2D1 maintext CODE >380:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2D5 maintext CODE >381:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2D7 maintext CODE >382:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2DD maintext CODE >383:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2E2 maintext CODE >385:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2E8 maintext CODE >386:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-2ED maintext CODE >388:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+254 maintext CODE >350:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+254 maintext CODE >351:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+255 maintext CODE >352:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+25F maintext CODE >353:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+263 maintext CODE >354:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+268 maintext CODE >355:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+26A maintext CODE >356:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+26F maintext CODE >358:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+274 maintext CODE >359:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+27E maintext CODE >361:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+27E maintext CODE >362:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+27F maintext CODE >363:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+289 maintext CODE >364:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+28D maintext CODE >365:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+292 maintext CODE >366:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+295 maintext CODE >371:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2B5 maintext CODE >372:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2BA maintext CODE >375:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2BF maintext CODE >376:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2C3 maintext CODE >377:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2C5 maintext CODE >378:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2C6 maintext CODE >381:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2CC maintext CODE >382:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2D0 maintext CODE >383:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2D2 maintext CODE >384:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2D8 maintext CODE >385:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2DD maintext CODE >387:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2E3 maintext CODE >388:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
+2E8 maintext CODE >390:/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -394,19 +398,19 @@ __Hstrings 0 0 ABS 0 strings -
 __CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _LATA 18 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _LATC 1A 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcDUjnAVE.o
+___sp 0 0 STACK 2 stack /tmp/xcdwnGcYk.o
 _main 316 0 CODE 0 maintext dist/default/production/AC-Dimmer-C.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
-start 2EA 0 CODE 0 init /tmp/xcDUjnAVE.o
+start 2EA 0 CODE 0 init /tmp/xcdwnGcYk.o
 __size_of_main 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcDUjnAVE.o
-intlevel1 0 0 ENTRY 0 functab /tmp/xcDUjnAVE.o
-intlevel2 0 0 ENTRY 0 functab /tmp/xcDUjnAVE.o
-intlevel3 0 0 ENTRY 0 functab /tmp/xcDUjnAVE.o
-intlevel4 0 0 ENTRY 0 functab /tmp/xcDUjnAVE.o
-intlevel5 0 0 ENTRY 0 functab /tmp/xcDUjnAVE.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcdwnGcYk.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcdwnGcYk.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcdwnGcYk.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcdwnGcYk.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcdwnGcYk.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcdwnGcYk.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_sendInt 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
@@ -425,14 +429,14 @@ __Lmaintext 0 0 ABS 0 maintext -
 _Flags0 7B 0 COMMON 1 bssCOMMON dist/default/production/AC-Dimmer-C.X.production.o
 _Flags1 28 0 BANK0 1 bssBANK0 dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
-___stackhi 20EF 0 ABS 0 - /tmp/xcDUjnAVE.o
-___stacklo 200E 0 ABS 0 - /tmp/xcDUjnAVE.o
+___stackhi 20EF 0 ABS 0 - /tmp/xcdwnGcYk.o
+___stacklo 200E 0 ABS 0 - /tmp/xcdwnGcYk.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __size_of_myIsr 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 start_initialization 2EC 0 CODE 0 cinit dist/default/production/AC-Dimmer-C.X.production.o
-__end_of_sendInt 614 0 CODE 0 text1 dist/default/production/AC-Dimmer-C.X.production.o
-__end_of_nibbleToHex 62E 0 CODE 0 text3 dist/default/production/AC-Dimmer-C.X.production.o
+__end_of_sendInt 60A 0 CODE 0 text1 dist/default/production/AC-Dimmer-C.X.production.o
+__end_of_nibbleToHex 624 0 CODE 0 text3 dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _RA0PPS 1F10 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _RC1REG 119 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
@@ -444,7 +448,7 @@ _T2CLKCON 290 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _TX1REG 11A 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _TX1STA 11E 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_RSTOSC$HFINTPLL 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
-___int_sp 0 0 STACK 2 stack /tmp/xcDUjnAVE.o
+___int_sp 0 0 STACK 2 stack /tmp/xcdwnGcYk.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -678,10 +682,10 @@ __S1 7C 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 sendInt@i 75 0 COMMON 1 cstackCOMMON dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
-_hexToNibble 62E 0 CODE 0 text4 dist/default/production/AC-Dimmer-C.X.production.o
+_hexToNibble 624 0 CODE 0 text4 dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcDUjnAVE.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcdwnGcYk.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __size_of_sendChar 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __size_of_nibbleToHex 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
@@ -753,12 +757,12 @@ __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _LATAbits 18 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_WRTAPP$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 main@state 76 0 COMMON 1 cstackCOMMON dist/default/production/AC-Dimmer-C.X.production.o
-_sendInt 5DE 0 CODE 0 text1 dist/default/production/AC-Dimmer-C.X.production.o
+_sendInt 5D4 0 CODE 0 text1 dist/default/production/AC-Dimmer-C.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-_sendChar 648 0 CODE 0 text2 dist/default/production/AC-Dimmer-C.X.production.o
+_sendChar 63E 0 CODE 0 text2 dist/default/production/AC-Dimmer-C.X.production.o
 __pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
@@ -771,7 +775,7 @@ __CFG_CSWEN$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 end_of_initialization 310 0 CODE 0 cinit dist/default/production/AC-Dimmer-C.X.production.o
-__end_of_sendChar 65C 0 CODE 0 text2 dist/default/production/AC-Dimmer-C.X.production.o
+__end_of_sendChar 652 0 CODE 0 text2 dist/default/production/AC-Dimmer-C.X.production.o
 _Ch0Delay 79 0 COMMON 1 bssCOMMON dist/default/production/AC-Dimmer-C.X.production.o
 __Hintentry 2EA 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
@@ -780,10 +784,10 @@ __Lstrings 0 0 ABS 0 strings -
 sendInt@tmp 74 0 COMMON 1 cstackCOMMON dist/default/production/AC-Dimmer-C.X.production.o
 __Hreset_vec 2 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext1 5DE 0 CODE 0 text1 dist/default/production/AC-Dimmer-C.X.production.o
-__ptext2 648 0 CODE 0 text2 dist/default/production/AC-Dimmer-C.X.production.o
-__ptext3 614 0 CODE 0 text3 dist/default/production/AC-Dimmer-C.X.production.o
-__ptext4 62E 0 CODE 0 text4 dist/default/production/AC-Dimmer-C.X.production.o
+__ptext1 5D4 0 CODE 0 text1 dist/default/production/AC-Dimmer-C.X.production.o
+__ptext2 63E 0 CODE 0 text2 dist/default/production/AC-Dimmer-C.X.production.o
+__ptext3 60A 0 CODE 0 text3 dist/default/production/AC-Dimmer-C.X.production.o
+__ptext4 624 0 CODE 0 text4 dist/default/production/AC-Dimmer-C.X.production.o
 _RX1DTPPS 1ECB 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -800,7 +804,7 @@ __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/AC-Dimmer-C.X.production.o
 _T0CON0bits 59E 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __Hend_init 2EC 0 CODE 0 end_init -
-__end_of_main 5DE 0 CODE 0 maintext dist/default/production/AC-Dimmer-C.X.production.o
+__end_of_main 5D4 0 CODE 0 maintext dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_WRTSAF$OFF 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __end_of_myIsr 2EA 0 CODE 0 intentry dist/default/production/AC-Dimmer-C.X.production.o
 _T2CON 28E 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
@@ -810,8 +814,8 @@ _TRISA 12 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 _TRISC 14 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__end_of_hexToNibble 648 0 CODE 0 text4 dist/default/production/AC-Dimmer-C.X.production.o
-_nibbleToHex 614 0 CODE 0 text3 dist/default/production/AC-Dimmer-C.X.production.o
+__end_of_hexToNibble 63E 0 CODE 0 text4 dist/default/production/AC-Dimmer-C.X.production.o
+_nibbleToHex 60A 0 CODE 0 text3 dist/default/production/AC-Dimmer-C.X.production.o
 _myIsr 8 0 CODE 0 intentry dist/default/production/AC-Dimmer-C.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production/AC-Dimmer-C.X.production.o
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production/AC-Dimmer-C.X.production.o
@@ -844,7 +848,7 @@ __pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production/AC-Dimmer-C.X.producti
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cstackCOMMON 1 70 70 C 1
-intentry 0 4 8 32A 2
+intentry 0 4 8 325 2
 reset_vec 0 0 0 1 2
 bssBANK0 1 20 20 E 1
 config 0 8007 1000E 5 2

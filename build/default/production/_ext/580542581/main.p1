@@ -1977,8 +1977,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! == -> _Cmd `i -> 0 `i 914  ]
 {
 "348
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 348:                                 if (Flags1.update || CmdVal.value > 8191) {
-[e $ ! || != -> . . _Flags1 1 1 `i -> 0 `i > . _CmdVal 0 -> -> 8191 `i `ui 915  ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 348:                                 if (CmdVal.value > 8191) {
+[e $ ! > . _CmdVal 0 -> -> 8191 `i `ui 915  ]
 {
 "349
 [; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 349:                                     state = 1;
@@ -1990,73 +1990,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 915 ]
 {
 "351
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 351:                                     Ch0Delay.value = 8191 -CmdVal.value;
-[e = . _Ch0Delay 0 - -> -> 8191 `i `ui . _CmdVal 0 ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 351:                                     Flags1.update = 0;
+[e = . . _Flags1 1 1 -> -> 0 `i `uc ]
 "352
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 352:                                     sendInt(Ch0Delay.msb);
-[e ( _sendInt (1 . . _Ch0Delay 1 1 ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 352:                                     Ch0Delay.value = 8191 -CmdVal.value;
+[e = . _Ch0Delay 0 - -> -> 8191 `i `ui . _CmdVal 0 ]
 "353
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 353:                                     sendInt(Ch0Delay.lsb);
-[e ( _sendInt (1 . . _Ch0Delay 1 0 ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 353:                                     sendInt(CmdVal.msb);
+[e ( _sendInt (1 . . _CmdVal 1 1 ]
 "354
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 354:                                     Flags1.update = 1;
-[e = . . _Flags1 1 1 -> -> 1 `i `uc ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 354:                                     sendInt(CmdVal.lsb);
+[e ( _sendInt (1 . . _CmdVal 1 0 ]
 "355
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 355:                                     state = 2;
-[e = _state -> -> 2 `i `uc ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 355:                                     Flags1.update = 1;
+[e = . . _Flags1 1 1 -> -> 1 `i `uc ]
 "356
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 356:                                 }
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 356:                                     state = 2;
+[e = _state -> -> 2 `i `uc ]
+"357
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 357:                                 }
 }
 [e :U 916 ]
-"357
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 357:                             } else if (Cmd == 1) {
+"358
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 358:                             } else if (Cmd == 1) {
 }
 [e $U 917  ]
 [e :U 914 ]
 [e $ ! == -> _Cmd `i -> 1 `i 918  ]
 {
-"358
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 358:                                 if (Flags1.update || CmdVal.value > 8191) {
-[e $ ! || != -> . . _Flags1 1 1 `i -> 0 `i > . _CmdVal 0 -> -> 8191 `i `ui 919  ]
-{
 "359
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 359:                                     state = 1;
-[e = _state -> -> 1 `i `uc ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 359:                                 if (CmdVal.value > 8191) {
+[e $ ! > . _CmdVal 0 -> -> 8191 `i `ui 919  ]
+{
 "360
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 360:                                 } else {
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 360:                                     state = 1;
+[e = _state -> -> 1 `i `uc ]
+"361
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 361:                                 } else {
 }
 [e $U 920  ]
 [e :U 919 ]
 {
-"361
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 361:                                     Ch1Delay.value = 8191 -CmdVal.value;
-[e = . _Ch1Delay 0 - -> -> 8191 `i `ui . _CmdVal 0 ]
 "362
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 362:                                     sendInt(Ch1Delay.msb);
-[e ( _sendInt (1 . . _Ch1Delay 1 1 ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 362:                                     Flags1.update = 0;
+[e = . . _Flags1 1 1 -> -> 0 `i `uc ]
 "363
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 363:                                     sendInt(Ch1Delay.lsb);
-[e ( _sendInt (1 . . _Ch1Delay 1 0 ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 363:                                     Ch1Delay.value = 8191 -CmdVal.value;
+[e = . _Ch1Delay 0 - -> -> 8191 `i `ui . _CmdVal 0 ]
 "364
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 364:                                     Flags1.update = 1;
-[e = . . _Flags1 1 1 -> -> 1 `i `uc ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 364:                                     sendInt(CmdVal.msb);
+[e ( _sendInt (1 . . _CmdVal 1 1 ]
 "365
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 365:                                     state = 2;
-[e = _state -> -> 2 `i `uc ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 365:                                     sendInt(CmdVal.lsb);
+[e ( _sendInt (1 . . _CmdVal 1 0 ]
 "366
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 366:                                 }
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 366:                                     Flags1.update = 1;
+[e = . . _Flags1 1 1 -> -> 1 `i `uc ]
+"367
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 367:                                     state = 2;
+[e = _state -> -> 2 `i `uc ]
+"368
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 368:                                 }
 }
 [e :U 920 ]
-"367
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 367:                             }
+"369
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 369:                             }
 }
 [e :U 918 ]
 [e :U 917 ]
-"368
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 368:                             break;
+"370
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 370:                             break;
 [e $U 902  ]
-"369
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 369:                     }
+"371
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 371:                     }
 }
 [e $U 902  ]
 [e :U 903 ]
@@ -2069,91 +2075,91 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 6 `i 913
  902 ]
 [e :U 902 ]
-"370
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 370:                     RcvCnt++;
+"372
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 372:                     RcvCnt++;
 [e ++ _RcvCnt -> -> 1 `i `uc ]
-"371
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 371:                 }
+"373
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 373:                 }
 }
 [e :U 901 ]
-"372
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 372:             }
+"374
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 374:             }
 }
 [e :U 898 ]
-"373
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 373:         } else if (RC1STAbits.OERR) {
+"375
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 375:         } else if (RC1STAbits.OERR) {
 }
 [e $U 921  ]
 [e :U 895 ]
 [e $ ! != -> . . _RC1STAbits 0 1 `i -> 0 `i 922  ]
 {
-"374
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 374:             sendChar('O');
-[e ( _sendChar (1 -> -> 79 `ui `uc ]
-"375
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 375:             RC1STAbits.CREN = 0;
-[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
 "376
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 376:             RC1STAbits.CREN = 1;
-[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 376:             sendChar('O');
+[e ( _sendChar (1 -> -> 79 `ui `uc ]
 "377
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 377:         }
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 377:             RC1STAbits.CREN = 0;
+[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
+"378
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 378:             RC1STAbits.CREN = 1;
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+"379
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 379:         }
 }
 [e :U 922 ]
 [e :U 921 ]
-"379
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 379:         if (state == 2) {
+"381
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 381:         if (state == 2) {
 [e $ ! == -> _state `i -> 2 `i 923  ]
 {
-"380
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 380:             sendChar('K');
-[e ( _sendChar (1 -> -> 75 `ui `uc ]
-"381
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 381:             RcvCnt = 0;
-[e = _RcvCnt -> -> 0 `i `uc ]
 "382
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 382:         } else if (state == 1) {
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 382:             sendChar('K');
+[e ( _sendChar (1 -> -> 75 `ui `uc ]
+"383
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 383:             RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"384
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 384:         } else if (state == 1) {
 }
 [e $U 924  ]
 [e :U 923 ]
 [e $ ! == -> _state `i -> 1 `i 925  ]
 {
-"383
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 383:             sendChar('N');
-[e ( _sendChar (1 -> -> 78 `ui `uc ]
-"384
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 384:             RcvCnt = 0;
-[e = _RcvCnt -> -> 0 `i `uc ]
 "385
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 385:         } else if (state == 3) {
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 385:             sendChar('N');
+[e ( _sendChar (1 -> -> 78 `ui `uc ]
+"386
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 386:             RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"387
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 387:         } else if (state == 3) {
 }
 [e $U 926  ]
 [e :U 925 ]
 [e $ ! == -> _state `i -> 3 `i 927  ]
 {
-"386
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 386:             sendChar('Z');
-[e ( _sendChar (1 -> -> 90 `ui `uc ]
-"387
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 387:             RcvCnt = 0;
-[e = _RcvCnt -> -> 0 `i `uc ]
 "388
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 388:         }
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 388:             sendChar('Z');
+[e ( _sendChar (1 -> -> 90 `ui `uc ]
+"389
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 389:             RcvCnt = 0;
+[e = _RcvCnt -> -> 0 `i `uc ]
+"390
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 390:         }
 }
 [e :U 927 ]
 [e :U 926 ]
 [e :U 924 ]
-"389
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 389:     }
+"391
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 391:     }
 }
 [e :U 892 ]
 [e $U 893  ]
 [e :U 894 ]
-"391
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 391:     return 0;
+"393
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 393:     return 0;
 [e ) -> 0 `i ]
 [e $UE 891  ]
-"392
-[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 392: }
+"394
+[; ;/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c: 394: }
 [e :UE 891 ]
 }

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/Applications/microchip/xc8/v2.10/pic/dat/en_msgs.txt -cs \
   -h+dist/default/production/AC-Dimmer-C.X.production.sym \
   --cmf=dist/default/production/AC-Dimmer-C.X.production.cmf -z -Q16LF15323 \
-  -o/tmp/xcXZpg6ER --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcoyNPamu --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/AC-Dimmer-C.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0200Eh-020EFh -pstack=STACK -ACODE=00h-07FFh \
   -ASTRCODE=00h-07FFh -ASTRING=00h-0FFhx8 -ACONST=00h-0FFhx8 \
@@ -37,7 +37,7 @@ Linker command line:
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
-  -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcDUjnAVE.o \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcdwnGcYk.o \
   dist/default/production/AC-Dimmer-C.X.production.o 
 
 Object code version is 3.11
@@ -47,18 +47,18 @@ Machine type is 16LF15323
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcDUjnAVE.o
+/tmp/xcdwnGcYk.o
                 end_init                            175      175        1        8       0
                 reset_vec                             0        0        1        0       0
                 config                             8007     8007        5    1000E       0
 dist/default/production/AC-Dimmer-C.X.production.o
                 cinit                               176      176       15        8       0
                 intentry                              4        4      171        8       0
-                text4                               317      317        D        8       0
-                text3                               30A      30A        D        8       0
-                text2                               324      324        A        8       0
-                text1                               2EF      2EF       1B        8       0
-                maintext                            18B      18B      164        8       0
+                text4                               312      312        D        8       0
+                text3                               305      305        D        8       0
+                text2                               31F      31F        A        8       0
+                text1                               2EA      2EA       1B        8       0
+                maintext                            18B      18B      15F        8       0
                 cstackBANK0                          2C       2C        2       20       1
                 cstackCOMMON                         70       70        7       70       1
                 bssBANK0                             20       20        C       20       1
@@ -72,11 +72,11 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                               176      176       15         0
                 intentry                              4        4      171         0
                 reset_vec                             0        0        1         0
-                text4                               317      317        D         0
-                text3                               30A      30A        D         0
-                text2                               324      324        A         0
-                text1                               2EF      2EF       1B         0
-                maintext                            18B      18B      164         0
+                text4                               312      312        D         0
+                text3                               305      305        D         0
+                text2                               31F      31F        A         0
+                text1                               2EA      2EA       1B         0
+                maintext                            18B      18B      15F         0
 
         CLASS   STRCODE        
 
@@ -368,7 +368,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000001  000001         0       0  CODE        2
                 bssBANK0                       000020  00000E  00002E        20       1  BANK0       1
-                intentry                       000004  00032A  00032E         8       0  CODE        2
+                intentry                       000004  000325  000329         8       0  CODE        2
                 cstackCOMMON                   000070  00000C  00007C        70       1  COMMON      1
                 config                         008007  000005  00800C     1000E       0  CONFIG      2
 
@@ -381,12 +381,12 @@ UNUSED ADDRESS RANGES
         BANK2            00120-0016F              50           1
         BIGRAM           02000-020EF              F0           1
         CODE             00001-00003               3           2
-                         0032E-007FF             4D2
+                         00329-007FF             4D7
         COMMON           0007C-0007D               2           1
         CONST            00001-00003               3           2
-                         0032E-007FF             100
+                         00329-007FF             100
         ENTRY            00001-00003               3           2
-                         0032E-007FF             100
+                         00329-007FF             100
         IDLOC            08000-08003               4           2
         RAM              0002E-0006F              42           1
                          000A0-000EF              50
@@ -457,9 +457,9 @@ UNUSED ADDRESS RANGES
         SFR9             00480-004EF              70           1
         STACK            0200E-020EF              E2           1
         STRCODE          00001-00003               3           2
-                         0032E-007FF             4D2
+                         00329-007FF             4D7
         STRING           00001-00003               3           2
-                         0032E-007FF             100
+                         00329-007FF             100
 
                                   Symbol Table
 
@@ -851,12 +851,12 @@ ___sp                    stack        00000
 ___stackhi               (abs)        020EF
 ___stacklo               (abs)        0200E
 __end_of__initialization cinit        00188
-__end_of_hexToNibble     text4        00324
-__end_of_main            maintext     002EF
+__end_of_hexToNibble     text4        0031F
+__end_of_main            maintext     002EA
 __end_of_myIsr           intentry     00175
-__end_of_nibbleToHex     text3        00317
-__end_of_sendChar        text2        0032E
-__end_of_sendInt         text1        0030A
+__end_of_nibbleToHex     text3        00312
+__end_of_sendChar        text2        00329
+__end_of_sendInt         text1        00305
 __initialization         cinit        00176
 __pbssBANK0              bssBANK0     00020
 __pbssCOMMON             bssCOMMON    00077
@@ -864,22 +864,22 @@ __pcstackBANK0           cstackBANK0  0002C
 __pcstackCOMMON          cstackCOMMON 00070
 __pintentry              intentry     00004
 __pmaintext              maintext     0018B
-__ptext1                 text1        002EF
-__ptext2                 text2        00324
-__ptext3                 text3        0030A
-__ptext4                 text4        00317
+__ptext1                 text1        002EA
+__ptext2                 text2        0031F
+__ptext3                 text3        00305
+__ptext4                 text4        00312
 __size_of_hexToNibble    (abs)        00000
 __size_of_main           (abs)        00000
 __size_of_myIsr          (abs)        00000
 __size_of_nibbleToHex    (abs)        00000
 __size_of_sendChar       (abs)        00000
 __size_of_sendInt        (abs)        00000
-_hexToNibble             text4        00317
+_hexToNibble             text4        00312
 _main                    maintext     0018B
 _myIsr                   intentry     00004
-_nibbleToHex             text3        0030A
-_sendChar                text2        00324
-_sendInt                 text1        002EF
+_nibbleToHex             text3        00305
+_sendChar                text2        0031F
+_sendInt                 text1        002EA
 btemp                    (abs)        0007E
 end_of_initialization    cinit        00188
 hexToNibble@c            cstackCOMMON 00072
@@ -1091,14 +1091,14 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 /Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c
-		_sendInt       		CODE           	02EF	0000	28
-		_nibbleToHex   		CODE           	030A	0000	14
-		_main          		CODE           	018B	0000	357
+		_sendInt       		CODE           	02EA	0000	28
+		_nibbleToHex   		CODE           	0305	0000	14
+		_main          		CODE           	018B	0000	352
 		_myIsr         		CODE           	0004	0000	370
-		_sendChar      		CODE           	0324	0000	11
-		_hexToNibble   		CODE           	0317	0000	14
+		_sendChar      		CODE           	031F	0000	11
+		_hexToNibble   		CODE           	0312	0000	14
 
-/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c estimated size: 794
+/Users/craig/MPLABXProjects/AC-Dimmer-C.X/main.c estimated size: 789
 
 shared
 		__initialization		CODE           	0176	0000	19
